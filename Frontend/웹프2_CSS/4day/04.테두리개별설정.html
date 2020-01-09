@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>테두리 개별설정</title>
+        <style>
+            .mixA, .mixB{
+                border-style: solid;
+                border-width: 3px;
+            }
+            .mixA {
+                border-top-style: dotted;
+                border-right-style: double;
+                border-bottom-style: dotted;
+                border-left-style: double;
+            }
+            .mixB { border-style: dotted double; }
+        </style>
+    </head>
+    <body>
+        <h1>테두리의 각 부분에 대한 별도의 스타일 설정</h1>
+        <p class="mixA">border-style 속성값을 4개로 설정한 단락입니다.</p>
+        <p class="mixB">border-style 속성값을 2개로 설정한 단락입니다.</p>
+        <p>margin 속성값을 4개로 한 것과 2개로 한 것이 같은 효과를 내는 것에 주목</p>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>visible</title>
+        <style>
+            div {
+                background-color: ivory;
+                border: 2px solid black;
+            }
+            p.none { display: none;}
+            p.hidden { visibility: hidden;}
+        </style>
+    </head>
+    <body>
+        <h1>HTML 요소의 숨기기</h1>
+        <div>
+            <p>이 알의 단락은 display 속성값을 none으로 설정했습니다.</p>
+            <p class="none">이 단락은 display 속성값을  none으로 설정했습니다.</p>
+        </div><br>
+        <div>
+            <p>이 아래의 단락은 visibility 속성값을 hidden으로 설정했습니다.</p>
+            <p class="hidden">이 단락은 display 속성값을 hidden으로 설정했습니다.</p>
+        </div>
+        <p>visiblity 속성값을 hidden으로 설정하면 눈에 보이지만 않을 뿐 여전히 웹페이지 내에 존재하게 됩니다.</p>
+    </body>
+</html>

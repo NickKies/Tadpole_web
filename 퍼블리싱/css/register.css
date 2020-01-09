@@ -1,0 +1,392 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+
+}
+
+
+/* --------------- register bg ------------ */
+.register { width: 100%; height: 100%; box-sizing: border-box; background: url(../images/mainBg.png) no-repeat 0px 0px; background-size: cover; background-color: #4874e8; transition: all .5s; position: relative; padding-bottom: 20px;}
+.register .bgWrap {height: 126px; width: 100%; background-color: #4874E8; transition: all .5s;}
+.register .contentWrap { width: 1200px; margin: 0 auto; }
+.register h3 {  text-align: center; padding: 10px 0; font-size: 22px; color: #5977e0; /* border: 1px solid #ccc; */ margin-bottom: 20px;}
+.register .overlay { width: 100%; height: 100%; z-index: 0; position: absolute; bottom: 0; top: 0; left: 0; right: 0; background:linear-gradient(135deg,rgba(31,74,186,.8) 0%, rgba(72,116,232,.2) 100%);}
+
+/* --------------- step Navigation------------ */
+/*.register .stepNavi { width: 555px; margin: 0 auto; padding-top: 40px; }
+.register .stepNavi ul { width: 100%; background-color: #f8f8f8; border-radius: 20px; border:1px solid #ccc; box-sizing: border-box;}
+.register .stepNavi ul:after { content:""; display: block; clear: both; }
+.register .stepNavi ul li { float: left; width: 25%; height: 40px; }
+.register .stepNavi ul li p { text-align: center; color: #777; font-size: 14px; line-height: 38px; transition: all .5s; }
+.register .stepNavi ul li.active p { color: #4874e8; font-weight:bold; }
+.register .stepNavi ul .activeBg { width: 25%; background-color: #fff; border-radius: 20px; border:1px solid #4874e8;height: 40px; box-sizing: border-box; transition: all .5s; }*/
+
+.register .stepNavi_2 { width: 555px;margin: 0 auto; padding-top: 30px; }
+.register .stepNavi_2 ul { position: relative; }
+.register .stepNavi_2 ul::after {content:""; display: block; clear:both; }
+.register .stepNavi_2 ul li { display: block; float: left; width: 25%; }
+.register .stepNavi_2 ul li.activeBg { width: 80%; height: 4px; margin: 0 auto; float:none; position: relative; top: 5px; z-index: -1; background-color: #eee;}
+.register .stepNavi_2 ul li.activeBg .activeBar { transition: all .5s; background-color: #4874e8; height: 100%; width: 0%; }
+.register .stepNavi_2 ul li .naviBox { width: 15px; height: 15px; margin: 0 auto; background-color: #eee; transition: all .5s; font-size: 8px; text-align: center;}
+.register .stepNavi_2 ul li.active .naviBox { background-color: #4874e8; color: white; font-size: 8px; text-align: center;}
+.register .stepNavi_2 ul li p {  text-align: center; color: #f8f8f8; font-size: 12px;  /* font-weight: bold; */  padding-top: 10px;} /*의뢰인 수정*/
+
+/* --------------- multi step form ------------ */
+.register fieldset { border: 0; padding: 0; }
+.register legend { position: absolute; left: -9999px; top: -9999px; }
+
+.register .stepWrap { padding-top: 15px; width: 555px; margin: 0 auto; padding-bottom: 0px; transition: all .5s; }
+.register .row { width: 100%; margin-bottom: 20px; }
+.register .row:after { content:""; display: block;clear: both;}
+.register .row .row_group_1 { width: 100%; padding: 0 5px; box-sizing: border-box; }
+.register .row .row_group_2 { width: 50%; float: left; padding: 0 5px; box-sizing: border-box;}
+.register .step > .row > .row_group_2 { padding: 0 10px; }
+.register .row .inputGroup { width: 100%; overflow: hidden;}
+.register .row label { color: #555; display: inline-block; margin-bottom: 8px;}
+.register .row input { width: 80%; height: 45px;  border: 1px solid #ddd; border-radius: 5px 0 0 5px; box-sizing: border-box; display: block; float: left; border-right: 0; padding: 10px;  }
+.register .row .inputMax { width: 100%; border-radius: 5px; border-right: 1px solid #ccc;}
+.register .row button { width: 20%; height: 45px; display: block; float: left; border: 0; background: #4874E8; color: #fff; border-radius: 0 5px 5px 0; outline: 0; cursor: pointer;}
+.register .row select { display: block; width: 100%; height: 45px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; padding: 10px 15px;}
+.register .row .stepTitle { width: 100%; height: 40px; color: #4874e8; text-align: center; line-height: 40px; font-size: 20px;  font-weight: bold;} /* 의뢰인 수정 */
+.register .row .stepDesc {  text-align: center; color: #777; font-size: 12px; margin-bottom: 25px; line-height: 22px;}
+.register .row .daw { width: 20%; height: 45px; display: block; float: left; border: 0; background: #eee; color: #999; border-radius: 0 5px 5px 0; outline: 0; cursor: inherit; line-height: 45px; text-align: center; font-size: 14px;}
+.register .row .input90 { width: 90%; }
+.register .row textarea { display: block; width: 100%; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; padding: 10px; font-family: 'Spoqa Han Sans', 'Sans-serif';}
+.register .row .submitBtn { background: #4874E8;  width: 100%;border: 0; border-radius: 5px; color: #fff; }
+.register .row span.checkIcon { width: 18px; height: 13px;	 display: inline-block;	 background:url(../images/check.png) no-repeat 0 0; padding-right: 2px; background-size: cover;}
+.register .row .agreeNo { width: 100%; border-radius: 5px;  }
+.register .row .agreeNo.agreeYes { background-color: #269a44; }
+.register .row .positionNo { width: 100%; border-radius: 5px; }
+.register .row .positionNo.positionYes { background-color: #269a44; }
+
+.register .row input[type=checkbox] { width: 15px; height: 15px; position: relative; top: 2px; margin-right: 7px; }
+.register .agreePopup .inputGroup { padding-top: 10px; }
+.register .agreePopup .inputGroup label { line-height: 21px; }
+.register .stpe5 .submitBtn { width: 100%; border-radius: 5px; }
+
+.register .row .idNum div { height: 45px; line-height: 45px; }
+.register .row .idNum input { width: 20%; text-align: center; border-right: 0; border-radius: 5px 0 0 5px;}
+.register .row .idNum .idNum_2  { width: 80%; background-color: #f8f8f8; font-size: 20px; line-height: 45px; padding-top: 17px; border-left: 0; border-right: 1px solid #ccc; border-radius: 0 5px 5px 0;}
+
+.register .row .gendBox { width: 100%; height: 45px; border:1px solid #ccc; border-radius: 5px; box-sizing: border-box; overflow: hidden; background-color: #ddd;}
+.register .row .gendBox > div { float: left; width: 50%; box-sizing: border-box; padding-left: 60px; color: #555; cursor:pointer; transition: all .4s; font-weight: bold; font-size: 14px;}
+.register .row .gendBox .genderMale {  background:url(../images/male.png) no-repeat 5px 3px; background-size: 35px; border-right: 1px solid #ccc;  background-color: #fff;}
+.register .row .gendBox .genderFemale { background:url(../images/female.png) no-repeat 5px 2px; background-size: 35px;  background-color: #fff;}
+.register .row .gendBox > div.active { background-color: #4874e8;  color: #fff;}
+
+.register .row .nextStep { width: 100%; border-radius: 5px; }
+.register .row .prevStep { width: 100%; border-radius: 5px;  background: #4874e8;}
+.register .stepBox { width: 600%; height: 100%; transition: all .5s ease-in-out; position: relative;}
+.register .stepBox:after { content:""; display: block; clear: both; }
+
+.register .step { width: 555px; /* border: 1px solid #eee; */ border-top: 10px solid #4874e8; box-shadow: 3px 3px 3px 0 rgba(0,0,0,.28); border-radius: 5px; padding: 40px 20px; box-sizing: border-box; background-color: #fff;  position: relative;} /* 의뢰인 수정 */
+.register .step.on { display: block; }
+.register .step { width: 555px; }
+.register .step0 { margin-left: 0;/*float: left;*/width: 555px; min-height: 800px; /*position: relative;*/ position: absolute;  }
+.register .step1 { margin-left: 0;/*float: left;*/width: 555px; min-height: 800px; /*position: relative;*/  position: absolute;  left: 40%;	}
+.register .step2 { margin-left: 0;/*float: left;*/width: 555px; min-height: 800px; /*position: relative;*/  position: absolute; left:40%;   }
+.register .step3 { margin-left: 0;/*float: left;*/ width: 555px;min-height: 800px; /*position: relative;*/   position: absolute; left:40%; }
+.register .step4 { margin-left: 0;/*float: left;*/width: 555px; min-height: 800px; position: absolute; left:40%;   }
+.register .step5 { margin-left: 0;/*float: left;*/width: 555px; min-height: 800px; position: absolute; left:40%;    }
+.register .step6 { margin-left: 0;/*float: left;*/width: 555px; min-height: 800px; position: absolute; left:40%;  }
+.register .btnFixed {  position: absolute; bottom: 50px; left: 0; box-sizing: border-box; padding: 0 20px; }
+
+/*.register .step3 .tip { display: inline-block; }
+.register .step3 .tipBtn { background: url(../images/tipBtn.png) no-repeat 0 0; width: 15px; height: 15px; background-size: cover; position: relative; top: 2px;}
+.register .step3 .tipDesc { visibility: hidden;  position: absolute;  width: 230px;  background-color: #555;     padding:10px 5px; border-radius: 6px; z-index: 1; opacity: 0; transition: opacity .6s; bottom: 125%; left: 50%;   margin-left: -115px; text-align: center;}
+.register .step3 .tipDesc p { font-size: 14px; }
+.register .step3 .tipDesc a { color: #fff; font-size: 12px;  }
+.register .step3 .tipBtn:hover .tipDesc { visibility: visible; opacity: 1;}*/
+
+.register .row label .tip { display: inline-block; width: auto; height: auto; cursor: pointer;}
+.register .row label .tip i { padding-left: 5px; position: relative;}
+.register .row label .tip .tipDesc { visibility: hidden; position: absolute; width: 230px;  background-color: #4874e8; padding: 10px 5px; border-radius: 3px; z-index: 1; opacity: 0; transition: opacity .6s; text-align: center; top: -10px; left: 20px; }
+.register .row label .tip .tipBtn:hover .tipDesc { visibility: visible; opacity: 1;  color: #fff;
+    font-size: 12px;}
+.register .row label .tip .tipBtn:hover .tipDesc a { color: #fff; font-size: 12px;}
+
+
+.register .row .info { padding-bottom: 60px; position: relative;}
+.register .row .info label { display: block; }
+.register .row .info .w33 { width: 33.3333%; float: left; box-sizing: border-box; padding-right: 10px; }
+.register .row .info .w30 { width: 30%; float: left; box-sizing: border-box; padding-right: 10px;}
+.register .row .info .w60 { width: 60%; }
+.register .row .info .w40 { width: 40%; float: left; box-sizing: border-box; padding-right: 10px;}
+.register .row .info .daw.w40 { padding-right: 0; }
+.register .row .info .infoWrap {position: relative; }
+.register .row .info .infoWrap::after { content: ""; display: block; clear: both; }
+.register .row .info .btnGuard { position: absolute; bottom: 0; left: 0; width: 100%;}
+.register .row .info .btnArea { width: 100%; height: 100%;position: absolute; left: 0; top: -9px; right: 0; bottom: 0; background: rgba(0,0,0,.98); text-align: center; border-radius: 10px; box-sizing: border-box; padding-top: 10px;}
+.register .row .info .btnArea button { float: none; display: inline-block; border-radius: 5px; width: 45px; height: 45px; }
+.register .row .info .btnArea .addBtn { background: url(../images/plus.png) no-repeat 0 0; background-size: 45px; padding: 0;}
+.register .row .info .btnArea .deleteBtn {background: url(../images/minus.png) no-repeat 6px 3px;  background-size: 40px;}
+.register .infoBox { margin-bottom: 20px; width: 50%; float: left; }
+.register .infoBox:after { content: ""; display: block; clear: both;  }
+.register .mb100 { margin-bottom: 100px; }
+.register .infoWrap .infoArea {float: left; width:calc( 100% - 45px );}
+.register .deleteBtn { cursor: pointer;  width: 45px; margin-bottom: 20px; float: left; text-align: right;}
+.register .deleteBtn .i_delete { width: 30px; height:30px; display: block; background: url(../images/minus.png) no-repeat 0 0; background-size: 30px; display: inline-block;}
+
+.register .row .rangeBox { box-sizing: border-box; padding: 25px 20px; }
+.register .row .rangeBox .slider-container { margin: 0 auto; }
+.register .row .rangeBox .slider-container .back-bar { top: -10px; }
+.register .row .rangeBox .slider-container .scale ins { color: #555; }
+.register .row .rangeBox .slider-container .back-bar .pointer-label { background-color:transparent;  color: #fff;}
+
+
+/* register layout 변경 180816 배다빈 추가 */
+.register .step0 .row .step0Desc { text-align: left; font-size: 13px; color: #777;}
+.register .step0 .row .stepIntro { width: 100%;	 }
+.register .step0 .row .step0Info { color: #f8f8f8; font-size: 14px; line-height: 30px; letter-spacing: 1px;  box-sizing: border-box; padding: 0 20px;} /*의뢰인수정*/
+
+.register .step .row .popupInfo { display: block;  text-align: center; font-size: 13px; color: #777; font-weight: bold; position: absolute; bottom: 0; left: 0; width: 100%; height: 55px; line-height: 55px; cursor: pointer; background-color: #eee;}
+
+
+/* agree Popup */
+.agreePopup { }
+.agreePopup.on { }
+.agreePopup .wrap { margin: 0 auto;  box-sizing: border-box; padding-bottom: 73px;	}
+.agreePopup h2 { box-sizing: border-box; color: #777; padding: 10px 20px; text-align: center; font-size: 17px; font-weight: bold;}
+
+.agreePopup .agreeForm { width: 100%; height: 40px; padding: 10px 0; margin-bottom: 0; border-bottom: 1px solid #ddd; }
+.agreePopup .agreeForm:nth-child(2) { border-top: 1px solid #ddd; }
+.agreePopup .agreeForm:after { content:""; display: block; clear:both; }
+.agreePopup .agreeForm .row_group_1 { height: 40px; line-height: 40px; overflow: hidden; box-sizing: border-box; padding: 0 10px; color: #555; font-size: 15px;}
+.agreePopup .agreeForm .row_group_1 div { float: right; overflow: hidden;}
+.agreePopup .agreeForm .row_group_1 label { font-size: 13px;float: right; color: #4874e8;}
+.agreePopup .agreeForm .row_group_1 b { color: #4874e8; font-size: 15px; font-weight: 600; }
+.agreePopup .agreeForm .row_group_1 input[type=checkbox] { width: 1px; height: 1px; position: absolute; left: -20px; top: -20px;}
+.agreePopup .agreeForm .row_group_1 span { font-size: 12px; color:#4d70ce; display: inline-block; padding-left: 5px; cursor: pointer;}
+.agreePopup .agreeForm .row_group_1 .agreeBtn { display: inline-block;
+    overflow: hidden; width: 8px; height: 8px;  margin-top: -1px; margin-right: 6px; padding: 3px; border: 1px solid #ccc;  border-radius: 50%; background-color: #fff;  box-shadow: none!important;  text-align: center;  vertical-align: middle;  line-height: 0; }
+.agreePopup .agreeForm .row_group_1 .agreeBtn.active:after { content: ' '; display: inline-block; overflow: hidden; width: 8px; height: 8px; border-radius: 50%; background-color: #0443a1;  line-height: 0;}
+
+.agreePopup .allAgree {  }
+.agreePopup .btnArea { text-align: center; padding: 30px 0; }
+.agreePopup .btnArea button { width: 80px; height: 30px; border: 0; margin: 0 10px; line-height: 30px;background-color: #777;  color: #fff; cursor: pointer; }
+.agreePopup .btnArea button.submit { background-color: #4874e8;  color: #fff;}
+
+.agreePopup .agreeDesc { box-sizing: border-box; padding:10px; background-color: #f9f9f9; color: #555; font-size: 14px; height: 200px; overflow-y: scroll; border-bottom: 1px solid #8fbff4; display: none;}
+.agreePopup .agreeDesc.view { display: block; }
+
+/* 신청정보는 업체가 어디까지 확인하나요? 눌렀을때 팝업창 180816 배다빈 추가 */
+.viewPopup { position: absolute; width: 100%; top: 0; bottom: 0; right: 0; left: 0; background: rgba(0,0,0,.6); z-index: 1000; visibility: hidden; }
+.viewPopup.on { visibility: visible;}
+.viewPopup .wrap { width: 1200px; margin: 0 auto; background-color: #fff; position: absolute; left: 50%; margin-left: -600px;  box-sizing: border-box; padding: 0 10px; border-radius: 5px; }
+.viewPopup .wrap h3 { background-color: #4874e8; color: #fff;border:0; height: 30px; font-size: 20px; }
+.viewPopup .wrap > p { color:red; box-sizing: border-box; padding-left: 20px; font-weight: bold; font-size: 14px; text-align: center; padding-bottom: 20px;}
+.viewPopup .wrap .btnArea { text-align: center;  padding: 20px 0;}
+.viewPopup .wrap .btnArea button { width: 200px; height: 40px; border:0; background-color: #4874e8; color: #fff; border-radius: 5px; line-height: 40px; cursor: pointer;}
+
+/* register 전체 레이아웃 변경 180903 배다빈 추가 */
+.register .row .regCate { width: 70%; margin: 0 auto; }
+.register .row .regCate ul::after {content: ""; display: block; clear: both;}
+.register .row .regCate ul li { float: left; width: 33.3333%; box-sizing: border-box;padding:  0 10px;}
+.register .row .regCate ul li div { width: 70px; height: 70px; border-radius: 50%; margin: 0 auto; cursor:pointer; }
+.register .row .regCate ul li .pro_1 { background-color: #2f7ffc; }
+.register .row .regCate ul li .pro_2 { background-color: #509afc; }
+.register .row .regCate ul li .pro_3 { background-color: #4bb9e6; }
+.register .row .regCate ul li div .i_product { display: block; width: 100%; height: 100%; text-align: center; color: #fff; font-size: 11px; box-sizing: border-box;
+    padding-top: 43px; font-weight: 300; }
+.register .row .regCate ul li .pro_1 .i_product { background: url(../images/product_1_1.png) no-repeat 20px 12px; background-size: 30px;}
+.register .row .regCate ul li .pro_2 .i_product { background: url(../images/product_2_1.png) no-repeat 20px 12px; background-size: 30px;}
+.register .row .regCate ul li .pro_3 .i_product { background: url(../images/product_3_1.png) no-repeat 18px 10px; background-size: 36px;}
+.register .row .regCate select {display: none;}
+.register .row .regCate select.active { display: block; }
+
+.register .row .selectBtn { padding-top:10px; }
+.register .row .selectBtn ul { position: relative; width: 90%;}
+.register .row .selectBtn ul:after {content: ""; display: block; clear: both;}
+.register .row .selectBtn ul li { float: left; width: 25%;  }
+.register .row .selectBtn ul li div { text-align: center;color: #555; border:1px solid #ddd; font-size: 13px; padding: 8px 0; cursor: pointer;}
+.register .row .selectBtn ul li .br0 { border-right: 0; }
+.register .row .selectBtn ul .reloadBtn { height: 37px; width: 37px; padding: 0; position: absolute; right: -41px; }
+.register .row .selectBtn ul .reloadBtn div { padding: 0; }
+.register .row .selectBtn ul .reloadBtn div .i_reload { background: url(../images/reload.png) no-repeat 8px 8px; background-size: 20px; width: 35px; height: 35px; display: block;}
+
+.register .row .clickBox {}
+.register .row .clickBox ul { }
+.register .row .clickBox ul:after {content: ""; display: block; clear: both;}
+.register .row .clickBox ul li { float: left; width: 25%;  }
+.register .row .clickBox ul li div { text-align: center;color: #555; border:1px solid #ddd; font-size: 13px; padding: 8px 0; cursor: pointer; transition: all .5s;}
+.register .row .clickBox ul li.active div { background-color: #4874e8; color:#fff; }
+.register .row .clickBox ul li .br0 { border-right: 0; }
+.register .row .clickBox ul li .bb0 { border-bottom: 0; }
+.register .row .clickBox ul li .bl0 { border-left: 0; }
+.register .row .clickBox ul li .bt0 { border-top: 0; }
+
+.register .row .infoStats {}
+.register .row .infoStats .infoStatsBox { width: 100%; height: 70px; background-color: #f2f2f2; border:1px solid #ccc; }
+.register .row .infoStatsBox ul { box-sizing: border-box; padding: 10px 20px; }
+.register .row .infoStatsBox ul::after {content: ""; display: block; clear: both;}
+.register .row .infoStatsBox ul li { float: left; width: 25%;}
+.register .row .infoStatsBox ul li div { font-size: 14px; line-height: 50px; text-align: center; color:#555;}
+.register .row .infoStatsBox ul li input[type=text] { width: 50px; background-color: transparent; border:0; border-bottom: 1px solid #ccc; float: none; display: inline-block;}
+
+.register .row .back-bar .pointer-label { display: none; }
+.register .row .rangeValue { display: inline-block; padding-left: 10px; }
+
+.register .row .info { padding: 0 0 20px; }
+.register .infoBox { width: 100%; float: none; }
+.register .row .info .w33 { width: 33.3333%; }
+.register .row .info .w40 { padding-right: 5px; }
+.register .row .info .w30 { padding-right: 5px; }
+.register .row .info .w30:last-child { padding-right: 0; }
+.register .row .info .w33:last-child { padding-right: 0; }
+.register .infoWrap .infoArea { width: 100%; float: left;}
+.register .deleteBtn { width: 45px; float: right; padding-right: 10px; margin-bottom: 0; padding-top: 20px;}
+.register .addBtnBox { width: 45px; float: right; padding-right: 10px;  padding-top: 20px;text-align: right;}
+.register .addBtnBox .addBtn { background: url(../images/plus.png) no-repeat 0 0; background-size: 30px; padding: 0; width: 30px; height: 30px; display: inline-block; float: none;}
+.register .row .infoStats .infoStatsBox { height: auto; }
+.register .row .infoStatsBox ul { padding: 5px; }
+.register .row .infoStatsBox ul li { width: 50%; float: left; }
+.register .step > .row > .row_group_2 { padding: 0 5px; }
+.register .stepWrap { width: 555px; }
+
+.register .step6 .complete {  text-align: center; display: block; height: 300px; padding-top: 30px;}
+.register .step6 .complete i { color: #4874e8; font-size: 250px; w background: #fff; display: block; border-radius: 50%; line-height: 250px; margin: 0 auto;}
+.register .step6 .cpDesc p { text-align: center; color: #555; font-size: 15px;}
+.register .step6 .cpDesc p b { display: block;  color: #4874e8; font-size: 22px;}
+.register .step6 .cpCount {text-align: center; color: #eb834c; font-size: 50px;}
+.register .step6 .cpCount span {  }
+.register .step6 .cpCount p { font-size: 14px; color: #555;}
+.register .step6 .btnArea { text-align: center; }
+.register .step6 .btnArea button { width: 80%; border-radius: 5px; float: none; display: block;margin: 0 auto;}
+
+.register .info2 { margin-bottom: 0; }
+.register .infoWrap {margin-bottom: 20px; background:#4874e8; padding: 10px; border-radius: 5px;}
+/* ---------- //index.html register 부분 레이아웃 전체 변경 180904 배다빈 추가 ----------  */
+
+
+@media only screen and (max-width:1200px) {
+
+	.register .contentWrap { width: 100%; }
+
+	.viewPopup .wrap { width: 100%; left: 0; margin-left: 0;}
+
+
+
+}
+
+@media only screen and (min-width: 767px) and (max-width:1200px) {
+	/* register.html 전체 레이아웃 변경 180903 배다빈 추가*/
+	/*.register .stepWrap { width: 100%; }*/
+	.register .step { padding: 40px 10px;}
+	.register .step0 { }
+	.register .step1 { margin-left: 0;}
+	.register .step2 { margin-left: 0;}
+	.register .step3 { margin-left: 0;}
+	.register .step4 { margin-left: 0;}
+
+	.register .row label { font-size: 14px; }
+	.register .step3 .row .info input { font-size: 12px; }
+	.register .step3 .row .info .w60 { width: 70%; }
+	.register .step3 .row .info .daw.w40 { width: 30%; }
+
+	.register .row .selectBtn ul .reloadBtn {  right: -36px; }
+	/* //register.html 전체 레이아웃 변경 180903 배다빈 추가*/
+}
+
+
+@media screen and (max-width: 767px) {
+
+	.register { width: 100%; padding-bottom: 0;}
+	.register .bgWrap { height: 50px;}
+	.register .stepBox { position: inherit; }
+
+
+
+	/*.register .stepNavi { width: 100%; margin: 0 auto; padding: 40px 5px 0; box-sizing: border-box;}
+	.register .stepNavi ul li p { font-size: 11px; } */
+	.register .stepNavi_2 { width: 100%; }
+	.register .stepNavi_2 ul li p { font-size: 12px; }
+
+	.register .step0 .row .step0Desc { font-size: 11px; }
+	.register .step0 .row .step0Info { padding: 0;}
+	.register .step0 .row .step0Notice { padding-bottom: 80px;}
+
+	.register .stepWrap { width: 100%; overflow: hidden;}
+	.register .step { padding: 20px 0 40px; min-width: 320px;}
+	.register .step0 { min-height: 800px; height: auto;}
+	.register .step .row .popupInfo { font-size: 12px; }
+
+	.register .row .gendBox > div { padding-left: 33px; text-align: center;}
+	.register .row .gendBox .genderMale {  background:url(../images/male.png) no-repeat 5px 5px; background-size: 30px; background-color: #fff;}
+	.register .row .gendBox .genderFemale { background:url(../images/female.png) no-repeat 5px 5px; background-size: 30px; background-color: #fff;}
+
+	.register .step4 .row .info .btnArea .addBtn { background-position: 50% 7px;  background-size: 30px;}
+	.register .step4 .row .info .btnArea .deleteBtn { background-position: 50% 7px;  background-size: 30px; }
+	/*.register .stepBox > div { width: 360px; }*/
+	.register .row { width: 100%; }
+	.register .row select { font-size: 13px; padding: 5px 7px; background-color: #fff;}
+	.register .row .input90 { width: 80%; }
+	.register .row .daw { width: 20%; font-size: 11px;}
+	.register .row input {  padding: 5px 7px;  font-size: 13px; }
+	.register .row label { font-size: 14px; }
+	.register .row button { font-size: 10px; }
+	.register .row span.checkIcon { width: 10px; height: 10px; position: relative; top: 2px; padding-right: 5px;}
+
+	.register .row .mRow { width: 100%;  }
+
+	.register .row label .tip .tipBtn:hover .tipDesc { visibility: inherit; opacity: inherit;  color: #fff; font-size: 12px;}
+	.register .row label .tip .tipBtn .tipDesc.active { visibility: visible; opacity: 1; color: #fff; font-size: 12px;}
+	.register .row label .tip .tipBtn .tipDesc.hidden { visibility: hidden; opacity: 0; color: #fff; font-size: 12px;}
+	.register .row label .tip .tipBtn .tipDesc { left: -60px; top: -40px; }
+	.register .row label .tip .tipBtn .tipDesc.rightPosition { left: -200px; top: -40px; }
+	.register .row label .tip .tipBtn .tipDesc.centerPosition { left: -150px; top: -80px; }
+
+	.register .step4 .row .info .btnArea button img { width: 15px; margin-top: 2px;}
+
+	.agreePopup .wrap { width: 100%; left: 0; margin-left: 0;}
+	.agreePopup h2 { font-size: 15px; }
+	.agreePopup .agreeForm { width: 100%; height: 40px; }
+    .agreePopup .agreeForm .row_group_1 { height: 80px; overflow: hidden; font-size: 14px; padding: 0;}
+    .agreePopup .agreeForm .row_group_1 a { font-size: 14px; }
+    .agreePopup .agreeForm .row_group_1 div { float: none; box-sizing: border-box; padding-left: 20px;}
+    .agreePopup .agreeForm .row_group_1 input[type=checkbox] { border-radius: 5px; border-right: 1px solid #ccc; padding: 0; top: 9px;}
+	.agreePopup .allAgree { height: 40px;}
+
+	.agreePopup .agreeDesc b { font-size: 12px; }
+	.agreePopup .agreeDesc p { font-size: 11px; }
+
+	.viewPopup .wrap { width: 100%; padding: 0; border-radius: 0; margin-top: -315px;}
+	.viewPopup .wrap h3 { width: 100%; line-height: 30px;}
+
+	/* register.html 전체 레이아웃 변경 180903 배다빈 추가*/
+	.register .row .regCate { width: 100%; }
+	.register .row .pb60 { padding-bottom: 60px; }
+	.register .step > .row > .row_group_2.mRow {padding: 0;}
+	.register .step > .row > .row_group_2.mRow:first-child { margin-bottom: 20px; }
+	.register .stepWrap { width: 100%; }
+	.register .step { padding: 20px 10px;}
+	.register .step0 { 	}
+	.register .step1 { margin-left: 0;left: 100%;}
+	.register .step2 { margin-left: 0;left: 100%;}
+	.register .step3 { margin-left: 0;left: 100%;}
+	.register .step4 { margin-left: 0;left: 100%;}
+	.register .step5 { margin-left: 0;left: 100%;}
+	.register .step6 { margin-left: 0;left: 100%;}
+
+	.register .step3 .row .info { padding: 0 0 200px; }
+	.register .step3 .infoBox { width: 100%; float: none; }
+	.register .step3 .row .info .btnArea { padding-top:70px;  }
+
+	.register .row .infoStats .infoStatsBox { height: auto; }
+	.register .row .infoStatsBox ul { padding: 5px; }
+	.register .row .infoStatsBox ul li { width: 100%; float: none; }
+	.register .row .selectBtn ul li div { height: 37px; padding: 0; line-height: 37px;}
+	.register .row .selectBtn ul .reloadBtn {  right: -36px; }
+
+	.register .step3 .row .info .w40 { padding-right: 5px; }
+	.register .step3 .row .info .w30 { padding-right: 5px; }
+	.register .step3 .row .info .w30:last-child { padding-right: 0; }
+	.register .step3 .infoWrap .infoArea { width: 100%; float:none;}
+	.register .step3 .deleteBtn { width: 100%; float: none;  }
+	.register .step3 .row .info .btnArea .addBtn { }
+
+	.registerHtml .row .cpDesc p { font-size: 14px; }
+	/* //register.html 전체 레이아웃 변경 180903 배다빈 추가*/
+	.register .row .mobileRange { width: 90%; margin: 0 auto; }
+
+}

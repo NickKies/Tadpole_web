@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript DOM Element</title>
+</head>
+<body>
+	<h1>아이디를 이용한 선택</h1>
+	<ul>
+		<li>첫 번째 아이템이에요!</li>
+		<li id="even">두 번째 아이템이에요!</li>
+		<li>세 번째 아이템이에요!</li>
+		<li id="even">네 번째 아이템이에요!</li>
+		<li>다섯 번째 아이템이에요!</li>
+	</ul>
+	<script>
+		var selectedItem = document.getElementById("even");
+		selectedItem.style.color = "red";
+	</script>	
+</body>
+</html>

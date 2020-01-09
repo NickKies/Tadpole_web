@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>JSP Object</title>
+    </head>
+    <body>
+        <h1>객체의 메소드 참조</h1>
+    </body>
+</html>
+<script>
+    var kim = {
+        name: "김윤성",
+        birthday : "0303",
+        pId: "112233",
+        fullId:function() {
+            return this.birthday + this.pId;
+        }
+    };
+    document.write(kim.fullId() + "<br>")
+    document.write(kim.fullId)
+</script>

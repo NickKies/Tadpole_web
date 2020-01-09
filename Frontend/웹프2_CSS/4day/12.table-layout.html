@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>테이블 레이아웃</title>
+        <style>
+            body { font-family: "맑은 고딕","고딕","굴림";}
+            table#id1 {
+                width:300px;
+                table-layout: auto;
+                word-break: break-all;
+            }
+            table#id2 {
+                width:300px;
+                table-layout: fixed;
+                word-break: break-all;
+            }
+            td { width:150px;}
+        </style>
+    </head>
+    <body>
+        <h1>Table-layout</h1>
+        <table id="id1" border="1">
+            <tr>
+                <td>
+                    한글로 띄어쓰기 없이 길게 붙여쓰기
+                    한글로 띄어쓰기 없이 길게 붙여쓰기한글로 띄어쓰기 없이 길게 붙여쓰기
+                    한글로 띄어쓰기 없이 길게 붙여쓰기한글로 띄어쓰기 없이 길게 붙여쓰기
+                    한글로 띄어쓰기 없이 길게 붙여쓰기한글로 띄어쓰기 없이 길게 붙여쓰기
+                    한글로 띄어쓰기 없이 길게 붙여쓰기한글로 띄어쓰기 없이 길게 붙여쓰기
+                    한글로 띄어쓰기 없이 길게 붙여쓰기
+                </td>
+                <td>
+                    Long_description_without_spacelong_Long_description_without_spaceLong_description_without_spacelong_Long_description_without_space Long_description_without_spacelong_Long_description_without_spaceLong_description_without_spacelong_Long_description_without_space Long_description_without_spacelong_Long_description_without_spaceLong_description_without_spacelong_Long_description_without_space Long_description_without_spacelong_Long_description_without_spaceLong_description_without_spacelong_Long_description_without_space
+                </td>
+            </tr>
+        </table>
+        <table id="id2" border="1">
+            <tr>
+                <td>
+                        한글로 띄어쓰기 없이 길게 붙여쓰기
+                        한글로 띄어쓰기 없이 길게 붙여쓰기한글로 띄어쓰기 없이 길게 붙여쓰기
+                        한글로 띄어쓰기 없이 길게 붙여쓰기한글로 띄어쓰기 없이 길게 붙여쓰기
+                        한글로 띄어쓰기 없이 길게 붙여쓰기한글로 띄어쓰기 없이 길게 붙여쓰기
+                        한글로 띄어쓰기 없이 길게 붙여쓰기한글로 띄어쓰기 없이 길게 붙여쓰기
+                        한글로 띄어쓰기 없이 길게 붙여쓰기
+                </td>
+                <td>
+                    Long_description_without_spaceLong_description_without_spaceLong_description_without_spaceLong_description_without_spaceLong_description_without_spaceLong_description_without_spaceLong_description_without_spaceLong_description_without_spaceLong_description_without_spaceLong_description_without_spaceLong_description_without_space
+                </td>
+            </tr>
+
+        </table>
+    </body>
+</html>

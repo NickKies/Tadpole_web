@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Element Insert</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<style>
+		div { margin: 10px; }
+		.content { border: 2px solid yellow; }
+		.wrapper { border: 2px solid green; }
+	</style>
+	<script>
+		$(function() {
+			$("button").on("click", function() {
+				$(".content").wrapInner("<div class='wrapper'></div>");
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>.wrapInner() 메소드</h1>
+	<div class="content">첫 번째 컨텐츠에요!</div>
+	<div class="content">두 번째 컨텐츠에요!</div>
+	<button>div 요소 추가</button>
+</body>
+</html>

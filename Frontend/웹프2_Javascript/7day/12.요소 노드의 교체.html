@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JSP Node Manage</title>
+</head>
+<body>
+    <div id="parent">
+        <p id="first">첫 번째 요소입니다.</p>
+        <p>두 번째 요소입니다.</p>
+    </div>
+    <p id="third">세 번째 요소입니다.</p>
+    <button onclick="changeNode()">요소 노드 교체</button>
+</body>
+</html>
+<script>
+    var parent = document.getElementById("parent")
+    var first = document.getElementById("first")
+    var third = document.getElementById("third")
+    function changeNode() {
+        parent.replaceChild(third, first)
+    }
+</script>

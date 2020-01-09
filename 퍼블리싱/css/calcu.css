@@ -1,0 +1,229 @@
+
+
+.calcu .contentWrap { padding-top: 50px; }
+.calcu .contentWrap .calcuTab { width: 100%; padding-bottom: 20px;}
+.calcu .contentWrap .calcuTab::after {content: ""; display: block; clear: both;}
+.calcu .contentWrap .calcuTab > div { float:left;  width: 25%; line-height: 50px; color: #4874e8; background-color: #f7f7f7; text-align: center; font-weight: bold; cursor: pointer; border:1px solid #eee; box-sizing: border-box;}
+.calcu .contentWrap .calcuTab > div.br0 { border-right: 0; }
+.calcu .contentWrap .calcuTab > div.bt0  { border-top: 0; }
+.calcu .contentWrap .calcuTab > div.active { color: #fff; background-color: #4874e8; }
+.calcu .contentWrap .calcuTabBox > section { display: none; }
+.calcu .contentWrap .calcuTabBox > section.active {display: block;}
+.calcu .contentWrap .calcuTabBox .ctDesc { width: 100%; border:1px solid #eee; background-color: #f7f7f7; }
+.calcu .contentWrap .calcuTabBox .ctDesc p { padding: 10px 20px; font-weight: bold; color: #333; font-size: 14px; line-height: 25px;}
+
+.calcu .contentWrap .calcuTabBox .ctBox { padding-top: 30px; padding-bottom: 30px;}
+.calcu .contentWrap .calcuTabBox .ctBox::after { content: ""; display: block; clear: both; }
+.calcu .contentWrap .calcuTabBox .ctLeft { width: 50%; float: left; box-sizing: border-box; padding-right: 50px;}
+.calcu .contentWrap .calcuTabBox .ctRight { width: 50%; float: right; box-sizing: border-box; padding-left: 20px; min-height: 1000px; padding-right: 20px;}
+
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCate { padding: 20px 0 10px; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCate ul::after { content: ""; display: block; clear: both; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCate ul li { float: left; width: 25%; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCate ul li div { width: 70px; height: 70px; border-radius: 50%;  margin: 0 auto;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCate ul li span { display: block; width: 100%; height: 100%; text-align: center; color: #fff; font-size: 11px; box-sizing: border-box; padding-top: 43px; font-weight: 300; cursor: pointer;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCate ul li .pro_1 { background-color:#2f7ffc; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCate ul li .pro_2 { background-color:#509afc; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCate ul li .pro_3 { background-color:#4bb9e6; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCate ul li .reg_1 { background-color: #4874e8; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCate ul li .pro_1 .i_product { background: url(../images/product_1_1.png) no-repeat 20px 12px; background-size: 30px; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCate ul li .pro_2 .i_product { background: url(../images/product_2_1.png) no-repeat 20px 12px; background-size: 30px; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCate ul li .pro_3 .i_product { background: url(../images/product_3_1.png) no-repeat 17px 10px; background-size: 36px; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCate ul li .reg_1 .i_register { background: url(../images/m_icon_1.png) no-repeat 24px 12px; background-size: 26px; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCate2 { padding: 20px 0; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCate2 select { width: 100%; height: 45px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; padding: 10px 15px; display: none;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCate2 select.active { display: block; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctInfo { border:2px solid #4874e8; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctInfo .ctInfoTitle { width: 100%; color: #fff; text-align: center; font-weight: bold; background-color: #4874e8; line-height: 35px; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctInfo .ctInfoDesc { background-color: #dde6fd; color: #4874e8; padding: 10px 20px; font-size: 14px; line-height: 25px;}
+
+
+
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li { overflow: hidden; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li.p30 { padding-top: 20px; padding-bottom: 20px; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcTitle { float: left; width: 15%; text-align: center; font-weight: bold; color: #777; font-size: 14px; line-height: 40px;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput { float:left; width: 85%; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput .inputBox {overflow: hidden;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput input { float: left;width: 85%; border:1px solid #ddd; height: 40px; box-sizing: border-box; padding: 5px 10px;} /*의뢰인수정 border 사이즈 변경 */
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput .addon { float: left; width: 15%; background-color: #eee; height: 40px; box-sizing: border-box; text-align: center; color: #777; line-height: 38px; font-size: 14px;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul { position: relative; width: 91%; padding-left: 40px; margin-left: -40px; padding-top: 10px;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul::after {content: ""; display: block; clear: both;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul li { width: 25%; height: 40px;  float: left; box-sizing: border-box; padding:0; font-size: 14px;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul li div { width: 100%; height: 100%; border:1px solid #ddd; text-align: center; color: #999; line-height: 40px; transition: all .5s; cursor:pointer; box-sizing: border-box; border-right: 0;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul li.br1 div {border-right: 1px solid #ddd;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul li.bt0 div { border-top:0;  }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul li div:hover { background-color: #4874e8; color: #fff; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul.clickBtn { padding-top: 0; margin-left: 0; padding-left: 0; width: 100%; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul.clickBtn.w25 li { width: 25%;  }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul.clickBtn.w25 li.bt0 div { border-top: 0; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul.clickBtn li { width: 33.3333%; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul.clickBtn li.bl1 div { border-left: 1px solid #ddd; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul.clickBtn li.pbl1 div { border-left: 1px solid #ddd; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul.clickBtn li div { border-left: 0; border-right: 1px solid #ddd; }
+
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul.clickBtn li.active div { background-color: #4874e8; color: #fff; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput .dtiCate2_1 { display: none; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput .dtiCate2_2 { display: none; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput .dtiCate2_3 { display: none; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput .dtiCate2_1.active { display: block; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput .dtiCate2_2.active { display: block; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput .dtiCate2_3.active { display: block; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .btnBox { clear:both; text-align: right; padding-top: 15px; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .btnBox button { width: 120px; height: 40px; border:0; font-size: 15px; margin-left: 5px; cursor: pointer;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .btnBox .resetBtn { background-color: #eee; color: #777;}
+
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .btnBox .calcBtn { background-color: #4874e8; color: #fff; }
+
+
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul li.reloadBtn { height: 40px; width: 44px; padding: 0; position: absolute; right: -43px; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul li.reloadBtn div { padding: 0; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul li.reloadBtn div .i_reload { background: url(../images/reload.png) no-repeat 11px 10px; background-size: 20px; width: 100%; height: 100%; display: block;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul li div:hover .i_reload { background: url(../images/reload_white.png) no-repeat 11px 10px; background-size: 20px;}
+
+
+
+
+
+
+.calcu .contentWrap .calcuTabBox .ctRight { box-sizing: border-box; border:1px solid #eee; position: relative;	}
+.calcu .contentWrap .calcuTabBox .ctRight .ctResultTitle { color: #4874e8; font-weight: bold; font-size: 18px; text-align: center; padding-top: 10px; padding-bottom: 10px;}
+.calcu .contentWrap .calcuTabBox .ctRight .resultTable { width: 95%; margin: 0 auto; }
+.calcu .contentWrap .calcuTabBox .ctRight .resultTable table th { height: 30px;  font-weight: bold; color: #333;}
+.calcu .contentWrap .calcuTabBox .ctRight .resultTable table td { height: 30px; }
+.calcu .contentWrap .calcuTabBox .ctRight .resultTable table td span { color: #4874e8; font-weight: bold; }
+.calcu .contentWrap .calcuTabBox .ctRight .resultTable table .tal { text-align: left;  box-sizing: border-box; padding-left: 20px;}
+.calcu .contentWrap .calcuTabBox .ctRight .monthTable { padding-top: 20px;  width: 95%; margin: 0 auto; }
+.calcu .contentWrap .calcuTabBox .ctRight .monthTable .mtTitle { text-align: left; color: #333; font-weight: bold; font-size: 14px; box-sizing: border-box; padding-left: 10px; padding-bottom: 10px;}
+.calcu .contentWrap .calcuTabBox .ctRight .monthTable table th { height: 30px; font-weight: bold ; color: #333; }
+.calcu .contentWrap .calcuTabBox .ctRight .monthTable table td { height: 30px; }
+.calcu .contentWrap .calcuTabBox .ctProductTitle { width: 100%; color: #fff; background-color: #4874e8;  line-height: 50px; font-size: 20px; text-align: center; font-weight: bold;}
+.calcu .contentWrap .calcuTabBox .ctProductTab { padding: 30px 0 10px; }
+.calcu .contentWrap .calcuTabBox .ctProductTab::after { content: ""; display: block; clear:both; }
+.calcu .contentWrap .calcuTabBox .ctProductTab > div { float:left; width: 25%; border:1px solid #ddd; box-sizing: border-box; border-left: 0; text-align: center; line-height: 50px; color: #4874e8; background-color: #f7f7f7; font-weight: bold; cursor: pointer; transition: all .5s;}
+.calcu .contentWrap .calcuTabBox .ctProductTab > div:first-child { border-left: 1px solid #ddd; }
+.calcu .contentWrap .calcuTabBox .ctProductTab > div.active { background-color: #4874e8; color: #fff; }
+.calcu .contentWrap .calcuTabBox .ctProduct .productForm li { width: 25%; }
+
+.calcu .contentWrap .calcuTabBox .ctRight .ctIntroTitle { text-align: center; font-weight: bold; font-size: 22px; color: #333; border-bottom: 1px solid #eee; width: 80%; margin: 0 auto; padding-top: 30px; padding-bottom: 5px;}
+.calcu .contentWrap .calcuTabBox .ctRight .ctIntroTitle b { color: #4874e8; }
+.calcu .contentWrap .calcuTabBox .ctRight .ctIntroTitle span { color: #4874e8; }
+.calcu .contentWrap .calcuTabBox .ctRight .ctIntro p { padding: 10px 20px; font-size: 14px; line-height: 25px;}
+.calcu .contentWrap .calcuTabBox .ctRight .ctIntroTable { padding-top: 20px; }
+.calcu .contentWrap .calcuTabBox .ctRight .ctIntroTable table th { height: 30px;  font-weight: bold; color: #333;}
+.calcu .contentWrap .calcuTabBox .ctRight .ctIntroTable table td { height: 30px;}
+.calcu .contentWrap .calcuTabBox .ctRight .ctIntroTable table td span { color: #4874e8; font-weight: bold; }
+.calcu .contentWrap .calcuTabBox .ctRight .ctIntroTable table .tal { text-align: left;  box-sizing: border-box; padding-left: 20px;}
+.calcu .contentWrap .calcuTabBox .ctRight .ctIntroTable table td .i_x { width: 20px; height: 20px; display: block; background: url(../images/deleteBtn_2.png) no-repeat 0 0; background-size: 20px; border-radius: 50%;}
+.calcu .contentWrap .calcuTabBox .ctRight .ctIntroTable p { color: #777; font-size: 14px;  padding-top: 10px; line-height: 24px;}
+
+.calcu .contentWrap .calcuTabBox .ctLeft .ltvCate { margin-bottom: 20px; font-size: 14px;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ltvCate::after {content: ""; display: block; clear: both;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ltvCate > div { width: 50%; float: left; height: 40px; line-height: 40px; text-align: center; background-color: #f7f7f7; color: #333; font-weight: bold; box-sizing: border-box; border:1px solid #eee; cursor: pointer; transition: all .5s;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ltvCate > div.br0 { border-right: 0; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ltvCate > div.active {background-color: #4874e8; color: #fff;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ltvCate2 { display: none; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ltvCate2.active { display: block; font-size: 14px;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ltvCate3 { display: none; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ltvCate3.active { display: block; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ltvCate2::after {content: ""; display: block; clear: both;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ltvCate2 > div { width: 25%; float:left; height: 40px; line-height: 40px; text-align: center; color: #333; font-weight: bold;background-color: #f7f7f7; cursor: pointer; transition: all .5s;}
+.calcu .contentWrap .calcuTabBox .ctLeft .ltvCate2 > div.br0 { border-right: 0; }
+.calcu .contentWrap .calcuTabBox .ctLeft .ltvCate2 > div.active {background-color: #4874e8; color: #fff;}
+
+/* 신DTI 대출분류 추가  180917 배다빈 추가 */
+.calcu .contentWrap .calcuTabBox .dtiCate1 { margin-bottom: 20px; }
+.calcu .contentWrap .calcuTabBox .dtiCate1 ul > li { width: 33.3333%; }
+
+/* 부대비용, COFIX 내용 추가 180919 배다빈 추가 */
+.calcu .contentWrap .calcuTabBox .ctTableTitle { font-weight: bold; color: #333; box-sizing: border-box; padding-left: 20px; padding-top: 20px; padding-bottom: 20px;}
+.calcu .contentWrap .calcuTabBox .ctTableBox { width: 100%;}
+.calcu .contentWrap .calcuTabBox .ctTableBox table th { line-height: 18px; }
+.calcu .contentWrap .calcuTabBox .ctTableDesc {  box-sizing: border-box; padding: 0px 40px; font-size: 14px;}
+.calcu .contentWrap .calcuTabBox .ctDesc p b { display: block; padding: 5px 10px; background-color: #4874e8; color: #fff;  width: 180px; margin-bottom: 5px; margin-top: 5px;}
+.calcu .contentWrap .calcuTabBox .ctTopBox { padding: 10px 0; }
+.calcu .contentWrap .calcuTabBox .ctTopBox::after {content: ""; display: block; clear: both;}
+.calcu .contentWrap .calcuTabBox .ctTopBox .ctTableLeft { float: left; line-height: 40px; font-size: 20px; color: #4874e8; font-weight: bold; }
+.calcu .contentWrap .calcuTabBox .ctTopBox .ctTableRight { float: right; }
+.calcu .contentWrap .calcuTabBox .ctTopBox .ctTableRight select { border-radius: 5px; height: 35px;  }
+.calcu .contentWrap .calcuTabBox .ctContent8 .ctTableBox table td { height: 40px; }
+.calcu .contentWrap .calcuTabBox .ctTable .ctTableBtn { padding-left: 40px; padding-top: 15px;}
+.calcu .contentWrap .calcuTabBox .ctTable .ctTableBtn button { border:0; background-color: #4874e8; color: #fff; height: 40px; width: 200px; text-align: center; border-radius: 5px; cursor: pointer;}
+
+/* ctdesc strong 글자 크기 색상 추가 180920 배다빈 추가 */
+.calcu .contentWrap .calcuTabBox .ctDesc strong { color: #4874e8; font-size: 18px; }
+/* 대출계산기 복사하기/출력하기 버튼 추가 180920 배다빈 추가 */
+.calcu .contentWrap .calcuTabBox .ctResultPrint { text-align: right; position: absolute;	 bottom: 0; left: 0; width: 100%;	padding: 20px; box-sizing: border-box;}
+.calcu .contentWrap .calcuTabBox .ctResultPrint button { width: 120px; height: 40px; border: 0; font-size: 15px; margin-left: 5px; cursor: pointer; }
+.calcu .contentWrap .calcuTabBox .ctResultPrint .printBtn { background-color: #4874e8; color: #fff; }
+.calcu .contentWrap .calcuTabBox .ctResultPrint .copyBtn { background-color: #eee; color: #777; }
+
+
+
+@media only screen and (min-width: 960px) and ( max-width: 1200px) {
+	.calcu .contentWrap .calcuTabBox .ctLeft { padding-right: 10px; }
+	.calcu .contentWrap .calcuTabBox .ctRight { padding:0 5px; }
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul { padding-left: 40px; width: 89%;}
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcTitle { width: 13%; }
+
+	.calcu .contentWrap .calcuTabBox .ctProduct .productForm li { width: 33.3333%; padding: 10px 20px 105px;}
+	.calcu .contentWrap .calcuTabBox .ctProduct .productForm li .proResBox { padding: 0 20px 10px; }
+
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul.clickBtn.w25 li { font-size: 11px; }
+}
+
+@media only screen and (min-width: 768px) and ( max-width: 959px) {
+	.calcu .contentWrap .calcuTabBox .ctLeft { padding-right: 10px; padding-left: 10px;}
+	.calcu .contentWrap .calcuTabBox .ctRight { padding:0 5px; }
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul { width: 88%; }
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcTitle { float: none; display: block; }
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput { float: none; display: block; width: 100%;}
+
+	.calcu .contentWrap .calcuTabBox .ctProduct .productForm li { width: 50%; padding: 10px 30px 105px;}
+	.calcu .contentWrap .calcuTabBox .ctProduct .productForm li .proResBox { padding: 0 30px 10px; }
+
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul.clickBtn.w25 li { font-size: 12px; }
+
+}
+
+@media only screen and ( max-width: 767px) {
+	.calcu .contentWrap .calcuTab > div { font-size: 12px; }
+	.calcu .contentWrap .calcuTabBox .ctDesc p { padding: 10px 10px; font-size: 12px;}
+	.calcu .contentWrap .calcuTabBox .ctLeft { float: none; width: 100%; padding: 0 10px; }
+	.calcu .contentWrap .calcuTabBox .ctRight { float: none; width: 100%; padding: 0 10px; }
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul { width: 87%; }
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcTitle { float: none; display: block; width:auto; text-align: left; box-sizing: border-box; padding-left: 5px;}
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput { float: none; display: block; width: 100%;}
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul li.reloadBtn { width: 40px; right: -39px; }
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctInfo .ctInfoDesc { font-size: 12px; }
+
+	.calcu .contentWrap .calcuTabBox .ctRight table tr { display: table-row; padding: 0; border:0; height: 40px; border-radius: 0; margin: 0; box-shadow: none;  }
+	.calcu .contentWrap .calcuTabBox .ctRight table tr::after { display: none; }
+	.calcu .contentWrap .calcuTabBox .ctRight table td { display: table-cell;  float: none; border-bottom: 1px solid #eee; font-size: 12px;}
+	.calcu .contentWrap .calcuTabBox .ctRight .monthTable table th { font-size: 11px; }
+
+	.calcu .contentWrap .calcuTabBox .ctRight .ctIntroTitle { width: 100%;  font-size: 18px; }
+	.calcu .contentWrap .calcuTabBox .ctRight .ctIntroTable table .tal { padding-left:0; }
+	.calcu .contentWrap .calcuTabBox .ctRight .ctIntro p { padding: 10px;  font-size: 12px;}
+	.calcu .contentWrap .calcuTabBox .ctRight .ctIntroTable p { font-size: 12px; }
+
+	.calcu .contentWrap .calcuTabBox .ctProductTitle {font-size: 16px;}
+
+	.calcu .contentWrap .calcuTabBox .ctProduct .productForm li { width: 100%; padding: 10px 10px 105px;}
+	.calcu .contentWrap .calcuTabBox .ctProduct .productForm li .proResBox { padding: 0 10px 10px; }
+
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul.clickBtn.w25 li { font-size: 11px; width: 33.3333%; }
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul.clickBtn.w25 li.br1 div { border-right: 0; }
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul.clickBtn.w25 li.mbt0 div { border-top: 0; }
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul.clickBtn.w25 li.mbr1 div { border-right: 1px solid #ddd; }
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul.clickBtn li.mbl1 div { border-left: 1px solid #ddd; }
+	.calcu .contentWrap .calcuTabBox .ctLeft .ctCalc ul > li .calcInput ul.clickBtn li.pbl1 div { border-left:0; }
+	
+	.calcu .contentWrap .calcuTabBox .ctTableBox {overflow-x: scroll; -webkit-overflow-scrolling:touch;}
+	.calcu .contentWrap .calcuTabBox .ctTableBox table { width: 600px; }
+	.calcu .contentWrap .calcuTabBox .ctContent8 .ctTableBox table { width: 400px; }
+	.calcu .contentWrap .calcuTabBox .ctTable table tr { display: table-row; padding: 0; border:0; height: 40px; border-radius: 0; margin: 0; box-shadow: none;  }
+	.calcu .contentWrap .calcuTabBox .ctTable table tr::after { display: none; }
+	.calcu .contentWrap .calcuTabBox .ctTable table td { display: table-cell;  float: none; border-bottom: 1px solid #eee; font-size: 12px;}
+	.calcu .contentWrap .calcuTabBox .ctTableDesc { padding: 0 10px; }
+	.calcu .contentWrap .calcuTabBox .ctTable .ctTableBtn { padding-left: 0; text-align: center; }
+}

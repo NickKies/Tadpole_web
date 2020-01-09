@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Element Traversing</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<style>
+		.container * { 
+			display: block;
+			border: 1px solid lightgray;
+			padding: 5px;
+			margin: 15px;
+		}
+	</style>
+	<script>
+		$(function() {
+			$("#parents").on("click", function() {
+				$("#origin").parents("div")
+					.css({"border": "2px solid red"});
+			});
+			$("#closest").on("click", function() {
+				$("#origin").closest("div")
+					.css({"border": "2px solid green"});
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>.closest() 메소드</h1>
+	<div class="container">
+		<div>div 요소
+			<div>div 요소
+				<ul>ul 요소
+					<li>li 요소</li>
+					<li>li 요소
+						<div id="origin">div 요소 (기준)
+							<span>span 요소</span>
+						</div>
+					</li>
+					<li>li 요소</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<button id="parents">parents() 메소드</button>
+	<button id="closest">closest() 메소드</button>
+</body>
+</html>

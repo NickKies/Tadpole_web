@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>이미지</title>
+    </head>
+    <body>
+        <h1>이미지 경로 연습</h1>
+        <d1>
+            <dt>절대경로 이미지</dt>
+            <!--절대경로 중 파일위치를 직접 명시하는 방법은 사용되지 않습니다.-->
+            <dd><img src="C:\Users\KYS\Documents\webProgramming\HTML\2day\images\thrones1.png" alt="왕겜 이미지"></dd>
+
+            <!--절대경로 중 타 사이트 또는 현재 사이트에 있는 이미지를 넣는 방법-->
+            <dd><img src="http://tcpschool.com/img/logo.png" alt="tcpschool 로고 이미지"></dd>
+            <dt>상대경로 이미지</dt>
+
+            <!-- 상대경로 images 폴더 안에 있는 이미지를 넣는 방법-->
+            <!-- http://내도메인/images/파일이름.확장명-->
+            <dd><img src="images/thrones2.png" alt="왕겜 이미지"></dd>
+
+            <!--상대경로 같은 폴더 안에 있는 이미지를 넣는방법 -->
+            <dd><img src="thrones3.png" alt="왕겜 이미지"> </dd>
+
+            <!--상대경로 상위 폴더 안에 있는 이미지를 넣는 방법-->
+            <dd><img src="../thrones4.png"alt="왕겜 이미지"></dd>
+
+            <!--상대경로 상위폴더에 있는 다른폴더 내에 img폴더에 있는 이미지를 넣는 방법-->
+            <dd><img src="../1day/img/thrones5.png"alt="왕겜 이미지"></dd>
+        </d1>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>JSP Node Manage</title>
+    </head>
+    <body>
+        <h1>텍스트 노드의 생성</h1>
+        <button onclick="creatTextNode()">텍스트 노드 생성!</button>
+        <p id="text"></p>
+    </body>
+</html>
+<script>
+    function creatTextNode() {
+        var elementNode = document.getElementById("text")
+        var newText = document.createTextNode("새로운 텍스트에요!")
+        elementNode.appendChild(newText)
+    }
+</script>

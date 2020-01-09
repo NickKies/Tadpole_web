@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>function</title>
+    </head>
+    <body>
+        <h1>함수 만들기</h1>
+        <form name="myForm">
+            <input type="hidden" name="num1" id="num1" value="값1">
+            <input type="hidden" name="num2" id="num2" value="값2">
+            <input type="button" value="함수실행" onclick="fn2(num1.value, num2.value)">
+            <br>
+            <input type="text" name="a"> + <input type="text" name="b">
+            <input type="button" value="덧샘실행" onclick="fn3(a.value,b.value)">
+        </form>
+    </body>
+</html>
+<script>
+    function fn2(x,y){
+        var sum = Number(x) +Number(y)
+        alert("두 수의 합은 : " + sum)
+    }
+    function fn3(x,y) {
+        //var frm = document.myForm
+        //var a = frm.a.value
+        //var b = frm.b.value
+        alert(Number(x)+Number(y))
+
+    }           
+    /*var num1 = prompt("첫 번째 숫자를 입력해 주세요")
+    var num2 = prompt("두 번째 숫자를 입력해 주세요")
+    fn2(num1,num2)
+    var val1 = document.getElementById("num1")
+    var val2 = document.getElementById("num2")
+    var frm = document.myform
+    alert(frm.num1.value)
+    alert(frm.num2.value)
+    alert(document.getElementById(num1).value)*/
+</script>

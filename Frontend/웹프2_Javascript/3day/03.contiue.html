@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>중첩와일문</title>
+    </head>
+    <body>
+        <script>
+            var sum = 0
+            var num = "3의 배수";
+            for (var i =1; i<10; i++){
+                if(i%3===0){
+                    num += i +"";
+                    continue;
+                }
+                sum +=i;
+            }
+            document.write(num + "제외 총합 : " + sum);
+        </script>
+    </body>
+</html>

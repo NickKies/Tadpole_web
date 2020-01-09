@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>String 객체</title>
+    <script>
+        // charAt()
+        var str = 'Javascript'
+        console.log(str.charAt(0)); // J
+        // indexOf()
+        var str = 'Javascript'
+        console.log(str.indexOf('a'));  // 1
+        console.log(str.indexOf('k'));  // -1
+        // lastIndexOf()
+        var str = 'Javascript'
+        console.log(str.lastIndexOf('a'));  // 3
+        // includes()
+        var str = 'Javascript';
+        console.log(str.includes('script'));    // true
+        // substring()
+        var str = 'http://naver.com';
+        console.log(str.substring(0, 4));   // http
+        console.log(str.substring(7));  // naver.com
+        // substr()
+        var str = 'http://naver.com';
+        console.log(str.substr(7, 4));  // nave
+        // split()
+        var str = 'Javascript_jQuery';  // str[0] = "Javascript", str[1] = "jQuery"
+        var division = str.split('_');
+        console.log(division[0] + ', ' + division[1]); // Javascript, jQuery
+        // replace()
+        var str = 'm_out.gif';
+        console.log(str.replace('out', 'over')); // m_over.gif
+        // concat()
+        var str1 = 'nav';
+        var str2 = '_bg';
+        console.log(str1.concat(str2)); // nav_bg
+        // trim()
+        var str = ' removeblank ';        
+        console.log(str.trim());  // removeblank  
+        // toLowerCase(), toUpperCase()
+        var str = 'LowerCase';
+        console.log(str.toLowerCase());  // lowercase
+        var str = 'UpperCase';
+        console.log(str.toUpperCase()); // UPPERCASE
+    </script>
+</head>
+<body>
+</body>
+</html>

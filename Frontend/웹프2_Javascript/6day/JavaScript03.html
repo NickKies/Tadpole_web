@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>window객체</title>
+    </head>
+    <body>
+        <script>
+        var output="";
+        for(var key in window){
+            output += key + ":" + window[key]+"<br>";
+        }
+        document.write(output);
+        </script>
+    </body>
+</html>

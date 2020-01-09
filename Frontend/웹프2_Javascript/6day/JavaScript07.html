@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>location.href</title>
+    <script>
+        function sendit(){
+            var frm = document.myForm;
+            if(frm.site.value == "naver"){
+                location.href="http://www.naver.com";
+            }
+            else if(frm.site.value == "daum"){
+                location.href="http://www.daum.net";
+            }
+            else if(frm.site.value == "google"){
+                location.href="http://www.google.co.kr";
+            }
+        }
+    </script>  
+</head>
+<body>
+    <form name="myForm">
+        <p><label>네이버 <input type="radio" value="naver" name="site" checked></label></p>
+        <p><label>다음 <input type="radio" value="daum" name="site"></label></p>
+        <p><label>구글 <input type="radio" value="google" name="site"></label></p>
+        <p><input type="button" onclick="sendit()" value="이동"></p>
+    </form>
+</body>
+</html>

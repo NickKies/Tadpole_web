@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Element Unwrap</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<style>
+		div { border: 2px solid green; margin: 10px; }
+		#container { border: 2px solid orange; }
+	</style>
+	<script>
+		$(function() {
+			$("button").on("click", function() {
+				$("span").unwrap();
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>.unwrap() 메소드</h1>
+	<div id="container">
+		<div><span>첫 번째</span> 컨텐츠에요!</div>
+		<div><span>두 번째</span> 컨텐츠에요!</div>
+		<div><span>세 번째</span> 컨텐츠에요!</div>
+	</div>
+	<br>
+	<button>부모 요소 삭제</button>
+</body>
+</html>

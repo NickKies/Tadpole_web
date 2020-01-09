@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript BOM History Object</title>
+</head>
+<body>
+	<h1>히스토리 목록의 접근</h1>
+	<p>아래 버튼을 눌러보세요!</p>
+	<button onclick="goBack()">뒤로</button>
+    <button onclick="go()">원하는 곳으로 이동</button>
+    <button onclick="goForward()">앞으로</button>
+	<script>
+    function goBack() {
+        window.history.back();
+    }
+    function go() {
+        window.history.go(-1);
+    }
+    function goForward() {
+        window.history.goForward();
+    }
+	</script>
+</body>
+</html>

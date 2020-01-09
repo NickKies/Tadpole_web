@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Element Replace</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$("button").on("click", function() {
+				$("#firstItem").replaceAll(".item");
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>.replaceAll() 메소드</h1>
+	<ul>
+		<li class="item" id="firstItem">첫 번째 아이템이에요!</li>
+		<li class="item" id="secondItem">두 번째 아이템이에요!</li>
+		<li class="item" id="thirdItem">세 번째 아이템이에요!</li>
+	</ul>
+	<button>아이템 대체</button>
+</body>
+</html>

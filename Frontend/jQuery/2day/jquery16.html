@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Element Empty</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$("button").on("click", function() {
+				$("#container").empty();
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>.empty() 메소드</h1>
+	<div id="container" style="border: solid 3px teal; padding: 5px">
+		<div>첫 번째 컨텐츠에요!</div>
+		<div>두 번째 컨텐츠에요!</div>
+		<div>세 번째 컨텐츠에요!</div>
+	</div>
+	<br>
+	<button>자식 요소 삭제</button>	
+</body>
+</html>

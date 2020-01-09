@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>function</title>
+    </head>
+    <body>
+        <h1>함수 만들기</h1>    
+        <input type="button" value="결과" onclick="result()">
+    </body>
+</html>
+<script>
+    function plus(x,y) {
+        return x+y;
+    }
+    function minus(x,y) {
+        return x-y
+    }
+    function mul(x,y) {
+        return x*y
+    }
+    function div(x,y) {
+        return x/y
+    }
+    function result() {
+        var num1 = Number(prompt("첫 번째 숫자를 입력해주세요."))
+        var num2 = Number(prompt("두 번째 숫자를 입력해주세요."))
+        var result1 = plus(num1, num2)
+        alert(result1)
+        var result2 = minus(num1, num2)
+        alert(result2)
+        var result3 = mul(num1, num2)
+        alert(result3)
+        var result4 = div(num1, num2)
+        alert(result4)
+    }
+</script>

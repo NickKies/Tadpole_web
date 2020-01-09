@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>JSP Node Manage</title>
+    </head>
+    <body>
+        <button onclick="remove()">요소 노드 삭제!</button>
+        <div id="list">
+        <p>HTML</p>
+        <p id="item">CSS</p>
+        <p>JQuery</p>
+        </div>
+    </body>
+</html>
+<script>
+    function remove() {
+        var parent = document.getElementById("list")
+        var removedItem = document.getElementById("item")
+        parent.removeChild(removedItem)
+    }
+</script>

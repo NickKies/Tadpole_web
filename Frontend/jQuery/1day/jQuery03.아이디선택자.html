@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 아이디 선택자</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("p").on("click",function() {
+                $("#jq").css("border","2px solid orange");
+                // #jq {border: 2px solid orange;}
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>아이디 선택자</h1>
+    <p id="jq">이제부터 제이쿼리를 다 같이 공부해보죠!!</p>
+    <p>마우스로 글씨를 클릭해보세요!!</p>
+</body>
+</html>

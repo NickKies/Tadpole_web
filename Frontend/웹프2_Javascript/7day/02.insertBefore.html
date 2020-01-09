@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>JSP Node Manage</title>
+    </head>
+    <body>
+        <h1>insertBefore() 메소드</h1>
+        <h2 id="item">JSP</h2>
+        <div id="list">
+            <p>HTML</p>
+            <p id="criteria">CSS</p>
+            <p>JQuery</p>
+        </div>
+        <button onclick="appendNode()">노드추가!</button>
+    </body>
+</html>
+<script>
+    function appendNode() {
+        var parent = document.getElementById("list")
+        var criteriaItem = document.getElementById("criteria")
+        var newItem = document.getElementById("item")
+        parent.insertBefore(newItem, criteriaItem)
+    }
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JSP Node Manage</title>
+    <style>
+        .para {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <p>속성 노드의 값을 변경하고 싶어요!</p>
+    <button onclick="changeAttribute()">속성 변경!</button>
+</body>
+</html>
+<script>
+    var para;
+    function changeAttribute() {
+        document.getElementsByTagName("p")[0].setAttribute("class","para")
+    }
+</script>

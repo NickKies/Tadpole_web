@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Jsp Node Manage</title>
+    </head>
+    <body>
+       <p id="text">지금 시간은 오후 3시 입니다.</p>
+       <button onclick="changeText()">텍스트 교체!</button>
+    </body>
+</html>
+<script>
+    var text = document.getElementById("text").firstChild
+    function changeText() {
+        text.replaceData(7, 4, "저녁 7")
+    }
+</script>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript EventListener</title>
+</head>
+<body>
+	<h1>addEventListener() 메소드</h1>
+	<button id="btn">텍스트 보여주기!</button>
+	<p id="text"></p>
+	<script>
+		var showBtn = document.getElementById("btn");
+		showBtn.addEventListener("click", showText);
+		function showText() {
+			document.getElementById("text").innerHTML = "짜잔~!! 텍스트가 나타났어요!!";
+		}
+	</script>
+</body>
+</html>

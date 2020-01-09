@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Element Detach</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var data;
+			$("#detachBtn").on("click", function() {
+				data = $(".content").detach();
+			});
+			$("#restoreBtn").on("click", function() {
+				$("#container").append(data);
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>.detach() 메소드</h1>
+	<div id="container">
+		<div>첫 번째 컨텐츠에요!</div>
+		<div class="content">두 번째 컨텐츠에요!</div>
+		<div class="content">세 번째 컨텐츠에요!</div>
+	</div>
+	<br>
+	<button id="detachBtn">div 요소 삭제</button>
+	<button id="restoreBtn">div 요소 복구</button>
+</body>
+</html>

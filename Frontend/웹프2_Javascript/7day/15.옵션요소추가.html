@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>옵션 요소 추가</title>
+</head>
+<body>
+    <form action="#" name="frm">
+        <select name="y">
+            <option value="#">년도 선택</option>
+        </select>
+        <select name="m">
+            <option value="#">월 선택</option>
+        </select>
+        <select name="sub">
+            <option value="#">과목선택</option>
+            <option value="#">html</option>
+            <option value="#">css</option>
+            <option value="#">JSP</option>
+        </select>
+        <p><input type="button" onclick="selYear()" value="선택한 년도는?"></p>
+    </form>
+</body>
+</html>
+<script>
+    window.onload = function() {
+        var frm = document.frm;
+        var date = new Date();          // 현재 날짜 시간
+        var year = date.getFullYear();  // 4자리 연도
+        for (var i=1970; i<=year; i++){
+            frm.y.add(new Option(i,i))
+        }
+        for (var i=1; i<=12; i++) {
+            frm.m.add(new Option(i,i))
+        }
+        frm.m.add(new Option(i,i))
+    }
+    frm.sub.length =3;
+
+    function selYear() {
+        var fr = document.frm;
+        var selectYear = fr.y.selectedIndex;
+        var selectYearValue = fr.y.options[selectYear].value;
+        if(selectYearValue == "#"){
+            alert("년도를 선택해주세요")
+        }
+    }
+</script>

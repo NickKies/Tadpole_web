@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>JSP Node Manage</title>
+    </head>
+    <body>
+        <h1>appendChild() 메소드</h1>    
+        <h2 id="item">Javascript</h2>
+        <div id="list">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JQuery</p>
+        </div>
+        <button onclick="appendNode()">노드 추가!</button>
+    </body>
+</html>
+<script>
+    function appendNode() {
+        var parent = document.getElementById("list");
+        var newItem = document.getElementById("item");
+        parent.appendChild(newItem);
+    }
+</script>

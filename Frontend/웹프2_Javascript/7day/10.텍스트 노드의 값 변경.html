@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Jsp Node Manage</title>
+    </head>
+    <body>
+       <p id="text">이 텍스트를 변경하고 싶어요!</p>
+       <button onclick="changeText()">텍스트 변경!</button>
+    </body>
+</html>
+<script>
+    var para = document.getElementById("text")
+    function changeText() {
+        para.firstChild.nodeValue = "텍스트 변경 완료!"
+    }
+</script>

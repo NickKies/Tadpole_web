@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>회원가입</title>
+    </head>
+    <body>
+        <h1>회원가입</h1> 
+        <p><strong>* 표시는 필수입력사항입니다.</strong></p>  
+        <form name="joinMembership" method="dialog" action="membership.jsp" enctype="multipart/form-data">
+            <p>* 아이디 &nbsp;&nbsp;&nbsp;<input type="text" size="20" minlength="4" maxlength="12" placeholder="아이디를 입력해주세요." name="user_id" required> <input type="button" value="중복확인" onclick="sendit()"> *4자 이상 12이내</p>
+            <p>* 비밀번호 <input type="password" size="20" minlength="8" maxlength="16" placeholder="비밀번호를 입력해주세요." required> *8자 이상 16자 이내</p>
+            <p>* 비밀번호 확인<input type="password" size="20" minlength="8" maxlength="16" placeholder="비밀번호를 입력해주세요." required></p>
+            <p>* 생일/성별 <input type="date"> <label><input type="radio" name="gender" value="남" checked>남</label><label><input type="radio" name="gender" value="여">여</label></p>
+            <p>* 우편번호 <input type="text" size="3" minlength="3" maxlength="3" required> - <input type="text" size="3" minlength="3" maxlength="3" required> &nbsp; <input type="button" value="우편번호 검색"></p>
+            <p>* 집주소 <input type="text" size="50" required></p>
+            <p>* 상세주소 <input type="text" size="50" required></p> 
+            <p>* 전화번호 <input type="tell" required></p>
+            <p>* 휴대폰번호 <input type="text" list="cell" required>
+            <datalist id="cell">
+                <option value="010" label="010"></option>
+                <option value="011" label="011"></option>
+                <option value="016" label="016"></option>
+                <option value="017" label="017"></option>
+                <option value="018" label="018"></option>
+                <option value="019" label="019"></option>
+            </datalist> - <input type="tel" required> - <input type="tel" required>
+            </p>
+            <p>* 이메일 <input type="email" required></p>
+            <p>회사 전화 <input type="tell" required></p>
+            <p>회사우편번호 <input type="text" size="3" minlength="3" maxlength="3" required> - <input type="text" size="3" minlength="3" maxlength="3" required> &nbsp; <input type="button" value="우편번호 검색"></p>
+            <p>회사 주소<input type="text" size="50" required></p>
+            <p>뉴스메일 <label><input type="radio" name="news" value="yes" checked>받습니다. </label><label><input type="radio" name="news" value="no">받지 않습니다.</label></p>
+            <p>관심사 <label><input type="checkbox"name="inter" value="드라이브" checked>드라이브</label><label><input type="checkbox" name="inter" value="등산">등산</label><label><input type="checkbox" name="inter" value="영화감상">영화감상</label><label> <input type="checkbox" name="inter" value="게임">게임</label> *복수 선택 가능</p>
+            <p><input type="reset" value="초기화"></p>
+            <p><input type="submit" value="가입완료"></p>   
+        </form>
+    </body>
+</html>
+<script>
+        function sendit(){
+            alert("사용가능한 아이디입니다.")
+        }
+    </script>

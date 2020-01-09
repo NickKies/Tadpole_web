@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Jsp Node Manage</title>
+    </head>
+    <body>
+       <button onclick="cloneElement()">노드 복제!</button>
+       <h2 id="item">JSP</h2>
+       <div id="list">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JQuery</p>
+       </div>
+    </body>
+</html>
+<script>
+    function cloneElement() {
+        var parent = document.getElementById("list")
+        var originItem = document.getElementById("item")
+        parent.appendChild(originItem.cloneNode(true))
+    }
+</script>

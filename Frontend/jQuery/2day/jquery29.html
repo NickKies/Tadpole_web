@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Etc Traversing</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$("button").on("click", function() {
+				$("li").add("p")
+					.css({"border": "2px solid green"});
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>.add() 메소드</h1>
+	<ul>
+		<li>첫 번째 아이템이에요!</li>
+		<li>두 번째 아이템이에요!</li>
+		<li>세 번째 아이템이에요!</li>
+	</ul>
+	<p>첫 번째 단락이에요!</p>
+	<button>li 요소 집합에 p 요소를 추가</button>
+</body>
+</html>

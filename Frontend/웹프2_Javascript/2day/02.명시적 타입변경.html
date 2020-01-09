@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>명시적 타입 변환</title>
+    </head>
+    <body>
+        <p id="result"></p>
+        <script>
+        document.getElementById("result").innerHTML = Number("10") + "<br>"
+        document.getElementById("result").innerHTML += String(true) + "<br>"
+        document.getElementById("result").innerHTML += Boolean(0) + "<br>"
+        document.getElementById("result").innerHTML += Object(3) + "<br>"
+        </script>
+    </body>
+
+</html>

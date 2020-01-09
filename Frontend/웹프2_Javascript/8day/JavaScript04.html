@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript EventListener</title>
+</head>
+<body>
+	<h1>여러 개의 이벤트 리스너 등록</h1>
+	<p>아래 버튼에 마우스를 올리거나 클릭해 보세요!</p>
+	<button id="btn">버튼</button>
+	<p id="text"></p>
+	<script>
+		var btn = document.getElementById("btn");
+		btn.addEventListener("click", clickBtn);
+		btn.addEventListener("mouseover", mouseoverBtn);
+		btn.addEventListener("mouseout", mouseoutBtn);
+		function clickBtn() {
+			document.getElementById("text").innerHTML = "버튼이 클릭됐어요!";
+		}
+		function mouseoverBtn() {
+			document.getElementById("text").innerHTML = "버튼 위에 마우스가 있네요!";
+		}
+		function mouseoutBtn() {
+			document.getElementById("text").innerHTML = "버튼 밖으로 마우스가 나갔어요!";
+		}
+	</script>
+</body>
+</html>

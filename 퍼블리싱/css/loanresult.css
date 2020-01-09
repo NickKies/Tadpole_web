@@ -1,0 +1,350 @@
+﻿.loanresult{width:100%;}
+.loanresult .bgWrap { height: 126px; width: 100%; background-color: #4874E8; border-bottom: 1px solid #ccc; transition: all .5s; }
+.loanresult .contentWrap { width: 1200px; margin: 0 auto;  }
+.loanresult .contentWrap h3 { text-align: center; padding:10px 0;  font-size: 22px; color: #777; border:1px solid #ccc; margin-bottom: 30px;}
+.loanresult .content{width:1200px;margin:0 auto;}
+.loanresult .content p{width:100%;text-align:center;font-size:1rem;}
+.loanresult .content p strong.loanName{color:#4874E8;font-size:1.2rem;}
+.loanresult .content p span.customerName{color:#4874e8;font-weight:bold;font-size:1.1rem;}
+.loanresult .content a.loanSearch{display:block;text-align:center;margin-top:20px;}
+.loanresult .content a.loanSearch button{border:none;background-color:#4874E8;border-radius:5px;color:white;padding:10px;cursor:pointer;}
+.loanresult .content h3{font-size:1rem;margin-top:30px;}
+
+
+.loanresult .content ul.loanAbout{width:100%;}
+.loanresult .content ul.loanAbout:after{display:block;visibility:hidden;clear:both;content:'';}
+.loanresult .content ul.loanAbout li{float:left;width:25%;text-align:center;font-size:0.9rem;padding:15px 0;border-bottom:1px solid #e1e1e1;}
+.loanresult .content ul.loanAbout li:last-of-type{width:75%;}
+.loanresult .content ul.loanAbout li:nth-of-type(2n-1){background-color:#f9f9f9;font-weight:bold;}
+.loanresult .content ul.loanAbout li:nth-of-type(1), .loanresult .content ul.loanAbout li:nth-of-type(2), .loanresult .content ul.loanAbout li:nth-of-type(3), .loanresult .content ul.loanAbout li:nth-of-type(4)
+{border-top:1px solid #e1e1e1;}
+
+.loanresult .content ul.productAbout{width:100%;}
+.loanresult .content ul.productAbout:after{display:block;visibility:hidden;clear:both;content:'';}
+.loanresult .content ul.productAbout li{float:left;width:25%;text-align:center;font-size:0.9rem;padding:15px 0;border-bottom:1px solid #e1e1e1;}
+.loanresult .content ul.productAbout li:nth-of-type(2n-1){background-color:#f9f9f9;font-weight:bold;}
+.loanresult .content ul.productAbout li:nth-of-type(1), .loanresult .content ul.productAbout li:nth-of-type(2),
+.loanresult .content ul.productAbout li:nth-of-type(3), .loanresult .content ul.productAbout li:nth-of-type(4)
+{border-top:1px solid #e1e1e1;}
+.loanresult .content p.subText{font-size:0.8rem;color:#464646;width:100%;text-align:left;padding:5px 0;}
+
+.loanresult .content ul.productInfo{width:100%;}
+.loanresult .content ul.productInfo:after{display:block;visibility:hidden;clear:both;content:'';}
+.loanresult .content ul.productInfo li{float:left;text-align:center;font-size:0.9rem;padding:15px 0;border-bottom:1px solid #e1e1e1;}
+.loanresult .content ul.productInfo li:nth-of-type(2n-1){background-color:#f9f9f9;font-weight:bold;width:25%;}
+.loanresult .content ul.productInfo li:nth-of-type(2n){width:75%;text-align:left;text-indent:20px;}
+.loanresult .content ul.productInfo li:nth-of-type(1), .loanresult .content ul.productInfo li:nth-of-type(2) {border-top:1px solid #e1e1e1;}
+.loanresult .content ul.productInfo li:nth-of-type(11), .loanresult .content ul.productInfo li:last-of-type{height:70px;}
+.loanresult .content ul.productInfo li:nth-of-type(11){line-height:70px;}
+.loanresult .content ul.productInfo li > p{font-size:0.9rem;text-align:left;text-indent:20px;}
+
+.loanresult .content ul.btnlist{width:100%;margin:30px 0;}
+.loanresult .content ul.btnlist:after{display:block;visibility:hidden;content:'';clear:both;}
+.loanresult .content ul.btnlist li{width:30%;float:left;padding:10px 0;text-align:center;background-color:#4874E8;border-radius:5px;}
+.loanresult .content ul.btnlist li:not(:last-of-type){margin-right:5%;}
+.loanresult .content ul.btnlist li a{color:white;font-weight:bold; display: block; width: 100%; height: 100%;}
+
+span.cb{color:#4874E8;font-weight:bold;}
+span.prl{padding:0 5px;}
+span.pr{padding-right:5px;}
+
+.mb30{margin-bottom:30px;}
+
+.loanresult .content ul.productAbout li input[type=text]{box-sizing:border-box;border:1px solid #ccc;margin:0 5px;border-radius:5px;text-align:center;}
+.loanresult .content ul.productAbout li select{}
+
+.loanresult .content ul.productInfoWrite{width:100%;}
+.loanresult .content ul.productInfoWrite:after{display:block;visibility:hidden;clear:both;content:'';}
+.loanresult .content ul.productInfoWrite li{float:left;margin:10px 0;width:100%;}
+.loanresult .content ul.productInfoWrite li input[type=text]{width:calc(100% - 20px);padding:10px;border:1px solid #ccc;background-color:#f0f0f0;border-radius:5px;font-size:0.8rem;}
+.loanresult .content ul.productInfoWrite li textarea{resize:none;width:calc(100% - 20px);padding:10px;border-radius:5px;border:1px solid #ccc;font-size:0.9rem;}
+
+.loanresult .content .abArea{display:block;width:100%;margin:10px 0;text-align:center;}
+.loanresult .content .abArea label{display:inline-block;margin-right:10px;color:#4874E8;}
+.loanresult .content .abArea button{border:none;background-color:#4874E8;border-radius:5px;padding:3px;cursor:pointer;}
+.loanresult .content button.formbtn{width:100%;color:white;background-color:#4874E8;border:none;border-radius:5px;padding:10px 0;margin:30px 0;}
+
+.loanresult .content .btnArea { text-align: center; padding-top: 50px; }
+.loanresult .content .btnArea button { width: 250px; height: 40px;  background-color: #4874e8; border: 0;border-radius: 5px; color: #fff;  font-weight: bold; cursor: pointer; }
+
+.loanresult .list table tr.on { background-color:#4874e8; }
+.loanresult .list table tr.on td { color: #fff; }
+.loanresult .list table tr.on td a { color: #fff; }
+
+
+/* loanresultWrite.html 레이아웃 변경 180809 */
+.loanBox { width: 1200px;  margin: 0 auto;  }
+.loanBox:after { content: ""; display: block; clear: both; }
+.loanBox .loan50 { width: 50%; float:left; box-sizing: border-box;}
+.loanBox > .pl10 { padding-left: 10px;  }
+.loanBox > .pr10 { padding-right:10px; }
+.loanBox .loan50 .contentWrap { width: 100%;    }
+.loanBox .loan50 .content { width: 100%;     }
+.loanBox .loan50 .content ul.productAbout li { height: 50px; box-sizing: border-box; font-size: 12px;}
+.loanBox .loan50 .content ul.productAbout li input[type=text]{width:60%; height: 30px; position: relative; top: -5px; font-size: 12px;}
+.loanBox .loan50 .content ul.productAbout li input.widthAll { width: 80%;   }
+.loanBox .loan50 .content ul.productAbout li select { font-size: 12px; width: 40px; height: 30px; padding-left: 5px; border-radius: 5px; position: relative; top: -5px; border:1px solid #ccc; }
+.loanBox .loan50 .content ul.productAbout li select.selectMax {  width: 90%; font-size: 11px; color: #555;}
+.loanBox .loan50 .content ul.productAbout li .inputBox { display: inline-block; width: 90%;}
+.loanBox .loan50 .content ul.productAbout li .inputBox::after {content:""; display: block; clear: both;}
+.loanBox .loan50 .content ul.productAbout li input.inputTarget { width: 74%; height: 30px; float: left; margin: 0; position: relative; top: -5px; border-right:0; border-radius: 5px 0 0 5px; outline: 0;}
+.loanBox .loan50 .content ul.productAbout li button.targetPopup { width: 26%; height: 30px; float: left; border:0; background-color: #4874e8; color: #fff; position: relative; top: -5px; border-radius: 0 5px 5px 0; font-size: 11px; cursor:pointer;}
+
+.loanBox .loan50 .contentWrap .list table input[type=radio] { width: 1px; height: 1px; position: absolute; left: -20px; top: -20px; }
+.loanBox .loan50 .contentWrap .list table label { display: inline-block; }
+.loanBox .loan50 .contentWrap .productSelect { display: inline-block;
+    overflow: hidden; width: 8px; height: 8px; padding: 3px; border: 1px solid #ccc;  border-radius: 50%; background-color: #fff;  box-shadow: none!important;  text-align: center;  vertical-align: middle;  line-height: 0; cursor: pointer;}
+.loanBox .loan50 .contentWrap .productSelect.on:after { content: ' '; display: inline-block; overflow: hidden; width: 8px; height: 8px; border-radius: 50%; background-color: #0443a1;  line-height: 0;}
+
+
+.loanBox .loan50 .content .proInfoAddBtn { display: inline-block; width: 40px; height: 30px; border:0; background-color: #4874e8; border-radius: 5px; margin-left: 10px; position: relative; top: 3px; cursor: pointer; }
+.loanBox .loan50 .content .proInfoAddBtn img { width: 18px; }
+.loanBox .loan50 .content .proInfoDelBtn { display: inline-block; width: 40px; height: 30px; border:0; border-radius: 5px; margin-left: 10px; position: relative; top: 0px; cursor: pointer; background-color: #e80000  ;  }
+.loanBox .loan50 .content .proInfoDelBtn img { width: 18px; display: inline-block;  position: relative; top: -2px;     }
+
+
+/* loanresult 전체 레이아웃 변경 180813 배다빈 추가 */
+.loanresult .list .contentWrap { padding-bottom: 0; }
+.loanresult .list .contentWrap p { text-align: center; color: #777; font-weight: bold; margin-bottom: 50px;}
+.loanresult .list .contentWrap p span { color: #4874e8; font-weight: bold;}
+.loanresult .list .contentWrap p b { color: #4874e8; }
+.loanresult .list .contentWrap .resultBox { width: 100%; border-radius: 10px; height: 230px; border:1px solid #eee;margin-bottom: 50px; background-color: #fff; box-shadow: 5px 5px 20px 5px rgba(0,0,0,.2); box-sizing: border-box; padding: 0 40px;}
+.loanresult .list .contentWrap .companyBox { width: 100%; height: 230px; border-radius: 10px; border:1px solid #eee; background-color: #fff; box-shadow: 5px 5px 20px 5px rgba(0,0,0,.2); box-sizing: border-box; padding: 0 40px;}
+
+
+.loanresult .list .contentWrap .resultBox .resultTitle { padding-top: 50px; font-weight: bold; color: #555; }
+.loanresult .list .contentWrap .resultBox .limitBox { width: 25%; float: left; text-align: center;}
+.loanresult .list .contentWrap .resultBox .resultDesc { font-weight: bold; color: #555; font-size: 14px;}
+.loanresult .list .contentWrap .resultBox .resultDesc span { color: #4874e8; font-weight: bold; font-size: 50px; }
+.loanresult .list .contentWrap .resultBox .resultDesc div { color: #999; }
+.loanresult .list .contentWrap .resultBox .rateBox { width: 25%; float: left; text-align: center;}
+.loanresult .list .contentWrap .resultBox .descBox { width: 40%; float: left; }
+.loanresult .list .contentWrap .resultBox .block { width: 10%; height: 100%; float: left;}
+.loanresult .list .contentWrap .descBox { padding-top: 30px; }
+.loanresult .list .contentWrap .descBox .row {width: 100%; height: 40px;}
+.loanresult .list .contentWrap .descBox .row::after {content:""; display: block; clear: both;}
+.loanresult .list .contentWrap .descBox .row .question { width: 40%; float: left; font-weight: bold; color: #999;}
+.loanresult .list .contentWrap .descBox .row .answer { width: 60%; float: left; font-weight: bold ; color: #555;}
+
+.loanresult .list .contentWrap .companyBox .resultTitle { padding-top: 30px; font-weight: bold; color: #555; }
+.loanresult .list .contentWrap .companyBox .gradeBox { width: 20%; float: left; text-align: center; }
+.loanresult .list .contentWrap .companyBox .nameBox { width: 40%; float: left; text-align: center;}
+.loanresult .list .contentWrap .companyBox .descBox { width: 40%; float: left; }
+.loanresult .list .contentWrap .companyBox .resultDesc { font-weight: bold; color: #555;  }
+.loanresult .list .contentWrap .companyBox .gradeBox .star  { display: block; background: url(../images/star2.png) no-repeat 0 0; background-size: cover;  width: 60px;  height: 60px;   margin: 20px auto; }
+.loanresult .list .contentWrap .companyBox .nameBox .resultDesc { font-size: 40px; margin-top: 20px; color: #222;}
+.loanresult .list .contentWrap .companyBox .nameBox .resultDesc div { font-size: 16px; margin-top: 20px; color: #777;}
+
+.loanresult .list .contentWrap .btnArea { margin: 50px 0; }
+.loanresult .list .contentWrap .btnArea::after {  content:"";  display: block; clear: both;}
+.loanresult .list .contentWrap .btnArea > div { width: 33.3333%; float: left; box-sizing: border-box; padding: 0 40px;}
+.loanresult .list .contentWrap .btnArea.resultBtnArea > div { width: 25%; float: left; box-sizing: border-box; padding: 0 15px;}
+.loanresult .list .contentWrap .btnArea button { width: 100%; height: 50px; border:0; border-radius: 5px; color: #fff; font-weight: bold; font-size: 16px; line-height: 48px; box-sizing: border-box; padding-left: 40px; cursor: pointer;}
+.loanresult .list .contentWrap .btnArea button.callBtn { background: url(../images/callBtn.png) no-repeat 70px 9px; background-size:35px; background-color: #4874e8;}
+.loanresult .list .contentWrap .btnArea button.calcuBtn { background: url(../images/calcuBtn.png) no-repeat 55px 9px; background-size:35px; background-color: #4874e8;}
+.loanresult .list .contentWrap .btnArea button.compaBtn { background: url(../images/compaBtn.png) no-repeat 55px 8px; background-size:35px;background-color: #4874e8;}
+.loanresult .list .contentWrap .btnArea button.noticeBtn { background: url(../images/noticeBtn.png) no-repeat 45px 10px; background-size:30px;background-color: #4874e8;}
+
+/* -------- companyView.html button icon -------- */
+.loanresult .list .contentWrap .btnArea button.productBtn {background: url(../images/productBtn.png) no-repeat 80px 10px; background-size:30px; background-color: #4874e8; }
+.loanresult .list .contentWrap .btnArea button.listBtn {background: url(../images/listBtn.png) no-repeat 70px 11px; background-size:30px; background-color: #4874e8; }
+/* -------- //companyView.html button icon -------- */
+
+.loanresult .list .contentWrap .productInfo { border-top: 1px solid #708be8; height: 50px; overflow: hidden; transition: all .5s;}
+.loanresult .list .contentWrap .productInfo.on { height: auto; }
+.loanresult .list .contentWrap .productInfo .infoTitle { height: 50px; line-height: 50px; box-sizing: border-box; padding:0 20px; font-weight: bold; color: #222;}
+.loanresult .list .contentWrap .productInfo .infoTitle > div { float: left; font-size: 18px;}
+.loanresult .list .contentWrap .productInfo .infoTitle span.moreBtn { float: right; width: 90px; height: 28px; display: block; text-align: center; border:1px solid #4874e8; border-radius: 70px; box-sizing: border-box; margin-top: 11px; line-height: 26px; color: #4874e8; font-size: 15px; cursor: pointer; transition: all .5s;}
+.loanresult .list .contentWrap .productInfo .infoTitle span.moreBtn:hover { background-color: #4874e8; color: #fff;}
+.loanresult .list .contentWrap .productInfo .row { width: 100%; min-height: 50px; border-bottom: 1px solid #ccc; color: #777; font-weight: bold; padding: 15px 20px; box-sizing: border-box;}
+.loanresult .list .contentWrap .productInfo .row:last-child { border-bottom: 0; }
+.loanresult .list .contentWrap .productInfo .row .rowTitle { padding-bottom: 10px; }
+.loanresult .list .contentWrap .productInfo .row .rowDesc { color: #222; font-weight: 400;}
+
+
+.loanresult .list .contentWrap .productNotice { border-top: 1px solid #708be8; }
+.loanresult .list .contentWrap .productNotice .noticeTitle { height: 50px; line-height: 50px; box-sizing: border-box; padding: 0 20px; font-weight: bold; color: #222; }
+.loanresult .list .contentWrap .productNotice p { color: #555; text-align: left; box-sizing: border-box; padding: 5px 20px; font-weight: 400; font-size: 14px;}
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .loanresult .contentWrap { width: 100%; }
+    .loanresult .content{width:100%;}
+    .loanresult .content h3{text-indent:10px;}
+
+    .loanBox { width: 100%;  }
+    .loanBox .loan50 {padding: 0 10px;}
+    .loanBox .loan50 .content p { font-size: 12px; }
+    .loanBox .loan50 .content ul.productAbout li {  font-size: 11px;}
+    .loanBox .loan50 .content ul.productAbout li input[type=text]{font-size: 11px;}
+}
+
+@media only screen and (min-width:960px) and (max-width: 1199px){
+    .loanresult .list .contentWrap .btnArea button.callBtn { background-position: 20px 8px;  }
+    .loanresult .list .contentWrap .btnArea button.calcuBtn { background-position: 15px 8px; }
+    .loanresult .list .contentWrap .btnArea button.compaBtn {  background-position: 15px 8px; }
+    .loanresult .list .contentWrap .btnArea button.noticeBtn {  background-position: 15px 8px; }
+    .loanresult .list .contentWrap .btnArea button.productBtn {  background-position: 20px 10px; }
+    .loanresult .list .contentWrap .btnArea button.listBtn {  background-position: 20px 10px; }
+
+    /* loanresult write 대출대상 폼 180814 */
+    .loanBox .loan50 .content ul.productAbout li input.inputTarget { width: 66%; }
+    .loanBox .loan50 .content ul.productAbout li button.targetPopup { width: 34%; }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+    .loanresult .content ul.productAbout li input[type=text]{width:50%;}
+
+    .loanBox { width: 100%;  }
+    .loanBox .loan50 {float: none; width: 100%;}
+
+    .loanresult .list .contentWrap .resultBox .resultDesc span { font-size: 40px; }
+    .loanresult .list .contentWrap .companyBox .nameBox .resultDesc { font-size: 30px; }
+    .loanresult .list .contentWrap .companyBox .gradeBox .star  {  width: 50px;  height: 50px; margin: 18px auto;  }
+
+    .loanresult .list .contentWrap .descBox .row .question { font-size: 14px;}
+    .loanresult .list .contentWrap .descBox .row .answer { font-size: 14px;}
+
+    .loanresult .list .contentWrap .btnArea > div { padding: 0 10px; }
+    .loanresult .list .contentWrap .btnArea button { font-size: 14px; }
+    .loanresult .list .contentWrap .btnArea button.callBtn { background-position: 20px 8px;  }
+    .loanresult .list .contentWrap .btnArea button.calcuBtn { background-position: 12px 8px; }
+    .loanresult .list .contentWrap .btnArea button.compaBtn {  background-position: 15px 8px; }
+    .loanresult .list .contentWrap .btnArea button.noticeBtn {  background-position: 12px 10px; }
+    .loanresult .list .contentWrap .btnArea button.productBtn {  background-position: 15px 10px; }
+    .loanresult .list .contentWrap .btnArea button.listBtn {  background-position: 15px 10px; }
+
+}
+@media only screen and (max-width:767px){
+    .loanresult .bgWrap  { height: 50px; }
+    .loanBox .loan50 .contentWrap table td.checkRadio { text-align: center;  }
+    .loanBox .loan50 .contentWrap table td { display: block; width: 100%;  text-align: right;}
+    .loanBox .loan50 .contentWrap table td::before { content: attr(data-label);  float: left;  font-weight: bold; text-transform: uppercase;}
+
+    .loanresult .list table tr.on {background-color: #fff;}
+    .loanresult .list table tr.on td { background-color: #4874e8; }
+
+    .loanresult .list .contentWrap { width: 98%; }
+    .loanresult .list .contentWrap h3 { font-size: 18px; }
+    .loanresult .list .contentWrap p { box-sizing: border-box; padding: 0 10px; font-size: 14px;}
+
+    .loanresult .list .contentWrap .resultBox { height: 320px; padding: 0 10px;}
+
+    .loanresult .list .contentWrap .resultBox .limitBox { width: 50%;}
+    .loanresult .list .contentWrap .resultBox .rateBox { width: 50%; }
+    .loanresult .list .contentWrap .resultBox .resultTitle { padding-top: 20px; font-size: 14px;}
+    .loanresult .list .contentWrap .resultBox .resultDesc span { font-size: 35px; }
+    .loanresult .list .contentWrap .resultBox .block { display: none; }
+    .loanresult .list .contentWrap .resultBox .descBox { width: 100%; }
+    .loanresult .list .contentWrap .descBox .row .question { width: 50%; text-align: center;  font-size: 14px;}
+    .loanresult .list .contentWrap .descBox .row .answer { width: 50%; text-align: center; font-size: 14px; box-sizing: border-box; padding-right: 10px;}
+
+    .loanresult .list .contentWrap .companyBox { height: 390px; padding: 0 10px; }
+    .loanresult .list .contentWrap .companyBox .gradeBox { width: 40%; }
+    .loanresult .list .contentWrap .companyBox .nameBox { width: 60%; }
+    .loanresult .list .contentWrap .companyBox .descBox { width: 100%; }
+    .loanresult .list .contentWrap .companyBox .resultTitle { padding-top: 20px; font-size: 14px; }
+    .loanresult .list .contentWrap .companyBox .gradeBox .star { width: 40px; height: 40px; margin: 18px auto;}
+    .loanresult .list .contentWrap .companyBox .nameBox .resultDesc { font-size: 24px; }
+    .loanresult .list .contentWrap .companyBox .nameBox .resultDesc div { font-size: 14px }
+    .loanresult .list .contentWrap .companyBox .descBox .row { min-height: 45px; height: auto; }
+    .loanresult .list .contentWrap .companyBox .descBox .row .question { width: 40%; text-align: center;  font-size: 14px;}
+    .loanresult .list .contentWrap .companyBox .descBox .row .answer { width: 60%; text-align: center; font-size: 14px; box-sizing: border-box; padding-right: 10px;}
+
+
+    .loanresult .list .contentWrap .btnArea {  }
+    .loanresult .list .contentWrap .btnArea > div { width: 100%; float:none; padding: 0 10px; margin-bottom: 12px;}
+    .loanresult .list .contentWrap .btnArea.resultBtnArea > div { width: 50%; padding: 0 5px; margin-bottom: 12px;}
+    .loanresult .list .contentWrap .btnArea button { height: 50px; font-size: 12px; padding: 0}
+    .loanresult .list .contentWrap .btnArea button.callBtn { background:none; background-color: #4874e8;}
+    .loanresult .list .contentWrap .btnArea button.calcuBtn { background: none;background-color: #4874e8;}
+    .loanresult .list .contentWrap .btnArea button.compaBtn { background:none;background-color: #4874e8;}
+    .loanresult .list .contentWrap .btnArea button.noticeBtn { background:none;background-color: #4874e8;}
+    .loanresult .list .contentWrap .btnArea button.productBtn {  background:none;background-color: #4874e8; }
+    .loanresult .list .contentWrap .btnArea button.listBtn {  background:none;background-color: #4874e8; }
+
+    .loanresult .list .contentWrap .productInfo .infoTitle { font-size: 14px; }
+    .loanresult .list .contentWrap .productNotice .noticeTitle { font-size: 14px; }
+    .loanresult .list .contentWrap .productNotice p { font-size: 12px; padding: 5px 10px;}
+
+    .loanresult .list .contentWrap .productInfo .infoTitle span.moreBtn { font-size: 14px; width: 70px;}
+    .loanresult .list .contentWrap .productInfo .row .rowTitle { padding-bottom: 10px; font-size: 14px;}
+    .loanresult .list .contentWrap .productInfo .row .rowDesc { color: #222; font-size: 14px;}
+
+    /* loanresultWrite form 180814 */
+    .loanBox .loan50 .content ul.productAbout li .inputBox { display: block;width: 90%; height: 100%; padding-top: 9px; margin: 0 auto; }
+    .loanBox .loan50 .content ul.productAbout li button.targetPopup { top: 0; }
+    .loanBox .loan50 .content ul.productAbout li input[type=text] { top: 0; }
+    .loanBox .loan50 .content ul.productAbout li input.inputTarget {  }
+
+}
+
+@media only screen and (min-width:550px) and (max-width:767px){
+    .loanresult .content h3{font-size:0.9rem;}
+    .loanresult .content ul.loanAbout li{font-size:0.7rem;}
+    .loanresult .content ul.productAbout li{font-size:0.7rem;}
+    /* 8.9 AJB 수정 */
+    .loanresult .content ul.productInfo li{font-size:0.7rem;width:50%;}
+    .loanresult .content ul.productInfo li.w75{width:50%;}
+    .loanresult .content ul.productInfo li > p{font-size:0.7rem;}
+    .loanresult .content ul.productInfo li:nth-of-type(3), .loanresult .content ul.productInfo li:nth-of-type(4) {border-top:none;}
+    .loanresult .content ul.productInfo li.h120{height:100px;}
+    .loanresult .content ul.productInfo li.lh120{line-height:70px;}
+    .loanresult .content ul.productInfo li.ha{height:48px;line-height:18px;}
+    .loanresult .content p.subText{font-size:0.6rem;}
+    /* 8.9 AJB 수정 Fin */
+    .loanresult .content ul.productAbout li{height:51px;padding:0;line-height:51px;}
+    .loanresult .content ul.productInfoWrite li input{font-size:0.8rem;}
+    .loanresult .content ul.productAbout li input[type=text]{width:40%;font-size:0.7rem;}
+    .loanresult .content ul.productAbout li input.widthAll{width:80%;}
+
+    .loanBox { width: 100%;  }
+    .loanBox .loan50 {float: none; width: 100%;}
+    .loanBox .loan50 .content ul.productAbout li select { top: 0; }
+
+
+
+}
+
+@media only screen and (max-width:549px){
+    .loanresult .content p{font-size:0.9rem;}
+    .loanresult .content p strong.loanName{font-size:1.1rem;}
+    .loanresult .content p span.customerName{font-size:1rem;}
+    .loanresult .content h3{font-size:0.8rem;}
+    .loanresult .content ul.loanAbout li{width:50%;font-size:0.7rem;}
+    .loanresult .content ul.loanAbout li:nth-of-type(3), .loanresult .content ul.loanAbout li:nth-of-type(4){border-top:none;}
+    .loanresult .content ul.loanAbout li:nth-of-type(17){height:50px;line-height:50px;}
+    .loanresult .content ul.loanAbout li:last-of-type{width:50%;height:50px;line-height:25px;}
+
+    .loanresult .content ul.productAbout li{width:50%;font-size:0.7rem;}
+    .loanresult .content ul.productAbout li:nth-of-type(3), .loanresult .content ul.productAbout li:nth-of-type(4){border-top:none;}
+    .loanresult .content p.subText{font-size:0.7rem;}
+    /* 8.9 AJB 수정 */
+    .loanresult .content ul.productInfo li{font-size:0.7rem;}
+    .loanresult .content ul.productInfo li{font-size:0.7rem;width:50%;}
+    .loanresult .content ul.productInfo li.w75{width:50%;}
+    .loanresult .content ul.productInfo li > p{font-size:0.7rem;}
+    .loanresult .content ul.productInfo li:nth-of-type(3), .loanresult .content ul.productInfo li:nth-of-type(4) {border-top:none;}
+    .loanresult .content ul.productInfo li.h120{height:100px;}
+    .loanresult .content ul.productInfo li.lh120{line-height:70px;}
+    .loanresult .content ul.productInfo li.ha{height:48px;line-height:18px;}
+    .loanresult .content p.subText{font-size:0.6rem;}
+    .loanresult .content ul.productInfo li > p{font-size:0.7rem;text-indent:20px;}
+    /* 8.9 AJB 수정 Fin */
+    .loanresult .content ul.btnlist li a{font-size:0.8rem;}
+
+    .loanresult .content ul.productInfoWrite li input{font-size:0.7rem;}
+    .loanresult .content ul.productAbout li{height:45px;padding:0;line-height:45px;}
+    .loanresult .content ul.productAbout li input[type=text]{width:40%;font-size:0.7rem;}
+    .loanresult .content ul.productAbout li input.widthAll{width:80%;}
+
+    .loanresult .content .btnArea button { font-size: 11px; }
+
+    .loanBox { width: 100%;  }
+    .loanBox .loan50 {float: none; width: 100%;}
+    .loanBox .loan50 .content ul.productAbout li select { width: 50px;   top: 3px;}
+}

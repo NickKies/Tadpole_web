@@ -1,0 +1,21 @@
+1. JDK 설치
+	1.8
+
+2. 환경변수
+	<JAVA_HOME>, <path%JAVA_HOME%/bin> 삭제
+	
+	+ 자바 설치 디렉토리 .bin
+
+3. ECLIPSE 설치
+	
+4. 톰켓 설치
+	tomcat 8.5
+
+5. Eclipse 환경 설정
+	0) window - preferences - utf-8 설정
+		1) web 
+		2) general - contents type - text
+		3) general - workspace
+	1) window - preferences - sever - runtime environments - add - apache tomcat v8.5
+	2) browse - tomcat directory
+	3) Dynamic Web Project 

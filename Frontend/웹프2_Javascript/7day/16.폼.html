@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>폼</title>
+</head>
+<body>
+    <form action="#" name="memForm">
+        <p><label>아이디 : <input type="text" name="userid"></label></p>
+        <p><label>패스워드 : <input type="password" name="pwd"></label></p>
+        <p><label>패스워드 확인 : <input type="password" name="pwd_re"></label></p>
+        <p><label>이름 : <input type="text" name="name"></label></p>
+        <p>성별 : <label>남자 <input type="radio" name="gender checked"></label><label>여자 <input type="raid" name="gender"></label></p>
+        <p>주민등록번호 : <input type="text" name="ssn1" maxlength="6" onkeyup="autoFocus()">- <input type="password" name="ssn2" maxlength="7"></p>
+        <p><label>이메일 : <input type="text" name="email"></label></p>
+        <p>취미 : <label> 등산 <input type="checkedbox" name="hobby" value="등산"></label></p>
+        <label> 게임 <input type="checkedbox" name="hobby" value="게임"></label></p>
+        <label> 드라이브 <input type="checkedbox" name="hobby" value="드라이브"></label></p>
+        <label> 음악감상 <input type="checkedbox" name="hobby" value="음악감상"></label></p>
+        <label> 영화감상 <input type="checkedbox" name="hobby" value="영화감상"></label></p>
+    </form>
+</body>
+</html>
+<script>
+    function regist() {
+        var frm = document.memForm;
+        if(frm.userid.value == "") {
+            alert("아이디를 입력 해 주세요")
+            frm.userid.focus();
+            return false;
+        }
+        if(frm.userid.value.length <4 || frm.userid.value.length >16){
+            alert("아이디는 4자 이상 16자 이하로 입력 해주세요!")
+            frm.userid.focus();
+            return false;
+        }
+
+        if(frm.pwd.value == "") {
+            alert ("비밀번호를 입력해주세요")
+            frm.pwd.focus();
+            return false
+        }
+        if(frm.pwd.value.length<4 || frm.pwd.value.length <16){
+            alert("비밀번호는 4자 이상 16자 이하로 입력 해주세요")
+            frm.pwd.focus();
+            return false;
+        }
+        if(frm.pwd.value !=frm.pwd_re.value){
+            alert("패스워드를 확인 해주세요")
+            frm.pwd.focus();
+            return false
+        }
+
+        var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9_\-]+\.[A-Za-z0-9_]+/;
+        if(exptext.test(frm.email.value)==false){
+            alert("이메일 형식이 맞지 않습니다.!");
+            frm.email.focus();
+            return false
+        }
+
+        var cnt = 0;
+        for( var i=0; i<frm.hobby.length; i++){
+            if(frm.hobby[i].checked) cnt++;
+        }
+        if(cnt <=0 ){
+            alert("취미는 1개이상 선택해야 합니다!")
+            return false;
+        }
+    }
+    function autoFocus() {
+        frm = document.memForm;
+        if(frm.ssn1.value.length >=6){
+            frm.ssn2.focus();
+            return false
+        }
+    }
+    /*
+    function chtext1() {
+        //alert("호출 되었습니다.")
+        var frm = document.memForm;
+        for(var i=0; i<frm.hobby.length; i++){
+            frm.hobby[i].checked = true;    // 모두 체크
+            frm.hobby[i].checked = false;    // 모두 해제
+            
+        }
+    }
+    */
+</script>

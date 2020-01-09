@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript BOM Screen Object</title>
+</head>
+<body>
+	<h1>Screen Object</h1>	
+	<script>
+		document.write("실제 사용할 수 있는 화면의 너비는 " + screen.availWidth + "픽셀입니다.<br>");
+		document.write("실제 사용할 수 있는 화면의 높이는 " + screen.availHeight + "픽셀입니다.<br>");
+        var bitColorDepth = screen.colorDepth;
+		document.write("사용자 화면에서 한 색상당 사용할 수 있는 비트수는 " + bitColorDepth + "개입니다.<br>");
+		document.write("즉, 한 색상은 총 " + Math.pow(2, bitColorDepth) + "가지로 표현됩니다.<br>");
+        var bitPixelDepth = screen.pixelDepth;
+		document.write("사용자 화면의 한 픽셀당 표시할 수 있는 비트수는 " + bitPixelDepth + "개입니다.<br>");
+	</script>
+</body>
+</html>

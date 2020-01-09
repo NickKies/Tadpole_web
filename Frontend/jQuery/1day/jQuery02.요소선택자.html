@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 라이브러리 연결</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("p").on("click",function() {
+                $("span").css("fontSize","28px");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>HTML 태그 선택자</h1>
+    <p>이제부터 <span>제이쿼리</span>를 다같이 공부해보죠!! <br>
+    마우스로 글씨를 클릭해보세요!!</p>
+</body>
+</html>

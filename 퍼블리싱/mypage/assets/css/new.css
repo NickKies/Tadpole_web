@@ -1,0 +1,1379 @@
+/* common 180817 배다빈 추가*/
+ul,ol { list-style: none; }
+
+body { min-width: 320px; position: relative;}
+header .header-left b { font-size: 22px; }
+header .header-left .homeBtn {}
+header .header-left .homeBtn a { color: #272c33; padding: .375rem .75rem; display: inline-block; }
+header .header-left .homeBtn a i { font-size: 20px; }
+header .header-left .for-message a { color: #272c33; padding: .375rem .75rem; display: inline-block; position: relative;}
+header .header-left .for-message .count { border-radius: 50%; color: #fff; font-size: 11px; height: 15px; width: 15px;
+    line-height: 15px; right: 0; top: 0; position: absolute; text-align: center;}
+
+aside #main-menu i { width: 55px; }
+aside #main-menu i.menu_product { background: url(../../../images/product.png) no-repeat 0 0; background-size: 20px; display: inline-block; height: 20px; position: relative; top: 5px;}
+aside #main-menu i.menu_product_new { background: url(../../../images/product_new.png) no-repeat 0 0; background-size: 15px; display: inline-block; height: 15px; position: absolute; top: 9px; left: -5px;}
+aside #main-menu i.menu_product_list { background: url(../../../images/product_list.png) no-repeat 0 0; background-size: 15px; display: inline-block; height: 15px; position: absolute; top: 10px; left: -5px;}
+aside #main-menu i.menu_estimate { background: url(../../../images/estimate.png) no-repeat 0 0; background-size: 20px; display: inline-block; height: 20px; position: relative; top: 5px;}
+aside #main-menu i.menu_chart { background: url(../../../images/chart.png) no-repeat 0 0; background-size: 20px; display: inline-block; height: 20px; position: relative; top: 5px; left: -1px;}
+aside #main-menu i.menu_review { background: url(../../../images/review.png) no-repeat 0 0; background-size: 20px; display: inline-block; height: 20px; position: relative; top: 5px; left: -1px;}
+aside #main-menu i.menu_review_stats { background: url(../../../images/review_stats.png) no-repeat 0 0; background-size: 15px; display: inline-block; height: 15px; position: absolute; top: 10px; left: -5px;}
+aside #main-menu i.menu_chart_list { background: url(../../../images/chart_list.png) no-repeat 0 0; background-size: 15px; display: inline-block; height: 15px; position: absolute; top: 10px; left: -5px;}
+
+/* 메뉴바 프로필, 나의 포인트 내역 추가 180910 배다빈 추가*/
+.navbar-profile {margin-bottom: 20px;}
+.navbar-profile .profileArea {width: 100%;}
+.navbar-profile .profileArea .imgArea { height: auto; line-height: inherit;}
+.navbar-profile .profileArea .imgArea img { width: 100%; vertical-align: top;}
+.navbar-profile .profileArea .textArea { width: 100%; background-color: #eee; padding: 10px 0;}
+.navbar-profile .profileArea .textArea .row { width: 100%; display: block; margin: 0; box-sizing: border-box; padding: 0 10px; line-height: 22px;}
+.navbar-profile .profileArea .textArea .row::after { content: ""; display: block; clear: both; }
+.navbar-profile .profileArea .textArea .row .question { float: left; font-weight: bold; font-size: 12px; color: #212121; width: 40%; }
+.navbar-profile .profileArea .textArea .row .answer {float: right; width: 60%; text-align: center; font-weight: bold; font-size: 14px; color: #333;}
+.navbar-profile .profileArea .gradeArea { color: #f5a63d; width: 100%; text-align: center; padding-top: 15px; padding-bottom: 8px; border-bottom: 2px solid #fff;}
+.navbar-profile .profileArea .gradeArea i { display: inline-block; margin: 0 5px;font-size: 25px; }
+
+.navbar-mypoint { margin-top: 20px; }
+.navbar-mypoint .mypointArea { background-color: #eee; width: 100%; padding: 5px 10px 20px;}
+.navbar-mypoint .mypointArea .mpTitle { font-weight: bold;  color: #272c33; font-size: 14px;}
+.navbar-mypoint .mypointArea .mpValue { text-align: right; font-size: 30px; color:  #f5a63d; padding-bottom: 5px; padding-top: 5px;}
+
+.navbar-mypoint .mypointArea .rowBox { display: block; border-bottom: 2px solid #272c33; padding-top: 8px; padding-bottom: 8px;}
+.navbar-mypoint .mypointArea .rowBox:first-child { border-color: #f5a63d; }
+.navbar-mypoint .mypointArea .rowBox .row { display: block; width: 100%; margin: 0; line-height: 22px;}
+.navbar-mypoint .mypointArea .rowBox .row::after {content: ""; display: block; clear: both;}
+.navbar-mypoint .mypointArea .rowBox .row .question { float: left; width: 60%; font-weight: bold; font-size: 12px;color: #272c33; }
+.navbar-mypoint .mypointArea .rowBox .row .answer { float: right; width: 40%; font-weight: bold; font-size: 12px; color: #272c33; text-align: right;}
+
+
+.content .card .card-header .toggleBox { float: right;  width: 40px; height: 30px; background: url(../../../images/down_272c33.png) no-repeat 8px 10px; background-size: 18px; cursor: pointer; display: block; }
+.content .card.hold .card-header .toggleBox { background: url(../../../images/up_272c33.png) no-repeat 8px 10px; background-size: 18px; }
+.content .card.hold .card-header { border-bottom: 0; }
+.content .card.hold .card-body { height: 1px; overflow: hidden; padding: 0; visibility: hidden;}
+.content .card.hold .card-body.listView { height: 1px; overflow: hidden; }
+
+
+/* ----------- mypage 180817 배다빈 추가 ---------*/
+
+/* ------ My 업체정보 ----- */
+.content .card .table.tdp0 td { padding: 0; }
+.content .card .table .snsIcon span { width: 35px; height: 35px; display: block; margin: 0 auto; }
+.content .card .table .snsIcon .i_googleplay { background: url(../../../images/googleplay.jpg) no-repeat 0 0; background-size: 30px; }
+.content .card .table .snsIcon .i_appstore { background: url(../../../images/appstore.jpg) no-repeat 0 0; background-size: 35px; }
+.content .card .table .snsIcon .i_kakaotalk { background: url(../../../images/kakaotalk.png) no-repeat 0 0; background-size: 35px; }
+.content .card .table .snsIcon .i_kakaostory { background: url(../../../images/kakaostory.png) no-repeat 0 0; background-size: 35px; }
+.content .card .table .snsIcon .i_facebook { background: url(../../../images/facebook.png) no-repeat 0 0; background-size: 35px; }
+.content .card .table .snsIcon .i_band { background: url(../../../images/band.png) no-repeat 0 0; background-size: 35px; }
+.content .card .table .snsIcon .i_twitter { background: url(../../../images/twitter.png) no-repeat 0 0; background-size: 35px; }
+.content .card .table .snsIcon .i_youtube { background: url(../../../images/youtube.png) no-repeat 0 0; background-size: 35px; }
+.content .card .table .snsIcon .i_blog { background: url(../../../images/blog.png) no-repeat 0 0; background-size: 35px; }
+.content .card .table .snsIcon .i_instagram { background: url(../../../images/instagram.png) no-repeat 0 0; background-size: 35px; }
+.content .card .table .snsIcon i { font-size:35px ; }
+
+
+/* ------ My 금융상품 My 상품만들기 ----- */
+
+.right-panel .page-header h1 { text-align: center; font-size: 1.5rem; }
+
+.breadcrumbs .page-header .page-title .btnArea .saveBtn { width: 100px; height: 40px;  border-radius: 5px; border:0; background-color: #007bff; color: #fff; position: relative; top: -8px;  }
+
+.content .card .category::after { content:""; display: block; clear: both; }
+.content .card .category > div { width: 33.3333%; float: left; height: 50px; line-height: 50px; text-align: center; background-color: #f7f7f7; font-weight: bold; color: #272c33; cursor: pointer; transition: all .5s;}
+.content .card .category > div.active { background-color: #4874e8; color: #fff;}
+.content .card .category span { width: 20px; height: 20px; display: inline-block; margin-right: 10px; position: relative; transition: all .5s;}
+.content .card .category .i_product_1 { background: url(../../../images/product_1_black.png) no-repeat 0 0; background-size: 20px; top: 4px;}
+.content .card .category .i_product_2 { background: url(../../../images/product_2_black.png) no-repeat 0 0; background-size: 20px; top: 5px;}
+.content .card .category .i_product_3 { width: 25px; height: 25px; background: url(../../../images/product_3_black.png) no-repeat 0 0; background-size:25px; top: 7px;}
+.content .card .category > div.active .i_product_1 {background: url(../../../images/product_1_1.png) no-repeat 0 0; background-size: 20px; top: 4px;}
+.content .card .category > div.active .i_product_2 { background: url(../../../images/product_2_1.png) no-repeat 0 0; background-size: 20px; top: 5px;}
+.content .card .category > div.active .i_product_3 {background: url(../../../images/product_3_1.png) no-repeat 0 0; background-size:25px; top: 7px;}
+.content .card .showTarget { cursor: pointer; }
+.content .card .showDocu { cursor: pointer; }
+.content .card .showHow { cursor: pointer; }
+.content .card .showJoin { cursor: pointer; }
+
+
+.content .productValue .form-group .form-control { color: #dc3545; font-weight: bold; }
+.content .card .cate_select select { display: none; }
+.content .card .cate_select select.active { display: block; }
+
+.content .card .btnArea {  display: block;  }
+.content .card .btnArea button {  }
+.content .card .btnArea .addBtn { background: url(../../../images/plus.png) no-repeat 0 0; background-size: 35px; width: 35px;   height: 35px;  border:0; margin-right: 12px;}
+.content .card .btnArea .deleteBtn { background: url(../../../images/minus.png) no-repeat 0 0; background-size: 35px; width:35px;   height: 35px;  border:0; }
+
+.content .card .btnArea .saveBtn { width: 100px; height: 40px;  border-radius: 30px; }
+.content .card .btnArea.textalign { text-align: center; padding: 10px 0; }
+
+.content .pluscover { position: absolute; left: 0; bottom: 0; top: 0; right: 0; width: 100%; height: 100%;  border-radius: 10px; background:url(../../../images/plus.png) no-repeat 50% 50%; background-color: rgba(0,0,0,.8); cursor: pointer; transition: all .5s; margin-top: -10px;}
+.content .pluscover:hover { background-color: rgba(50,50,50,.8); }
+/*.content .details .deleteBtn { background: url(../../../images/deleteBtn_2.png) no-repeat 50% 50%; overflow: hidden; min-width: 60px; background-color: #e74c3c;  cursor: pointer;}*/
+.content .details .deleteBtn { background: url(../../../images/deleteBtn_2.png) no-repeat 50% 50%; overflow: hidden; cursor: pointer; border: 0px; margin-left: 10px;}
+
+.content .card .form-group input[type=file] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0; }
+.content .card .fileBox .input-group label {margin-bottom: 0; cursor: pointer;}
+
+.content .card .form-group .changeWon { width: auto; height: auto; display: inline-block; color: #dc3545; font-weight: bold; padding-left: 20px;}
+
+.content .card .tip { display: inline-block; width: auto; height: auto; padding-left: 5px; cursor: pointer;}
+.content .card .tip .tipBtn {display: block; background: url(../../../images/tipBtn2.png) no-repeat 0 0;    width: 15px; height: 15px; background-size: cover; position: relative; top: 2px;}
+.content .card .tip .tipDesc { visibility: hidden; position: absolute; width: 230px;
+    background-color: #4a75e8; padding: 10px 5px; border-radius: 6px; z-index: 1; opacity: 0; transition: opacity .6s; bottom: 125%; left: 50%; margin-left: -115px; text-align: center;}
+.content .card .tipBtn:hover .tipDesc { visibility: visible; opacity: 1;}
+.content .card .tip .tipDesc a { color: #fff; font-size: 12px;}
+
+
+/* ------ //My 금융상품 My 상품만들기 ----- */
+
+/* ------ My 금융상품 My 상품리스트 ----- */
+.content .contentNavi { width: 100%;  }
+.content .contentNavi::after {content:""; display: block; clear: both;}
+.content .contentNavi > div { float:left; width: 25%; height: 50px; color: #272c33;  font-weight: bold; text-align: center; line-height: 50px; background-color: #f7f7f7; cursor: pointer; transition: all .5s;}
+.content .contentNavi > div.active { background-color: #4874e8; color: #fff; }
+.content .contentNavi > div span { width: 20px; height: 20px; display: inline-block; margin-right: 10px; position: relative; transition: all .5s;}
+.content .contentNavi > div .i_product_1 { background: url(../../../images/product_1_black.png) no-repeat 0 0; background-size: 20px; top: 4px;}
+.content .contentNavi > div .i_product_2 { background: url(../../../images/product_2_black.png) no-repeat 0 0; background-size: 20px; top: 5px;}
+.content .contentNavi > div .i_product_3 { width: 25px; height: 25px; background: url(../../../images/product_3_black.png) no-repeat 0 0; background-size:25px; top: 7px;}
+.content .contentNavi > div.active .i_product_1 {background: url(../../../images/product_1_1.png) no-repeat 0 0; background-size: 20px; top: 4px;}
+.content .contentNavi > div.active .i_product_2 { background: url(../../../images/product_2_1.png) no-repeat 0 0; background-size: 20px; top: 5px;}
+.content .contentNavi > div.active .i_product_3 {background: url(../../../images/product_3_1.png) no-repeat 0 0; background-size:25px; top: 7px;}
+
+.content .form-group .br-0 { border-right:0; border-radius: .25rem 0 0 .25rem;}
+.content .form-group .bl-0 { border-left: 0; border-radius: 0 .25rem .25rem 0; background-color: transparent;}
+.content .card .alignBox { width: 100%; overflow: hidden; box-sizing: border-box; padding:5px 20px; }
+.content .card .alignBox .tableAlign { float: right; font-size: 14px; color: #777; padding-bottom: 5px;}
+.content .table {text-align: center;  }
+.content .table th { height: 55px; background-color: #f8f8f8; font-size: 13px; color: #555;
+    font-weight: bold; box-sizing: border-box;   line-height: 26px; position: relative; border:0; padding-left: 0; padding-right: 0; }
+.content .table td { height: 60px; font-size: 13px; border-bottom: 1px solid #ddd; box-sizing: border-box;  color: #333;/* font-weight: bold;*/ vertical-align: middle; padding-left: 0; padding-right: 0;}
+.content .table td .c4874e8 { color: #4874e8;font-size: 16px;font-weight: bold; }
+.content .table td .i_x { width: 20px; height: 20px; display: block; background: url(../../../images/deleteBtn_2.png) no-repeat 0 0; background-size: 20px; border-radius: 50%; margin: 0 auto; cursor: pointer;}
+
+.content .form-group.btnArea { text-align: center; padding: 10px 0 5px;}
+.content .form-group.btnArea .delete { width: 100px; height: 40px;  border-radius: 5px; background-color: #dc3545; border:0; color: #eee; margin:0 10px;}
+.content .form-group.btnArea .save { width: 100px; height: 40px;  border-radius: 5px; border:0; color: #eee;  margin:0 10px;}
+.content .form-group.btnArea .reset { width: 100px; height: 40px;  border-radius: 5px; margin: 0 10px; background-color:#272c33; border-color: #555;}
+.content .card .card-header .poa { position: absolute; right:10px; top: 0;  }
+.content .card .card-header .poa button { width: 80px;   height: 30px; line-height: 22px; margin:0 5px;}
+/* ------ //My 금융상품 My 상품리스트 ----- */
+
+
+/* ------ My 견적상품 My 견적 만들기 ----- */
+.content .card .bgc-f7f7f7 > div { background-color: #f7f7f7; }
+.content .card .bgc-f7f7f7 > div.active { background-color: #272c33; }
+
+.content .card .list .contentWrap { width: 100%; padding-bottom: 0;}
+.content .card .list .contentWrap::after {content:""; display: block; clear: both;}
+.content .card .list .contentWrap table { width: 50%; float: left; }
+.content .card .list .contentWrap table .thGroup { display: none; }
+.content .card .list .contentWrap table .colGroup { display: none; }
+.content .card .list .contentWrap table tr { display: block;  overflow: hidden; box-sizing: border-box; padding: 30px 10px 5px;text-align: center; border: 1px solid #eee; width: 340px; height: 190px; position: relative; border-radius: 5px;box-shadow: 5px 5px 5px 0 rgba(0,0,0,.2); margin :0 auto 30px; }
+.content .card.list .contentWrap table tr::after { content:""; display: block; width: 95%; margin: 86px auto 0; border-top: 1px solid #eee; }
+
+.content .card .list .contentWrap table td { display: block; float: left; background-color: transparent; border:0;}
+.content .card .list .contentWrap table td.gender { width: 100px; box-sizing: border-box; padding: 10px; height: auto; position: absolute; left: 10px; top: 10px;}
+.content .card .list .contentWrap table td.gender img { width: 100%;}
+.content .card .list .contentWrap table td.countTd { width: 100px;  left: 10px; position: absolute;bottom: 0; line-height: 20px;}
+.content .card .list .contentWrap table td.timerTd { width: 50%; right: 33px; position: absolute;bottom: 0; line-height: 20px;}
+.content .card .list .contentWrap table td.sumTd { position: absolute; left: 120px; top: 50px; }
+.content .card .list .contentWrap table td.sumTd .sum { font-size: 22px; }
+.content .card .list .contentWrap table td.cateTd { position: absolute; top: 50px; background-color: transparent; height: auto; right: 10px; width: 70px; text-align: center;}
+.content .card .list .contentWrap table td.useTd { position: absolute; top: 70px; background-color: transparent; height: auto; right: 10px; color: #aaa; width: 70px; text-align: center;}
+.content .card .list .contentWrap table td.useTd::before { content: "("; padding-right: 2px;}
+.content .card .list .contentWrap table td.useTd::after { content: ")"; padding-left: 2px;}
+.content .card .list .contentWrap table td.ageTd { color: #999; }
+.content .card .list .contentWrap table td.ageTd::after { content:")"; padding-left:2px;}
+.content .card .list .contentWrap table td.authorTd { position: absolute; left: 122px; top: 25px; font-size: 16px; color: #555;}
+.content .card .list .contentWrap table td.btr { margin-left: 162px; color: #999;}
+.content .card .list .contentWrap table td.btr::after { content:" / "; }
+.content .card .list .contentWrap table td.btr::before { content:"("; padding-right: 2px; font-size: 12px;}
+.content .card .list .contentWrap table .td50 span { display: block; height: 25px; font-size: 16px;}
+.content .card .list .contentWrap table .td50 span i { background: url(../../../images/checked.png) no-repeat 0 3px;   display: inline-block;height: 20px; width: 20px; background-size: cover; background-position: 0 0; margin-left: 2px; position: absolute; top: -118px; right: -15px;}
+.content .card .list .contentWrap table .dateTd { display: none; }
+.content .card .list .contentWrap table .td50::before { content: attr(data-label);  display: block; font-weight: bold; text-transform: uppercase; height: 25px;}
+.content .card .list .contentWrap table td.no { display: none; }
+.content .card .list .contentWrap table tr:hover { background-color: transparent; }
+
+.content .card .list .contentWrap .pager { text-align: center; padding-top: 50px; float:none;}
+.content .card .list .contentWrap .pager ul { overflow: hidden; display: inline-block; }
+.content .card .list .contentWrap .pager ul li { height: 35px; display: block; float: left; text-align: center; margin: 0 5px;}
+.content .card .list .contentWrap .pager ul li a { font-size: 14px; display: block; width: 100%; height: 100%; line-height: 35px; color:#4874e8;padding: 0 6px; transition: all .5s; outline:0; text-align: center;    }
+.content .card .list .contentWrap .pager ul li a:hover { color: #fff; background-color: #8fbff4; }
+.content .card .list .contentWrap .pager ul li a.active { font-weight: bold; color: #fff; background-color: #4874e8;}
+.content .card .list .contentWrap .pager .prev a { color: #777; }
+.content .card .list .contentWrap .pager .next a { color: #777; }
+
+.content .card .card-body.listView { height: 885px; overflow-y: scroll; }
+.content .card .listView .contentWrap { padding: 0 0 0; width: 100%; margin: 0 auto; overflow: hidden; position: relative; }
+.content .card .listView .contentWrap:after { content: ""; display: block; clear: both; }
+.content .card .listView .contentWrap h3 { text-align: center; padding: 10px 0;  font-size: 20px;  color: #fff;  margin-bottom: 20px; background-color: #4874e8; }
+.content .card .listView .contentWrap h3 span { color: #fff; }
+.content .card .listView h3.mt70 { margin-top: 70px; }
+
+.content .card .listView ul { width: 50%; float: left; border-radius: 10px;}
+.content .card .listView ul li { width: 100%; box-sizing: border-box; padding: 10px 20px 105px; margin-bottom: 40px; transition: all .5s;}
+.content .card .listView .rightBox li {  }
+.content .card .listView .contentWrap .viewBox { width: 420%; overflow: hidden; border:0;}
+.content .card .listView .contentWrap div.viewBox > div {  width: 25%; float: left; height: 600px; text-align: center; padding: 50px 5px 0; box-sizing: border-box;}
+.content .card .listView .conTitle { color:#777; margin-bottom: 30px; font-size: 18px; font-weight: bold; height: 27px;}
+.content .card .listView .conDesc { width: 100%; text-align: center; position: relative;}
+.content .card .listView .conDesc .imgBox { position: absolute; background: url(../images/grade.png) no-repeat 100px 20px; width: 100%; height: 380px; z-index: -1; background-size: 65%; transition: all .5s;}
+.content .card .listView .conDesc span { font-size: 25px; font-weight: bold; color: #777;}
+.content .card .listView .conDesc span b { font-size: 50px; letter-spacing: 2px; display: inline-block; color: #4874e8; }
+.content .card .listView .grade { height: 380px; box-sizing: border-box; }
+.content .card .listView .grade span { padding-top: 130px; display: inline-block; }
+.content .card .listView .stats { height: 230px; }
+.content .card .listView .stats .statsBox { position: absolute; width: 100%; height: 230px; z-index: -1; background: url(../images/stats.png) no-repeat 100px 20px; background-size: 60%; }
+.content .card .listView .stats span { padding-top: 100px;  display: inline-block;}
+
+.content .card .listView .conInfo { width: 100%; box-sizing: border-box; margin-top: 40px; border: 1px solid #eee; border-radius: 5px;}
+.content .card .listView .conInfo:after { content: ""; display: block; clear:both; }
+.content .card .listView .conInfo .subTitle { width: 40%; height: 35px; float: left; background-color: #f8f8f8; line-height: 33px;  text-align: center; color: #555; font-size: 14px; font-weight: bold; transition: all .5s;}
+.content .card .listView .conInfo .subDesc {width: 60%; height: 35px; float: left; line-height: 33px; text-align: center;
+    font-size: 14px; /* font-weight: bold; */ color: #555; transition: all .5s;}
+.content .card .listView .conInfo .subBb {/* border-bottom: 1px solid #ccc;*/ }
+.content .card .listView .conInfo p {   height: 140px; box-sizing: border-box; padding: 15px 20px;color: #555;  font-size: 14px;  text-align: left; margin-bottom: 0;}
+.content .card .listView ul li .conTitle span.checkIcon { width: 18px; height: 13px;    display: inline-block;  background:url(../images/check.png) no-repeat 0 0; padding-right: 2px; margin-right: 5px; background-size: cover;}
+.content .card .listView .notice p { text-align: center; background-color: #f8f8f8; padding: 10px 0;
+    font-size: 14px; transition: all .5s; height: auto;}
+
+.content .card .listView .leftBtn { position: absolute; width: 50px; height: 50px; left: 0; top: 40%; background: url(../../../images/left.png) no-repeat 0 0; background-size: 49px; opacity: .2; cursor: pointer; display: block;}
+.content .card .listView .rightBtn { position: absolute; width: 50px; height: 50px; right: 0; top: 40%; background: url(../../../images/right.png) no-repeat 0 0; background-size: 49px; opacity: .2; cursor: pointer; display: block;}
+
+/* 견적상품 기능 추가 180905 배다빈 */
+.content .card .listView .listTab ul { width: 100%; }
+.content .card .listView .listTab ul li { padding: 0; width: 33.3333%; }
+.content .card .listView .listTab ul li div { font-size: 14px; }
+.content .card .listView .listTabBox .ltCalc .calcWrap { width: 95%; }
+.content .card .listView .listViewMap .mapArea { height: 200px; line-height: 200px; }
+.content .card .listView .listTabBox .ltResult h4 { width: 80%; font-size: 22px; border-bottom: 1px solid #222;}
+.content .card .listView .listTabBox .ltResult p { width: 75%; font-size: 14px;}
+.content .card .listView .listTabBox .ltTable table th { text-align: center; }
+.content .card .listView .listTabBox .ltCalc .calcWrap .calcBox .calcDesc .cTop { font-size: 14px; width: 320px; padding: 0 10px; }
+.content .card .listView .listTabBox .ltContent2 .calcBox { padding-top: 10px; padding-bottom: 10px; height: auto; line-height: 0px;}
+.content .card .listView .listTabBox .ltContent2 .ltCalc .calcWrap .calcBox .calcDesc > div {}
+.content .card .listView .listTabBox .ltContent2 .ltCalc .calcWrap .calcBox .calcDesc > div.lh55 { line-height: 80px;}
+
+.content .card .listView .listTabBox .conBox ul { width: 100%; float: none; }
+.content .card .listView .listTabBox .conBox ul li { width: 50%;  padding: 10px 10px 105px;}
+.content .card .listView .listTabBox .conBox ul.productForm li .proResBox { padding: 0 10px 10px; }
+
+.content .card .list .contentWrap table tr::after { content:""; display: block; width: 95%; margin: 86px auto 0; border-top: 1px solid #eee; }
+/* ------ //My 견적상품 My 견적 만들기 ----- */
+
+/* ------ My 견적상품 My 견적 리스트 ----- */
+.content .card .search .contentWrap .autoChart .chartTitle { font-size: 14px; }
+.content .card .search .contentWrap .autoChart .chartInfo { font-size: 14px; }
+.content .card .search .contentWrap .autoChart .chartBox b { font-size: 60px; margin-top: 20px; display: inline-block;}
+/* ------ //My 견적상품 My 견적 리스트 ----- */
+
+/* ------ My 후기관리 My 후기리스트 ----- */
+.content .reviewTable {text-align: left;  }
+.content .card .card-header span { font-size: 14px; padding-right: 10px; cursor: pointer;}
+
+/*.content .card .rGrade { font-weight: bold; text-align: center; font-size: 18px; }
+.content .card .rGrade .star { width: 50px; height: 50px; display: block; margin: 30px auto 20px; background:url(../../../images/star2.png) no-repeat 0 0; background-size: 50px; }*/
+.content .card .table td {  padding: 20px; position: relative;}
+.content .card .table td strong { font-size: 20px; }
+.content .card .table td .revDate { color: #777; }
+.content .card .table td .revDate::after { content: "|"; display: inline-block; margin:0 5px; }
+.content .card .table td .revDate::before { content: "|"; display: inline-block; margin:0 5px;}
+.content .card .table td .revReport { color: #777; cursor: pointer;}
+.content .card .table td .revDesc { font-size: 16px; padding-right: 110px;}
+.content .card .table td .btnBox {  position: absolute; right: 10px; bottom: 10px; }
+.content .card .table td .revComment { width: 100px; height: 30px; text-align: center; color: #fff; border:0; background-color: #25282e; line-height: 28px; border-radius: 5px;}
+.content .card .table td .revDelete { width: 100px; height: 30px; text-align: center; color: #fff; border:0; background-color: #d1283d; line-height: 28px; border-radius: 5px;}
+.content .card .table td .revSubmit { width: 100px; height: 30px; text-align: center; color: #fff; border:0; background-color: #4874e8; line-height: 28px;}
+.content .card .table td .revCancel { width: 100px; height: 30px; text-align: center; color: #fff; border:0; background-color: #777; line-height: 28px; margin-right: 20px;}
+.content .card .table td.comment { background-color: #f6f6f6; }
+.content .card .table td.comment_new { padding-bottom: 50px; }
+.content .card .bb-1 { border-bottom: 1px solid #ccc; }
+/* ------ //My 후기관리 My 후기리스트 ----- */
+
+/* ------ My 후기관리 My 만족도평점 ----- */
+.content .card .row .sGrade { font-weight: bold; height: 40px; line-height: 40px; font-size: 22px; display: inline-block; overflow: hidden; padding: 0 20px; margin-left: 50px;}
+.content .card .row .sGrade .star { width: 40px; height: 40px; background: url(../../../images/star2.png) no-repeat 0 0; background-size: 40px; display:block; float: left; margin-right: 20px;}
+.content .card .row .sPeople { line-height: 45px; color: #777; font-weight: bold; font-size: 14px; }
+.content .card .row .rowTitle { text-align: center; font-weight: bold; color: #555; font-size: 15px;  width: 100%; padding-top:20px;}
+.content .card .row .chartBox { width: 100%; min-height: 300px; background-color: #f8f8f8; }
+/* ------ //My 후기관리 My 만족도평점 ----- */
+
+/* ------ My 결제관리 유료서비스안내 ----- */
+.content .card.bg272c33 { background-color: #272c33; position: relative;}
+.content .card.bg272c33::after { content:""; display: block; background-color: #272c33;position: absolute;	   left: 50%; width: 30px;	 height: 30px; bottom: -14px; transform: rotate(45deg);}
+.content .card .pIntroTitle { text-align: center;	color: #fff; font-size: 15px;  line-height: 24px; padding: 20px 0;	position: relative;	}
+.content .card .pIntroTitle::before {content:""; display: block; position: absolute; width: 41px;	height: 28px; background: url(../../../images/quoteL.png) no-repeat 0 0; left:20%; top: 20px;	background-size: 30px;}
+.content .card .pIntroTitle::after {content:""; display: block; position: absolute;  width: 30px;	height: 28px; background: url(../../../images/quoteR.png) no-repeat 0 0; right: 20%; top: 20px; background-size: 30px;}
+.content .card .pIntroTitle strong { display: block; font-size: 30px; padding: 20px 0;}
+
+.content .card .pointBox::after { content:""; display: block; clear: both;	 }
+.content .card .pointBox .pointInfo { float: left; width: 30%;	 }
+.content .card .pointBox .pointNow { float: left; width: 40%; box-sizing: border-box; padding: 0 20px;}
+.content .card .pointBox .pointHow { float: left; width: 30%; }
+
+.content .card .pointBox .pointInfo > div { height: 155px; 	 }
+.content .card .pointBox .pointInfo .piTitle { text-align: center; color: #222; font-weight: bold; font-size: 18px; padding: 20px 0 10px; }
+.content .card .pointBox .pointInfo .piInput { text-align: center; line-height: 50px;	}
+.content .card .pointBox .pointInfo .piInput .i_coin { display: inline-block;	 width: 55px;	height: 55px; background:url(../../../images/pointCoin.png) no-repeat 0 0; background-size: 55px; }
+.content .card .pointBox .pointInfo .piInput .i_battery { display: inline-block;	 width: 55px;	height: 55px; background:url(../../../images/upPoint.png) no-repeat 0 0; background-size: 55px; }
+.content .card .pointBox .pointInfo .piInput input { width: 50%; border:1px solid #ccc; border-radius: 5px; height: 45px;  position: relative; top: -20px;	margin: 0 10px; text-align: right; box-sizing: border-box; padding: 5px 15px; color: #f5a63d;;}
+.content .card .pointBox .pointInfo .piInput .piP { color: #f5a63d; font-size: 55px; position: relative; top: -7px; left: 5px;}
+.content .card .pointBox .pointInfo .piDesc p { text-align: center; color: #777; font-size: 12px; box-sizing: border-box;padding-left: 30px;}
+
+.content .card .pointBox .pointInfo .piNow .piInput { padding-top: 5px; }
+.content .card .pointBox .pointInfo .piCharge .piTitle { padding-top: 0px; }
+
+.content .card .pointBox .pointNow .pnStats::after { content: ""; display: block; clear: both; }
+.content .card .pointBox .pointNow .pnStats .pn50 { float: left; width: 50%;padding:10px 20px; box-sizing: border-box; }
+.content .card .pointBox .pointNow .pnBox { width: 100%; height: 100%; border:2px solid #ffc107; box-sizing: border-box; }
+.content .card .pointBox .pointNow .pnTitle { text-align: center; color: #222; font-size: 18px; font-weight: bold; padding-top: 10px;}
+.content .card .pointBox .pointNow .pnDesc { text-align: center; }
+.content .card .pointBox .pointNow .pnDesc b { font-size: 55px; display: inline-block; padding-bottom: 10px; font-weight: 400;}
+.content .card .pointBox .pointNow .pnDesc b.c-f5a63d { color: #f5a63d; }
+.content .card .pointBox .pointNow .pnDesc b.c-d64153 { color: #d64153; }
+.content .card .pointBox .pointNow .pnDesc b.c-4874e8 { color: #4874e8; }
+
+.content .card .pointBox .pointNow .pnPrice { box-sizing: border-box; padding: 10px 20px; height: 155px;	 }
+.content .card .pointBox .pointNow .pnPrice .pnInput { padding-bottom: 10px; color: #f5a63d; position: relative; box-sizing: border-box; padding-left: 40px; padding-right: 10px;}
+.content .card .pointBox .pointNow .pnPrice .pnInput i { font-size: 38px; display: inline-block; font-weight: 400; position: absolute;	left: 30px; top: 10px;		}
+.content .card .pointBox .pointNow .pnPrice .pnDesc {  box-sizing: border-box; padding-left: 40px;padding-right: 10px;}
+.content .card .pointBox .pointNow .pnPrice .pnDesc ul { width: 80%; margin: 0 auto; position: relative; }
+.content .card .pointBox .pointNow .pnPrice .pnDesc ul::after { content: ""; display: block; clear: both; }
+.content .card .pointBox .pointNow .pnPrice .pnDesc ul li { float:left; width: 25%; padding-left:5px; }
+.content .card .pointBox .pointNow .pnPrice .pnDesc ul li div { text-align: center; color: #222; font-size: 12px; padding: 3px 0; border:1px solid #ccc; box-sizing: border-box; cursor:pointer;}
+.content .card .pointBox .pointNow .pnPrice .pnDesc ul .reloadBtn { height: 26px; width: 26px; padding: 0; position: absolute; right: -31px;}
+.content .card .pointBox .pointNow .pnPrice .pnDesc ul .reloadBtn div { width: 100%; height: 100%; padding: 0;}
+.content .card .pointBox .pointNow .pnPrice .pnDesc ul .reloadBtn div .i_reload { background: url(../../../images/reload.png) no-repeat 4px 3px; background-size: 18px; width: 26px; height: 26px; display: block;}
+.content .card .pointBox .pointNow .pnPrice input { border:0; border-bottom: 1px solid #ccc; width:80%;	 height: 45px;	display: block;	margin: 0 auto;	 text-align: right; box-sizing: border-box; padding: 5px 15px; color: #f5a63d; font-size: 30px; font-weight: bold;}
+
+
+.content .card .pointBox .pointHow { height: 310px; box-sizing: border-box; padding: 10px 20px; }
+.content .card .pointBox .pointHow .phBox { border:1px solid #ccc; width: 100%;	height: 100%; }
+.content .card .pointBox .pointHow .phTitle { text-align: center; color: #222; font-weight: bold; font-size: 18px; padding: 10px 0; background-color: #f6f6f6; border-bottom: 1px solid #ccc;}
+.content .card .pointBox .pointHow .phBox ul li { height: 43px;	box-sizing:border-box; padding: 0 30px 0 100px; margin:12px 0;}
+.content .card .pointBox .pointHow .phBox ul .ph_1 { background: url(../../../images/card.png) no-repeat 30px 2px; background-size: 40px; }
+.content .card .pointBox .pointHow .phBox ul .ph_2 { background: url(../../../images/iphone.png) no-repeat 35px 2px; background-size: 35px; }
+.content .card .pointBox .pointHow .phBox ul .ph_3 { background: url(../../../images/toss.png) no-repeat 33px 2px; background-size: 35px; }
+.content .card .pointBox .pointHow .phBox ul li div { width: 100%; height: 100%; box-sizing: border-box; border:1px solid #ccc; text-align: center; color: #555;  line-height: 41px; font-size: 14px; font-weight: bold;}
+.content .card .pointBox .pointHow .phBox .phDesc { text-align: center;	 }
+.content .card .pointBox .pointHow .phBox .phDesc p { font-size: 12px; }
+.content .card .pointBox .pointHow .phBox .phDesc p b { display: block;	font-size: 16px; font-weight: 400;}
+
+.content .card .introBox {  margin-bottom: 20px; }
+.content .card .introBox .introTitle { width: 100%;	box-sizing: border-box; padding: 10px 15px; background-color: #f15a24; color: #fff; }
+.content .card .introBox img { width: 100%;	 }
+.content .card .introBox .introDescBox { margin-top: 20px; width: 100%;	 box-sizing: border-box; border:1px solid #f2f2f2;}
+.content .card .introBox .introDescBox .introDescTitle { text-align: center; color: #111; background-color: #f2f2f2; padding: 10px 0; font-size: 14px; font-weight: bold;}
+.content .card .introBox .introDescBox .introDesc p { box-sizing: border-box; padding: 10px 15px; color: #777; font-size: 14px;}
+.content .card .introBox .introDescBox .introDesc p b { display: block; color: #666; padding: 10px 0;}
+
+.content .card .introBox .intro4 .row { margin-bottom: 10px; }
+.content .card .introBox .intro4 .row::after { content:""; display: block; clear: both; }
+.content .card .introBox .intro4 .row .imgArea { width: 60%; float:left; text-align: center;}
+.content .card .introBox .intro4 .row .imgArea img { width: 90%;}
+.content .card .introBox .intro4 .row .descArea { width: 40%;float: right; padding-top: 40px; }
+.content .card .introBox .intro4 .row .descArea .daTitle { width:80%; margin: 0 auto; font-size: 18px; color: #fff; background-color: #f15a24; border-radius: 10px; padding: 8px 0; text-align: center; font-weight: bold;}
+.content .card .introBox .intro4 .row .descArea .daDesc {margin: 0 auto;	width: 75%;	 color: #999; padding-top: 20px; font-size: 14px; font-weight: bold;}
+.content .card .introBox.bgc4874e8 .introTitle { background-color: #4874e8; }
+
+/* ------ //My 결제관리 유료서비스안내 ----- */
+
+/* ------ My 결제관리 포인트 충전내역 ----- */
+.content .pointCharge .tac { text-align: center; }
+.content .pointCharge label { height: 40px; line-height: 40px; font-size: 14px; margin-bottom: 0;}
+.content .pointCharge select { border:1px solid #ccc; border-radius: 5px; height: 40px; line-height: 40px;font-size: 14px; margin:0 5px; width: auto;}
+.content .pointCharge .inputBox { display: inline-block; margin: 0 5px;}
+.content .pointCharge .inputBox::after { content: ""; display: block; clear: both; }
+.content .pointCharge input[type=text] { float: left; border:1px solid #ccc; border-radius: 5px; height: 40px; line-height: 40px; }
+.content .pointCharge .inputBox .addon { float: left; height: 40px; padding: .5rem .75rem; margin-bottom: 0;  font-size: 1rem; font-weight: 400; line-height: 1.25; color: #495057; text-align: center; background-color: #e9ecef; border: 1px solid rgba(0, 0, 0, 0.15); border-radius: .25rem;}
+.content .pointCharge .pcCate1 { float: left; width: 25%; }
+.content .pointCharge .pcCate1 select { width: 50%; }
+.content .pointCharge .pcCate2 { float: left; width: 25%; }
+.content .pointCharge .pcCate2 select { width: 50%; }
+.content .pointCharge .pcCate3 { float: left; width: 50%; text-align: center;}
+.content .pointCharge .pcCate3 .centerBox { display: inline-block; }
+.content .pointCharge .centerBox::after {  content: ""; display: block; clear: both; }
+.content .pointCharge .centerBox > * { float: left; }
+.content .pointCharge .centerBox .betweenBox { height: 40px; line-height: 38px; font-size: 18px; }
+.content .card.pointCharge table td {  padding: 5px 10px; font-size: 14px; height: auto;}
+.content .card.pointCharge table tr td .chk1_y { width: 80px; height: 30px; border-radius: 20px; background-color: #fbb03b; color: #fff; text-align: center; line-height: 30px; display: inline-block;}
+.content .card.pointCharge table tr td .chk1_n { width: 80px; height: 30px; border-radius: 20px; background-color: #dc3545; color: #fff; text-align: center; line-height: 30px; display: inline-block;}
+.content .card.pointCharge table tr td .chk2_y { color: #fbb03b; }
+.content .card.pointCharge table tr td .chk2_n { color: #dc3545; }
+/* ------ //My 결제관리 포인트 충전내역 ----- */
+
+/* ------ My 결제관리 포인트 결제내역 ----- */
+.content .pointPay .tac { text-align: center; }
+.content .pointPay label { height: 40px; line-height: 40px; font-size: 14px; margin-bottom: 0;}
+.content .pointPay select { border:1px solid #ccc; border-radius: 5px; height: 40px; line-height: 40px;font-size: 14px; margin:0 5px;}
+.content .pointPay .inputBox { display: inline-block; margin: 0 5px;}
+.content .pointPay .inputBox::after { content: ""; display: block; clear: both; }
+.content .pointPay input[type=text] { float: left; border:1px solid #ccc; border-radius: 5px; height: 40px; line-height: 40px; width: 100px;}
+.content .pointPay .inputBox .addon { float: left; height: 40px; padding: .5rem .75rem; margin-bottom: 0;  font-size: 1rem; font-weight: 400; line-height: 1.25; color: #495057; text-align: center; background-color: #e9ecef; border: 1px solid rgba(0, 0, 0, 0.15); border-radius: .25rem;}
+.content .pointPay .ppCate1 { float: left; width: 40%; text-align: center; }
+.content .pointPay .ppCate2 { float: left; width: 22%; text-align: center;}
+.content .pointPay .ppCate3 { float: left; width: 22%; text-align: center;}
+.content .pointPay .ppCate4 { float: left; width: 16%; text-align: center;}
+.content .pointPay .centerBox { display: inline-block; }
+.content .pointPay .centerBox::after {  content: ""; display: block; clear: both; }
+.content .pointPay .centerBox > * { float: left; }
+.content .pointPay .centerBox .betweenBox { height: 40px; line-height: 38px; font-size: 18px; }
+
+.content .card.pointPay table td {  padding: 5px 10px; font-size: 14px; height: auto;}
+.content .card.pointPay table .pointValue { color: #4874e8; }
+.content .card.pointPay table .pointValue b { font-weight: 400; }
+.content .card.pointPay table .chk3_y {  width: 80px; height: 30px;  border-radius: 20px; background-color: #4874e8; color: #fff; text-align: center; line-height: 30px; display: inline-block; }
+.content .card.pointPay table .chk3_n {  width: 80px; height: 30px; border-radius: 20px; background-color: #dc3545; color: #fff; text-align: center; line-height: 30px; display: inline-block;}
+.content .card.pointPay table .chk4 {  width: 80px; height: 30px; text-align: center; border-radius: 20px; background-color: #009245; color: #fff; text-align: center; line-height: 30px; display: inline-block; }
+
+/* ------ //My 결제관리 포인트 결제내역 ----- */
+
+
+/* ------- product View (productMore -> productView 변경) 180824 배다빈 추가 ------- */
+.productView {  }
+.productView .contentWrap h3 { background-color: #4874e8; color: #fff; margin-bottom: 30px; text-align: center;	font-size: 18px; padding: 10px 0; font-weight: bold;}
+.productView .proViewTop::after { content:""; display: block; clear: both; }
+.productView .proViewTop .conBoxWrap { width: 40%; min-width: 300px; height: 300px; float: left; }
+.productView .proViewTop .conBoxWrap .conBox { transform: scale(1.2); position: relative; left: 118px; top: 20px; }
+.productView .proViewTop .conBoxWrap .conBox ul { padding-top: 0; overflow: hidden;	 width: 100%;	}
+.productView .proViewTop .conBoxWrap .conBox ul li { width: 100%;	 height: 300px;	 float:left; box-sizing: border-box; padding:10px 200px 105px; }
+.productView .proViewTop .conBox ul.productForm li .proResBox { padding:0 200px 10px; }
+.productView .proViewTop .conIntro { width: 50%;height: 300px; float: left; box-sizing: border-box; } /*의뢰인 수정 가로비율 */
+.productView .proViewTop .conIntro .row::after {content:""; display: block; clear: both;}
+.productView .proViewTop .conIntro .row .question { width: 100px; float: left; text-align: center; line-height: 35px; font-weight: bold; color: #555;}
+.productView .proViewTop .conIntro .row .answer { width: 500px; float: left; color: #777; line-height: 35px;}
+.productView .proViewTop .conIntro .row .downBox { width: 100%;	 }
+.productView .proViewTop .conIntro .row .joinHow {}
+.productView .proViewTop .conIntro .row .joinHow::after {content: ""; display: block; clear: both;}
+.productView .proViewTop .conIntro .row .joinHow > li { float: left; width: 100px; height: 120px; }
+.productView .proViewTop .conIntro .row .joinHow > li > div { width: 100%; height: 100%; text-align: center; font-size: 14px; color: #777;}
+.productView .proViewTop .conIntro .row .joinHow > li > div > span { width: 40px; height: 40px; display: block; margin: 15px auto 10px;}
+.productView .proViewTop .conIntro .row .joinHow > li > div > .i_enter { background: url(../../../images/enter.png) no-repeat 0 0; background-size: 40px; }
+.productView .proViewTop .conIntro .row .joinHow > li > div > .i_visit { background: url(../../../images/visit.png) no-repeat 0 0; background-size: 40px; }
+.productView .proViewTop .conIntro .row .joinHow > li > div > .i_call { background: url(../../../images/call.png) no-repeat 0 0; background-size: 40px; }
+.productView .proViewTop .conIntro .row .joinHow > li > div > .i_app { background: url(../../../images/app.png) no-repeat 0 0; background-size: 40px; }
+.productView .proViewTop .conIntro .row .joinHow > li > div > .i_web { background: url(../../../images/web.png) no-repeat 0 0; background-size: 40px; }
+.productView .proViewTop .conIntro .btnLine {  }
+.productView .proViewTop .conIntro .btnLine::after {content:""; display: block; clear: both;}
+.productView .proViewTop .conIntro .btnLine > div { float: left; padding: 0 5px;}
+.productView .proViewTop .conIntro .btnLine > div button { height: 50px; border:1px solid #ccc; width: 55px; background-color: #fff; cursor: pointer; font-size: 10px; color: #777; padding:0; } /*의뢰인 수정 - 수정내용 폰트사이즈 조정 + 폰트 컬러 조정*/
+.productView .proViewTop .conIntro .btnLine .goCall { width: 300px; height: 50px; background-color: #4874e8; border:0; color: #fff; font-size: 20px; line-height: 48px;}
+.productView .proViewTop .conIntro .btnLine .goCall .i_call { background: url(../../../images/callBtn.png) no-repeat 0 0; width: 25px; height: 25px; background-size: 25px; display: inline-block; position: relative; top: 7px; margin-right:10px;}
+.productView .proViewTop .conIntro .btnLine .goShare .i_share { background: url(../../../images/share.png) no-repeat 2px 4px; width: 25px; height: 28px; background-size: 20px; display: block; margin: 0 auto;}
+.productView .proViewTop .conIntro .btnLine .goLike {  color: #777; font-size: 12px; }
+.productView .proViewTop .conIntro .btnLine .goLike .i_like { background: url(../../../images/like.png) no-repeat 2px 6px; width: 25px; height: 28px; background-size: 20px; display: block; margin: 0 auto; }
+.productView .proViewTop .conIntro .btnLine .goDown .i_down { background: url(../../../images/document.png) no-repeat 2px 6px; width: 25px; height: 28px; background-size: 20px; display: block; margin: 0 auto; }
+.productView .proViewTop .conIntro .btnLine .goReserve .i_reserve { background: url(../../../images/reserveBtn2.png) no-repeat 2px 6px; width: 25px; height: 28px; background-size: 20px; display: block; margin: 0 auto; }
+
+.productView .proViewTop .conStats { clear: both;  border-top: 2px solid #eee; padding-top: 10px;  margin-top: 10px; margin-bottom: 20px;}
+.productView .proViewTop .conStats::after {content: ""; display: block; clear: both;}
+
+.productView .proViewTop .conStats .conGrade { width: 40%; float: left; overflow: hidden; box-sizing: border-box; padding-right: 20px;}
+.productView .proViewTop .conStats .conDate { width: 60%; float: left; }
+.productView .proViewTop .conStats .question { line-height: 35px; font-weight: bold; color: #555; }
+
+.productView .proViewTop .conStats .cGrade { width: 100%; overflow: hidden;}
+.productView .proViewTop .conStats .gradeBox { float: left; width: 40%; height: 140px; text-align: center; font-size: 30px; padding-top: 40px; box-sizing: border-box; position: relative; }
+.productView .proViewTop .conStats .gradeStats { width: 60%; float: left; }
+.productView .proViewTop .conStats .gradeBox .star i { font-size: 40px; color: #4874e8; display: inline-block; margin-right: 10px; }
+
+.productView .proViewTop .conStats .gradeTitle { width: 100%; font-size: 16px; color: #555; text-align: center; font-weight: bold; padding-top: 10px; position: absolute; bottom: 0;}
+.productView .proViewTop .conStats .gradeStats ul { overflow: hidden; }
+.productView .proViewTop .conStats .gradeStats ul li { float: left; width: 20%; height: 140px; position: relative;}
+.productView .proViewTop .conStats .gradeStats ul li .gradeValue { width: 20px; margin: 0 auto; height: 100px; position: relative; }
+.productView .proViewTop .conStats .gradeStats ul li .gradeValue div { position: absolute; width: 100%; bottom: 0; left: 0; background-color: #4874e8;}
+.productView .proViewTop .conStats .gradeStats ul li .gradeValue div.gValue20 { height: 40%; }
+.productView .proViewTop .conStats .gradeStats ul li .gradeValue div.gValue30 { height: 60%; }
+.productView .proViewTop .conStats .gradeStats ul li .gradeValue div.gValue40 { height: 80%; }
+
+.productView .proViewTop .conStats .conDate .conDateBox ul { overflow: hidden; }
+.productView .proViewTop .conStats .conDate .conDateBox ul li { width: 25%; float: left; background-color: #4874e8; text-align: center; color: #fff; font-size: 14px; font-weight: 400; padding-top: 18px; padding-bottom: 28px;}
+.productView .proViewTop .conStats .conDate .conDateBox ul li span { font-size: 45px;  font-weight: bold; display: block;}
+.productView .proViewTop .conStats .conDate .conDateDesc { text-align: center; font-weight: bold;  color: #555; padding: 5px 0;}
+
+.productView .proViewBottom { border-top: 2px solid #eee;  }
+.productView .proViewBottom h4.warning { width: 100%; box-sizing: border-box; border:1px solid #f8585d; background-color: #fff9f9; padding: 10px 20px 12px; color: #f8585d; font-weight: 400;margin-bottom: 50px;} /*의뢰인수정 border사이즈 변경*/
+.productView .proViewBottom h4.warning .i_warning { width: 20px; height: 20px; display: inline-block; background: url(../../../images/warning.png) no-repeat 0 0; background-size: 20px; position: relative; top: 3px; margin-right: 15px; }
+.productView .proViewBottom h4.warning strong { font-weight: bold; display: inline-block;margin-right: 20px; }
+.productView .proViewBottom .proNavi { border-bottom: 1px solid #eee; }
+.productView .proViewBottom .proNavi ul {text-align: center;;}
+.productView .proViewBottom .proNavi ul > li { display: inline-block; text-align: center; padding: 10px 20px;  font-weight: bold; color: #777; cursor: pointer;}
+.productView .proViewBottom .proNavi ul > li.active { color: #4874e8; }
+
+.productView .proViewBottom .proContent::after { content:""; display: block; clear: both; }
+.productView .proViewBottom .proContent .proView { float: left; width:calc( 100% - 320px ); box-sizing: border-box; padding-right: 50px; }
+.productView .proViewBottom .proContent .proAside { float: right;  width: 300px;}
+
+.productView .proViewBottom .proContent section { width: 100%; display: none;}
+.productView .proViewBottom .proContent section.active { display: block; }
+.productView .proViewBottom .proContent section h4 { font-size: 20px; color: #333;}
+.productView .proViewBottom .proContent section > ul { border-top: 1px solid #eee; }
+.productView .proViewBottom .proContent section > ul > li { border-bottom: 1px solid #eee; box-sizing: border-box; padding: 10px 20px; line-height: 30px;}
+.productView .proViewBottom .proContent section > ul > li .question { color: #555; font-weight: bold; }
+.productView .proViewBottom .proContent section > ul > li .answer { font-size: 15px; color: #777; }
+
+.productView .proViewBottom .proContent .proComp h4 { overflow: hidden; }
+.productView .proViewBottom .proContent .proComp h4 .snsBox { float: right; }
+.productView .proViewBottom .proContent .proComp h4 .snsBox ul { border:0; overflow: hidden;}
+.productView .proViewBottom .proContent .proComp h4 .snsBox ul li { border:0; float: left; padding: 0 5px; }
+.productView .proViewBottom .proContent .proComp h4 .snsBox .i_facebook { background: url(../../../images/facebook.png) no-repeat 0 0; background-size: 30px; display: block; margin: 0 auto; width: 30px;height: 30px; }
+.productView .proViewBottom .proContent .proComp h4 .snsBox .i_blog { background: url(../../../images/blog.png) no-repeat 0 0; background-size: 30px; display: block; margin: 0 auto; width: 30px;height: 30px; }
+.productView .proViewBottom .proContent .proComp h4 .snsBox .i_kakaotalk { background: url(../../../images/kakaotalk.png) no-repeat 0 0; background-size: 30px; display: block; margin: 0 auto; width: 30px;height: 30px; }
+.productView .proViewBottom .proContent .proComp h4 .snsBox .i_kakaostory { background: url(../../../images/kakaostory.png) no-repeat 0 0; background-size: 30px; display: block; margin: 0 auto; width: 30px;height: 30px; }
+.productView .proViewBottom .proContent .proComp h4 .snsBox .i_twitter { background: url(../../../images/twitter.png) no-repeat 0 0; background-size: 30px; display: block; margin: 0 auto; width: 30px;height: 30px; }
+.productView .proViewBottom .proContent .proComp h4 .snsBox .i_band { background: url(../../../images/band.png) no-repeat 0 0; background-size: 30px; display: block; margin: 0 auto; width: 30px;height: 30px; }
+.productView .proViewBottom .proContent .proComp h4 .snsBox .i_youtube { background: url(../../../images/youtube.png) no-repeat 0 0; background-size: 30px; display: block; margin: 0 auto; width: 30px;height: 30px; }
+.productView .proViewBottom .proContent .proComp h4 .snsBox .i_instagram { background: url(../../../images/instagram.png) no-repeat 0 0; background-size: 30px; display: block; margin: 0 auto; width: 30px;height: 30px; }
+.productView .proViewBottom .proContent .proComp > ul {  }
+.productView .proViewBottom .proContent .proComp .comGrade {overflow: hidden;}
+.productView .proViewBottom .proContent .proComp .gradeBox { float: left; width: 40%; height: 140px; text-align: center; font-size: 40px; padding-top: 40px; box-sizing: border-box; position: relative;}
+.productView .proViewBottom .proContent .proComp .gradeStats { float: left; width: 60%; }
+.productView .proViewBottom .proContent .proComp .gradeBox .star i { font-size: 40px; color: #4874e8; display: inline-block; margin-right: 10px; }
+.productView .proViewBottom .proContent .proComp .gradeTitle { width: 100%; font-size: 16px; color: #555; text-align: center; font-weight: bold; padding-top: 10px; position: absolute; bottom: 0;}
+.productView .proViewBottom .proContent .proComp .gradeStats ul { overflow: hidden; }
+.productView .proViewBottom .proContent .proComp .gradeStats ul li { float: left; width: 20%; height: 140px; position: relative;}
+.productView .proViewBottom .proContent .proComp .gradeStats ul li .gradeValue { width: 20px; margin: 0 auto; height: 100px; position: relative; }
+.productView .proViewBottom .proContent .proComp .gradeStats ul li .gradeValue div { position: absolute; width: 100%; bottom: 0; left: 0; background-color: #4874e8;}
+.productView .proViewBottom .proContent .proComp .gradeStats ul li .gradeValue div.gValue20 { height: 40%; }
+.productView .proViewBottom .proContent .proComp .gradeStats ul li .gradeValue div.gValue30 { height: 60%; }
+.productView .proViewBottom .proContent .proComp .gradeStats ul li .gradeValue div.gValue40 { height: 80%; }
+.productView .proViewBottom .proContent .proComp .profileWrap { position: relative; }
+.productView .proViewBottom .proContent .proComp .profileWrap .profile { position: absolute; right: 0; top: 10px; width: 200px; height: 100%; box-sizing: border-box; padding: 10px;}
+.productView .proViewBottom .proContent .proComp .profileWrap .profile img {width: 100%;}
+.productView .proViewBottom .proContent .proComp > ul > li > ul > li {font-size: 14px; color: #777;}
+
+.productView .proViewBottom .proContent .proComp .companyMap { width: 100%; height: 400px; background-color: #ddd; }
+.productView .proViewBottom .proContent .proComp .reviewBox ul { box-sizing: border-box; padding: 20px 0; }
+.productView .proViewBottom .proContent .proComp .reviewBox ul li {width: 100%; height: 200px; border:1px solid #ddd; overflow: hidden; box-sizing: border-box; padding: 10px 20px;}
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .rGender { float: left; width: 100px; height: 100px; }
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .gFemale {  background: url(../../../images/female.png) no-repeat 0 0; background-size: 100px; }
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .gMale {  background: url(../../../images/male.png) no-repeat 0 0; background-size: 100px; }
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .rGrade { padding-top: 10px; padding-left: 20px; float: left; width: calc( 100% - 50px ); padding-bottom: 10px;}
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .rGrade i {font-size: 20px; color: #ffc100; display: inline-block; margin-right:10px;}
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .rName { font-size: 24px; font-weight: bold; color: #222; padding-left: 20px; float: left;}
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .rDate { font-size:
+	14px; color: #777; float: left; line-height: 38px;}
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .rDate::after { content:"|"; display: inline-block; margin:0 5px; }
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .rDate::before { content: "|"; display: inline-block; margin: 0 5px; }
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .rReport { float: left; color: #777; font-size: 14px; line-height: 38px; cursor: pointer;}
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .rDesc { clear: both; }
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .rDesc p { box-sizing: border-box; width: 100%; height: 100%; padding: 20px 10px; color: #555; }
+
+.productView .proViewBottom .proContent .proCalc ul > li { overflow: hidden; }
+.productView .proViewBottom .proContent .proCalc ul > li.p30 { padding-top: 30px; padding-bottom: 30px; }
+.productView .proViewBottom .proContent .proCalc ul > li .calcTitle { float: left; width: 15%; text-align: center; font-weight: bold; color: #777; font-size: 14px;}
+.productView .proViewBottom .proContent .proCalc ul > li .calcInput { float:left; width: 85%; }
+.productView .proViewBottom .proContent .proCalc ul > li .calcInput .inputBox {overflow: hidden;}
+.productView .proViewBottom .proContent .proCalc ul > li .calcInput input { float: left;width: 90%; border:1px solid #ddd; height: 40px; box-sizing: border-box; padding: 5px 10px;} /*의뢰인수정 border 사이즈 변경 */
+.productView .proViewBottom .proContent .proCalc ul > li .calcInput .addon { float: left; width: 10%; background-color: #eee; height: 40px; box-sizing: border-box; text-align: center; color: #777; line-height: 38px;}
+.productView .proViewBottom .proContent .proCalc ul > li .calcInput ul { width: 90%; overflow: hidden; padding-left: 40px; margin-left: -40px;}
+.productView .proViewBottom .proContent .proCalc ul > li .calcInput ul li { width: 25%; height: 60px;  float: left; box-sizing: border-box; padding: 10px 10px 10px 0; }
+.productView .proViewBottom .proContent .proCalc ul > li .calcInput ul li div { width: 100%; height: 100%; border:1px solid #ddd; text-align: center; color: #999; line-height: 40px; transition: all .5s; cursor:pointer;} /*의뢰인수정 border 사이즈 변경 */
+.productView .proViewBottom .proContent .proCalc ul > li .calcInput ul li div:hover { background-color: #4874e8; color: #fff; }
+.productView .proViewBottom .proContent .proCalc ul > li .btnBox { clear:both; text-align: right; padding-top: 15px; }
+.productView .proViewBottom .proContent .proCalc ul > li .btnBox button { width: 120px; height: 40px; border:0; font-size: 15px; margin-left: 5px; cursor: pointer;}
+.productView .proViewBottom .proContent .proCalc ul > li .btnBox .resetBtn { background-color: #eee; color: #777;}
+
+.productView .proViewBottom .proContent .proCalc ul > li .btnBox .calcBtn { background-color: #4874e8; color: #fff; }
+
+.productView .proViewBottom .proContent .proNoti p { font-size: 14px; line-height: 20px; color: #777; }
+
+.productView .proViewBottom .proAside .asideTitle { text-align: center;  font-weight: bold; font-size: 18px; padding: 20px 0; }
+.productView .proViewBottom .proAside .asideBox { box-sizing: border-box; border:1px solid #eee; }
+.productView .proViewBottom .proAside .asideBox .conBox { height: 800px; overflow-x:hidden; overflow-y: scroll; -webkit-overflow-scrolling: touch; } /*의뢰인 변경   height 사이즈 조절 */
+.productView .proViewBottom .proAside .asideBox .conBox ul { padding-top: 0; }
+.productView .proViewBottom .proAside .asideBox .conBox ul li { height: 300px; padding: 10px 5px 105px; width: 50%;	float:left; }
+.productView .proViewBottom .proAside .asideBox .conBox ul.productForm li .proResBox { padding: 0 5px 10px; }
+.productView .proViewBottom .proAside .asideCall {}
+.productView .proViewBottom .proAside .asideCall button { width: 100%; height: 50px; line-height: 48px; background-color: #4874e8; color: #fff; border:0; cursor: pointer; font-size: 20px;} /*의뢰인 변경     font-size: 20px; */
+.productView .proViewBottom .proAside .asideCall button .i_call {     background: url(../../../images/callBtn.png) no-repeat 0 0; width: 25px; height: 25px; background-size: 25px; display: inline-block; position: relative; top: 7px; margin-right: 10px; } /*의뢰인 변경 - 이미지 크기 변경*/
+.productView .proViewBottom .proAside .asideReport { height: 160px; padding-top: 0px; } /* 의뢰인 수정 - padding 값 조정 */
+.productView .proViewBottom .proAside .asideReport .reportBox { width: 100%; height: 100%;  box-sizing: border-box; border:1px solid #ddd; background-color: #f8f8f8; padding: 10px 20px;}
+.productView .proViewBottom .proAside .asideReport .reportBox p { font-size: 14px;  margin-bottom: 	0;}
+.productView .proViewBottom .proAside .asideReport .reportBox p b { display: block; }
+.productView .proViewBottom .proAside .asideReport .reportBox .reportBtn { width: 100%; height: 40px; border:0; color: #fff; background-color: #999; cursor: pointer; font-size: 18px;}
+
+
+/* 의뢰인 수정 - 배너광고 */
+.productView .proViewBottom .proAside .asideBanner { padding-top: 0px; text-align: center; }
+.productView .proViewBottom .proAside .asideBanner img { width: 100%;	 }
+.productView .proViewBottom .proAside .asideBanner .bannertBox { width: 100%; height: 100%;  box-sizing: border-box; border:1px solid #ddd; background-color: #f8f8f8; padding: 10px 20px;}
+.productView .proViewBottom .proAside .asideBanner .bannertBox p { font-size: 14px; padding-bottom: 15px; }
+.productView .proViewBottom .proAside .asideBanner .bannertBox p b { display: block; margin-bottom: 15px; }
+.productView .proViewBottom .proAside .asideBanner .bannertBox .bannertBtn { width: 100%; height: 40px; border:0; color: #fff; background-color: #999; cursor: pointer; font-size: 18px;}
+
+/* productView.html 반응형 작업 180828 배다빈 추가 */
+.productView .proViewTop { overflow: hidden; }
+.productView .proViewTop .conBoxWrap { width: 100%; height: 300px; float: none; }
+.productView .proViewTop .conBoxWrap .conBox { transform: scale(1); left: 0; top: 0; }
+.productView .proViewTop .conIntro { width: 100%; height: auto; float: none; }
+.productView .proViewTop .conIntro .row { margin-top: 10px; margin:10px 0 0;	}
+.productView .proViewTop .conIntro .row .question { text-align: left; padding-left: 10px; }
+.productView .proViewTop .conIntro .row .answer { width: 100%; font-size: 14px; line-height: 20px;}
+.productView .proViewTop .conIntro .row .joinHow { padding-bottom: 20px; }
+.productView .proViewTop .conIntro .row .joinHow > li { width: 20%; height: 100px;}
+.productView .proViewTop .conIntro .row .joinHow > li > div { font-size: 12px; }
+
+.productView .proViewTop .conIntro .btnLine { overflow: hidden; }
+.productView .proViewTop .conIntro .btnLine > div { float: left; width: 20%; box-sizing: border-box; padding: 0 2px;}
+.productView .proViewTop .conIntro .btnLine > div button { width: 100%; }
+.productView .proViewTop .conIntro .btnLine .goCall { width: 100%; font-size: 10px; line-height: 15px;}
+.productView .proViewTop .conIntro .btnLine .goCall .i_call { display: block; background-size: 22px; top: 0; margin: 6px auto 0; }
+
+.productView .proViewTop .conStats { }
+.productView .proViewTop .conStats .conGrade { float:none; width: 100%; padding-right: 0; padding-bottom: 20px;}
+.productView .proViewTop .conStats .gradeBox { font-size: 30px; }
+.productView .proViewTop .conStats .gradeBox .star i { font-size: 30px; }
+.productView .proViewTop .conStats .gradeTitle { font-size: 14px; }
+.productView .proViewTop .conStats .conDate { float: none; width: 100%; }
+.productView .proViewTop .conStats .question { font-size: 14px; }
+.productView .proViewTop .conStats .conDate .conDateBox ul li { font-size: 12px; }
+.productView .proViewTop .conStats .conDate .conDateBox ul li span { font-size: 30px; }
+.productView .proViewTop .conStats .conDate .conDateDesc { font-size: 14px; }
+
+
+.productView .proViewBottom h4.warning { font-size: 12px; text-align: left; padding: 5px 10px 10px;}
+.productView .proViewBottom h4.warning strong { margin-right:5px;}
+.productView .proViewBottom h4.warning .i_warning { margin-right: 5px; }
+
+.productView .proViewBottom .proNavi { overflow: hidden; height: 40px;}
+.productView .proViewBottom .proNavi ul { overflow-x: auto; overflow-y: hidden;}
+.productView .proViewBottom .proNavi ul > li { font-size: 14px; padding: 10px 5px; }
+
+.productView .proViewBottom .proContent .proView { float: none; width: 100%; padding-right: 0; }
+.productView .proViewBottom .proContent .proComp h4 { font-size: 15px; }
+.productView .proViewBottom .proContent .proComp h4 .snsBox ul li { padding: 0 5px; }
+
+.productView .proViewBottom .proContent .proComp h4 .snsBox span.i_sns { background-size: 25px; width: 25px;height: 25px; }
+
+.productView .proViewBottom .proContent section h4 { font-size: 15px; font-weight: bold; padding: 10px 0;}
+.productView .proViewBottom .proContent section > ul > li { padding: 10px 0px; }
+
+.productView .proViewBottom .proContent .proComp .gradeBox { font-size: 25px; }
+.productView .proViewBottom .proContent .proComp .gradeBox .star i { font-size: 25px; }
+.productView .proViewBottom .proContent .proComp .gradeTitle { font-size: 14px; }
+.productView .proViewBottom .proContent .proComp .profileWrap .profile { width: 100px; }
+.productView .proViewBottom .proContent .proComp > ul > li > ul > li { font-size: 12px; }
+.productView .proViewBottom .proContent .proComp .companyMap { height: 300px; }
+.productView .proViewBottom .proContent .proComp .reviewBox ul li { padding: 10px; }
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .rGender { width: 50px; height: 50px; background-size: 50px; margin-top: 5px;}
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .rGrade { padding-top: 0; padding-bottom: 0; padding-left: 10px;}
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .rGrade i { font-size: 14px; }
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .rName { font-size: 18px; padding-left: 10px; }
+.productView .proViewBottom .proContent .proComp .reviewBox ul li .rDesc p { padding: 10px 10px; }
+.productView .proViewBottom .proContent section > ul > li .question { font-size: 14px; }
+.productView .proViewBottom .proContent section > ul > li .answer { font-size: 13px; line-height: 22px;}
+
+.productView .proViewBottom .proContent .proCalc ul > li .calcTitle { float: none;  width: 200px; text-align: left; box-sizing: border-box; padding-left: 5px;}
+.productView .proViewBottom .proContent .proCalc ul > li .calcInput { float: none; width: 100%; }
+.productView .proViewBottom .proContent .proCalc ul > li .calcInput input {width: 80%;}
+.productView .proViewBottom .proContent .proCalc ul > li .calcInput .addon { width: 20%; }
+.productView .proViewBottom .proContent .proCalc ul > li .calcInput ul { width: 100%; }
+.productView .proViewBottom .proContent .proCalc ul > li .calcInput ul li { padding-right: 0; }
+.productView .proViewBottom .proContent .proCalc ul > li .calcInput ul li div { border-right: 0;box-sizing: border-box; font-size: 14px;}
+.productView .proViewBottom .proContent .proCalc ul > li .calcInput ul li.br1 div { border-right: 1px solid #ddd; }
+.productView .proViewBottom .proContent .proCalc ul > li .btnBox { text-align: center; }
+
+.productView .proViewBottom .proContent .proAside { width: 100%; float: none; }
+.productView .proViewBottom .proAside .asideTitle { font-size: 15px; padding: 10px 0; }
+.productView .proViewBottom .proAside .asideBox { border-left: 0; border-right: 0; }
+
+.productScrollWrap { height: 1725px;	overflow-y: scroll; }
+
+/* ---------- loanresult.html 반응형 작업 180830 배다빈 추가 ---------- */
+.productView .loanResultTop .conTotal { width: 100%; float: none; margin-top: 20px; height: 180px;}
+.productView .loanResultTop .conTotal .totalTitle { font-size: 18px; padding-top: 10px;}
+.productView .loanResultTop .conTotal b { font-size: 60px; }
+.productView .loanResultTop .conTotal .totalDesc { font-size: 14px; }
+
+.productView .loanResultTop .conBoxWrap { padding: 0; height: auto; }
+.productView .loanResultTop .conBoxWrap .con50 { width: 100%; float:none; }
+.productView .loanResultTop .conBoxWrap > .loading9 { width: 100%; float: none; padding-top: 20px;}
+.productView .loanResultTop .conBoxWrap > .loading9 .loadingBox { transform: rotate(90deg);  margin: 0 auto; width: 130px; height: 100px; line-height: 100px;}
+.productView .loanResultTop .conBoxWrap > .loading9 i { margin-top: 0; width: 15px; height: 15px;}
+.productView .loanResultTop .conBoxWrap .conBox { left: 0; width: 100%;  }
+.productView .loanResultTop .conBoxWrap .conBox ul { text-align: center; }
+.productView .loanResultTop .conBoxWrap .conBox ul li { display: inline-block; float: none;}
+.productView .loanResultTop .conBoxWrap .conBox ul li .custom { width: 100%; }
+.productView .loanResultTop .conBoxWrap .conBox ul li .custom .cDesc { float: none; width: 100%; clear: both; position: absolute; top: 43px; padding-left: 50px; box-sizing: border-box;}
+.productView .loanResultTop .conBoxWrap .conBox ul li .custom .cDesc .cLimit { float:none; display: inline-block; }
+.productView .loanResultTop .conBoxWrap .conBox ul li .custom .cDesc .cCate {float: none; display: inline-block; position: relative; top: 5px;}
+/* ---------- //loanresult.html 반응형 작업 180830 배다빈 추가 ---------- */
+
+
+.content .card .rGrade { font-weight: bold; text-align: center; font-size: 18px; }
+.content .card .rGrade .star { width: 50px; height: 50px; display: block; margin: 30px auto 20px; background:url(../../../images/star2.png) no-repeat 0 0; background-size: 50px; }
+
+/* ---------- product_new 뱃지 선택 추가 180907 배다빈 추가 ------------ */
+.content .card .badgeSelect .search .contentWrap { width: auto; padding-bottom: 0;	}
+.content .card .badgeSelect { overflow: hidden; position: relative;}
+.content .card .badgeSelect > ul { width:601%; overflow: hidden; min-height: 100px; padding-top: 10px;}
+.content .card .badgeSelect > ul > li {  float: left;}
+.content .card .badgeSelect .proViewTop{ margin: 0 auto; width:280px; }
+.content .card .badgeSelect .badgeInfo { margin: 0 auto; width: 280px;}
+.content .card .badgeInfo { background-color: #f0f0f0; }
+.content .card .badgeInfo::after { content: ""; display: block; clear: both; }
+.content .card .badgeInfo > div { float:left; }
+.content .card .badgeInfo .badgeImg { width: 60px; height: 60px;background-color: #fff; margin:10px;}
+.content .card .badgeInfo .badgeIntro { width: 200px; }
+.content .card .badgeInfo .badgeIntro p { padding: 10px 20px; font-size: 12px; margin: 0; line-height: 20px;		}
+.content .card .badgeInfo .badgeIntro p b { display: block; font-size: 14px;}
+.content .card .badgeInfo.badge_0 { width: 300px; }
+.content .card .badgeInfo.badge_0 .badgeIntro { width: 220px; }
+.content .card .badgeInfo.badge_0 .badgeIntro p { padding: 10px 5px; line-height: 15px;}
+.content .card .badgeInfo.badge_0 .badgeIntro p b { padding-bottom: 4px; }
+.content .card .badgeInfo.badge_0 .badgeIntro p span { font-size: 11px; padding-top: 2px;}
+.content .card .badgeInfo.badge_1 .badgeIntro p b { display: block; color: #e52027;}
+.content .card .badgeInfo.badge_2 .badgeIntro p b { display: block; color: #5694ff;}
+.content .card .badgeInfo.badge_3 .badgeIntro p b { display: block; color: #fdab3c;}
+.content .card .badgeInfo.badge_4 .badgeIntro p b { display: block; color: #5a5a5a;}
+.content .card .badgeInfo.badge_5 .badgeIntro p b { display: block; color: #5f5f5f;}
+.content .card .badgeInfo.badge_6 .badgeIntro p b { display: block; color: #e52027;}
+.content .card .badgeInfo.badge_6 { width: 70%; }
+.content .card .badgeInfo.badge_6 .badgeIntro { width:calc( 100% - 80px );}
+.content .card .badgeInfo.badge_1 .badgeImg { background: url(../../../images/badge1.png) no-repeat 0 0; background-size: 60px; background-color: #fff;}
+.content .card .badgeInfo.badge_2 .badgeImg { background: url(../../../images/badge2.png) no-repeat 0 0; background-size: 60px; background-color: #fff;}
+.content .card .badgeInfo.badge_3 .badgeImg { background: url(../../../images/badge3.png) no-repeat 0 0; background-size: 60px; background-color: #fff;}
+.content .card .badgeInfo.badge_4 .badgeImg { background: url(../../../images/badge4.png) no-repeat 0 0; background-size: 60px; background-color: #fff;}
+.content .card .badgeInfo.badge_5 .badgeImg { background: url(../../../images/badge5.png) no-repeat 0 0; background-size: 60px; background-color: #fff;}
+.content .card .badgeInfo.badge_6 .badgeImg { background: url(../../../images/badge6.png) no-repeat 10px 10px; background-size: 60px; background-color: #fff;}
+
+.content .card .badgeSelect .leftBtn { position: absolute; width: 50px; height: 50px; left: 0; top: 23%; background: url(../../../images/left.png) no-repeat 0 0; background-size: 49px; opacity: .2; cursor: pointer; display: block;}
+.content .card .badgeSelect .rightBtn { position: absolute; width: 50px; height: 50px; right: 0; top: 23%; background: url(../../../images/right.png) no-repeat 0 0; background-size: 49px; opacity: .2; cursor: pointer; display: block;}
+
+.content .card .badgeDesc {  }
+.content .card .badgeDesc p { box-sizing: border-box; padding: 10px 15px;  color: #5874e8; border:2px solid #5874e8; font-size: 12px; line-height: 18px; background-color: #d9eaf9; font-weight: bold;}
+.content .card .badgeDesc p strong { display: block; font-weight: bold;font-size: 16px; margin-bottom: 5px;}
+
+/* ---------- //product_new 뱃지 선택 추가 180907 배다빈 추가 ------------ */
+
+
+/* ---------- My 상담/후기관리 My 상담리스트 180910 배다빈 추가 ---------- */
+
+.content .counsel .tac { text-align: center; }
+.content .counsel label { height: 40px; line-height: 40px; font-size: 14px; margin-bottom: 0;}
+.content .counsel select { border:1px solid #ccc; border-radius: 5px; height: 40px; line-height: 40px;font-size: 14px; margin:0 5px;}
+.content .counsel .inputBox { display: inline-block; margin: 0 5px;}
+.content .counsel .inputBox::after { content: ""; display: block; clear: both; }
+.content .counsel input[type=text] { float: left; border:1px solid #ccc; border-radius: 5px; height: 40px; line-height: 40px; width: 100px;}
+.content .counsel .inputBox .addon { float: left; height: 40px; padding: .5rem .75rem; margin-bottom: 0;  font-size: 1rem; font-weight: 400; line-height: 1.25; color: #495057; text-align: center; background-color: #e9ecef; border: 1px solid rgba(0, 0, 0, 0.15); border-radius: .25rem;}
+.content .counsel .rcCateBox { text-align: center; }
+.content .counsel .rcCateBox::after {content: ""; display: block; clear: both;}
+.content .counsel .rcCate1 { display: inline-block; text-align: center; }
+.content .counsel .rcCate2 { display: inline-block; text-align: center;}
+.content .counsel .rcCate3 { display: inline-block; text-align: center;}
+.content .counsel .rcCate4 { display: inline-block; text-align: center;}
+.content .counsel .rcCate5 { display: inline-block; text-align: center;}
+.content .counsel .rcCate6 { display: inline-block; text-align: center;}
+.content .counsel .centerBox { display: inline-block; }
+.content .counsel .centerBox::after {  content: ""; display: block; clear: both; }
+.content .counsel .centerBox > * { float: left; }
+.content .counsel .centerBox .betweenBox { height: 40px; line-height: 38px; font-size: 18px; }
+
+.content .card.counsel table { margin-top: 20px; }
+.content .card.counsel table td {  padding: 5px 10px; font-size: 14px; height: auto;}
+.content .card.counsel table td span { color: #4874e8; }
+.content .card.counsel table .counsel_1 {  width: 80px; height: 30px;  border-radius: 5px; background-color: #f5a63d; color: #fff; text-align: center; line-height: 30px; display: inline-block; font-size: 12px;}
+.content .card.counsel table .counsel_2 {  width: 80px; height: 30px; border-radius: 5px; background-color: #009245; color: #fff; text-align: center; line-height: 30px; display: inline-block; font-size: 12px;}
+/* ---------- //My 상담/후기관리 My 상담리스트 180910 배다빈 추가 ---------- */
+
+
+
+
+@media only screen and (max-width: 1810px) {
+    /* ------ My 견적상품 My 견적 만들기 ----- */
+    .content .card .list .contentWrap table { width: 100%; float: none; }
+    .content .card .list .contentWrap table tr { width: 70%; }
+    .content .card .listView .listTabBox .conBox ul li { width: 100%; }
+    .productView .proViewTop .conBoxWrap .conBox ul li { padding:10px 100px 105px; }
+    .productView .proViewTop .conBox ul.productForm li .proResBox { padding:0 100px 10px; }
+
+}
+
+@media only screen and (min-width:1280px) and (max-width: 1500px) {
+	/* ------ My 결제관리 common ----- */
+	.content .card .pointBox .pointNow { padding: 0; }
+	.content .card .pointBox .pointHow { padding: 10px 5px 15px 0;  }
+	.content .card .pointBox .pointInfo .piDesc p { line-height: 15px; }
+	.content .card .pointBox .pointInfo .piInput { line-height: 45px; }
+	.content .card .pointBox .pointInfo .piTitle { font-size: 16px; padding-left: 30px; }
+	.content .card .pointBox .pointInfo .piCharge .piTitle { font-size: 16px; padding-left: 30px;}
+	.content .card .pointBox .pointNow .pnTitle { font-size: 14px; }
+	.content .card .pointBox .pointNow .pnPrice .pnInput { padding-left: 0; padding-right: 10px; }
+	.content .card .pointBox .pointNow .pnPrice .pnDesc { padding-left: 0; padding-right: 10px;}
+	.content .card .pointBox .pointNow .pnPrice .pnInput i { top: 5px; }
+	.content .card .pointBox .pointHow .phTitle { font-size: 14px; }
+	.content .card .pointBox .pointHow .phBox .phDesc p { font-size: 11px; line-height: 17px;}
+	.content .card .pointBox .pointHow .phBox .phDesc p b { font-size: 14px; }
+	/* ------ //My 결제관리 common ----- */
+
+	/* ------ My 결제관리 포인트 충전내역 ----- */
+	.content .pointCharge input[type=text] { width: 100px; }
+	/* ------ //My 결제관리 포인트 충전내역 ----- */
+
+	/* ------ My 결제관리 포인트 결제내역 ----- */
+	.content .pointPay .ppCate1 { padding: 0 5px; }
+	.content .pointPay .ppCate2 { padding: 0 10px; }
+	.content .pointPay .ppCate3 { padding: 0 10px; }
+	.content .pointPay .ppCate4 { padding: 0 10px; }
+	.content .pointPay .ppCate1 .centerBox > .inputBox { width: 46%; margin: 0;}
+	.content .pointPay .ppCate1 .centerBox > .inputBox input { width: 80%; }
+	.content .pointPay .ppCate1 .centerBox > .inputBox .addon { width: 20%; padding: .5rem .5rem;}
+	.content .pointPay .ppCate2 select { width: 100%; margin: 0; }
+	.content .pointPay .ppCate3 .inputBox {  width: 100%; float: none; margin: 0;}
+	.content .pointPay .ppCate3 .inputBox input { width: 80%; }
+	.content .pointPay .ppCate3 .inputBox .addon { width: 20%; padding: .5rem .5rem; }
+	.content .pointPay .ppCate4 select { width: 100%; margin: 0; }
+
+	.content .pointPay .centerBox > .betweenBox { width: 8%; }
+	.content .pointPay label { display: block; float: none; width: 100%;}
+	.content .pointPay select { font-size: 13px; }
+	/* ------ //My 결제관리 포인트 결제내역 ----- */
+
+	.productView .proViewTop .conBoxWrap .conBox ul li { padding:10px 50px 105px; }
+	.productView .proViewTop .conBox ul.productForm li .proResBox { padding:0 50px 10px; }
+	.productView .proViewBottom .proAside .asideBox .conBox ul li { width: 100%; float: none; padding: 10px 20px 105px;  }
+	.productView .proViewBottom .proAside .asideBox .conBox ul.productForm li .proResBox { padding: 0 20px 10px; }
+
+	/* ------ My 상담리스트 ------ */
+	.content .counsel .rcCate1 { float: left; display: block; width: 30%; }
+	.content .counsel .rcCate2 { float: left; display: block; width: 70%;}
+	.content .counsel .rcCate3 { float: left; display: block; width: 25%;}
+	.content .counsel .rcCate4 { float: left; display: block; width: 25%;}
+	.content .counsel .rcCate5 { float: left; display: block; top: 0; width: 25%;}
+	.content .counsel .rcCate6 { float: left; display: block; width: 25%;}
+	/* ------ //My 상담리스트 ------ */
+}
+
+@media only screen and (min-width: 1024px) and ( max-width: 1280px){
+
+    /* ------ My 금융상품 My 상품만들기 ----- */
+    .content .card .btnArea .addBtn {  margin-right: 5px;}
+
+    .productView .proViewTop .conBoxWrap .conBox ul li { padding:10px 15px 105px; }
+    .productView .proViewTop .conBox { width: 100%;	margin: 0;	 }
+    .productView .proViewTop .conBox ul.productForm li .proResBox { padding:0 15px 10px; }
+    .productView .proViewBottom .proAside .asideBox .conBox ul li { width: 100%; float: none; padding: 10px 10px 105px; }
+    .productView .proViewBottom .proAside .asideBox .conBox ul.productForm li .proResBox { padding: 0 10px 10px; }
+
+    /* ------ My 금융상품 My 상품리스트 ----- */
+    .content .table th { font-size: 12px; }
+    .content .card .alignBox .tableAlign {font-size: 12px;}
+
+    .content .card-body .form-group.btnArea button.reset { width: 90px; margin: 0;}
+    .content .card-body .form-group.btnArea button.save { width: 90px; }
+    .content .card-body .form-group.btnArea button.delete { width: 90px; margin: 0;}
+    /* ------ //My 금융상품 My 상품리스트 ----- */
+
+    /* ------ My 견적상품 My 견적 만들기 ----- */
+    .content .card .list .contentWrap table { width: 100%; float: none; }
+    .content .card .list .contentWrap table tr { width: 100%; padding: 30px 0 5px;}
+
+    .content .card .listView .listTab ul li { padding: 0; width: 33.3333%; margin-bottom: 0;}
+    .content .card .listView .listTabBox .ltContent2 .ltCalc .calcWrap .calcBox .calcDesc { width: 100%;  }
+    .content .card .listView .listTabBox .ltContent2 .ltCalc .calcWrap .calcBox .calcDesc > div:first-child { width: 80%; }
+    .content .card .listView .listTabBox .ltContent2 .ltCalc .calcWrap .calcBox .calcDesc > div:last-child { width: 20%; }
+    .content .card .listView .listTabBox .ltCalc .calcWrap .calcBox .calcDesc .cTop { width: 100%; font-size: 12px; }
+    .content .card .listView .listTabBox .ltCalc .calcWrap .calcBox .calcDesc .cBottom { font-size: 12px; }
+    /* ------ //My 견적상품 My 견적 만들기 ----- */
+
+	/* ------ My 견적상품 My 견적 리스트 ----- */
+	.content .card .search .contentWrap .autoChart > div { width: 50%; }
+
+    /* ------ //My 견적상품 My 견적 리스트 ----- */
+
+    /* ------ My 후기관리 My 후기리스트 ----- */
+    .content .card .table td .revDesc { font-size: 14px; }
+    /* ------ //My 후기관리 My 후기리스트 ----- */
+
+    /* ------ My 결제관리 common ----- */
+    .content .card .pIntroTitle strong { font-size: 27px; }
+    .content .card .pIntroTitle { font-size: 14px; }
+    .content .card .pointBox .pointInfo { width: 50%; }
+    .content .card .pointBox .pointNow { width: 50%; padding: 0;}
+    .content .card .pointBox .pointNow .pnPrice .pnInput { padding-left: 0; padding-right: 10px;}
+    .content .card .pointBox .pointNow .pnPrice .pnInput i { top: 5px; }
+	.content .card .pointBox .pointNow .pnPrice .pnDesc { padding-left: 0; padding-right: 10px;}
+    .content .card .pointBox .pointHow { width: 80%; float:none;margin: 0 auto; clear: both; }
+    /* ------ //My 결제관리 common ----- */
+
+    /* ------ My 결제관리 유료서비스안내 ----- */
+    .content .card .introBox .introTitle { font-size: 15px; }
+    .content .card .introBox .intro4 .row { border-bottom: 1px solid #eee; padding-bottom: 20px;}
+    .content .card .introBox .intro4 .row:last-child { border-bottom:0; }
+    .content .card .introBox .intro4 .row .descArea .daTitle { font-size: 15px; }
+    .content .card .introBox .intro4 .row .imgArea { width: 100%; float: none; }
+    .content .card .introBox .intro4 .row .descArea { width: 100%; float: none; padding-top: 0px;}
+    /* ------ //My 결제관리 유료서비스안내 ----- */
+
+    /* ------ My 결제관리 포인트 충전내역 ----- */
+    .content .pointCharge .pcCate1 { width: 22%; }
+    .content .pointCharge .pcCate2 { width: 30%; }
+    .content .pointCharge .pcCate3 { width: 48%; }
+    .content .pointCharge label { font-size: 13px; }
+    .content .pointCharge select { font-size: 13px; }
+    .content .pointCharge select.w-119 { width: 119px; }
+	.content .pointCharge input[type=text] { width: 82px; font-size: 14px;text-align: center;}
+	/* ------ //My 결제관리 포인트 충전내역 ----- */
+
+	/* ------ My 결제관리 포인트 결제내역 ----- */
+	.content .pointPay .ppCate1 { padding: 0 5px; }
+	.content .pointPay .ppCate2 { padding: 0 10px; }
+	.content .pointPay .ppCate3 { padding: 0 10px; }
+	.content .pointPay .ppCate4 { padding: 0 10px; }
+	.content .pointPay .ppCate1 .centerBox > .inputBox { width: 46%; margin: 0;}
+	.content .pointPay .ppCate1 .centerBox > .inputBox input { width: 75%; }
+	.content .pointPay .ppCate1 .centerBox > .inputBox .addon { width: 25%; padding: .5rem .5rem;}
+	.content .pointPay .ppCate2 select { width: 100%; margin: 0; }
+	.content .pointPay .ppCate3 .inputBox {  width: 100%; float: none; margin: 0;}
+	.content .pointPay .ppCate3 .inputBox input { width: 75%; }
+	.content .pointPay .ppCate3 .inputBox .addon { width: 25%; padding: .5rem .5rem; }
+	.content .pointPay .ppCate4 select { width: 100%; margin: 0; }
+
+	.content .pointPay .centerBox > .betweenBox { width: 8%; }
+	.content .pointPay label { display: block; float: none; width: 100%;}
+	.content .pointPay select { font-size: 13px; }
+	/* ------ //My 결제관리 포인트 결제내역 ----- */
+
+	/* ------ My 상담리스트 ------ */
+	.content .counsel .rcCate1 { float: left; display: block; width: 30%; }
+	.content .counsel .rcCate2 { float: left; display: block; width: 70%;}
+	.content .counsel .rcCate3 { float: left; display: block; width: 25%;}
+	.content .counsel .rcCate4 { float: left; display: block; width: 25%;}
+	.content .counsel .rcCate5 { float: left; display: block; top: 0; width: 25%;}
+	.content .counsel .rcCate6 { float: left; display: block; width: 25%;}
+	/* ------ //My 상담리스트 ------ */
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1023px){
+
+
+	/* ------ 메뉴 부분 ----- */
+	.navbar-profile .profileArea .textArea .row .question { float: none; width: 100%; }
+	.navbar-profile .profileArea .textArea .row .answer { float: none; width: 100%; }
+	.navbar-profile .profileArea .gradeArea i { font-size: 18px; margin: 0 3px; }
+	.navbar-mypoint .mypointArea .mpValue { font-size: 22px; }
+	.navbar-mypoint .mypointArea .rowBox .row .question { float: none; width: 100%; }
+	.navbar-mypoint .mypointArea .rowBox .row .answer { float: none; width: 100%; }
+
+    aside #main-menu i { width: 30px; }
+    .content .card .card-header .toggleBox {position: relative; top: -12px;}
+
+    .content .card .list .contentWrap table tr { width: 100%; padding: 30px 0 5px;}
+    .content .card .search .contentWrap .autoChart > div { width: 50%; }
+
+    .content .card-body .form-group.btnArea button.reset {margin: 0;}
+    .content .card-body .form-group.btnArea button.save { margin: 0; }
+    .content .card-body .form-group.btnArea button.delete {margin: 0;}
+
+    .content .card .listView .listTab ul li { padding: 0; width: 33.3333%; margin-bottom: 0;}
+    .content .card .listView .listTabBox .ltContent2 .ltCalc .calcWrap .calcBox .calcDesc { width: 100%;  }
+    .content .card .listView .listTabBox .ltContent2 .ltCalc .calcWrap .calcBox .calcDesc > div:first-child { width: 80%; }
+    .content .card .listView .listTabBox .ltContent2 .ltCalc .calcWrap .calcBox .calcDesc > div:last-child { width: 20%; }
+    .content .card .listView .listTabBox .ltCalc .calcWrap .calcBox .calcDesc .cTop { width: 100%; font-size: 12px; }
+    .content .card .listView .listTabBox .ltCalc .calcWrap .calcBox .calcDesc .cBottom { font-size: 12px; }
+
+	.productView .proViewTop .conBoxWrap .conBox { width: 100%;	 margin: 0;	 }
+    .productView .proViewTop .conBoxWrap .conBox ul li { padding:10px 15px 105px; }
+    .productView .proViewTop .conBox ul.productForm li .proResBox { padding:0 15px 10px; }
+    .productView .proViewBottom .proAside .asideBox .conBox ul li { width: 100%; float: none; padding: 10px 10px 105px; }
+    .productView .proViewBottom .proAside .asideBox .conBox ul.productForm li .proResBox { padding: 0 10px 10px; }
+
+    /* ------ My 후기관리 My 후기리스트 ----- */
+    .content .card .table td .revDesc { font-size: 14px; }
+    /* ------ //My 후기관리 My 후기리스트 ----- */
+
+    /* ------ My 결제관리 common ----- */
+    .content .card .pIntroTitle strong { font-size: 27px; }
+    .content .card .pIntroTitle { font-size: 14px; }
+    .content .card .pointBox .pointInfo { width: 50%; }
+    .content .card .pointBox .pointNow { width: 50%; padding: 0;}
+    .content .card .pointBox .pointNow .pnPrice .pnInput { padding-left: 0; }
+    .content .card .pointBox .pointNow .pnPrice .pnInput i { top: 5px; }
+	.content .card .pointBox .pointNow .pnPrice .pnDesc { padding-left: 0;}
+    .content .card .pointBox .pointHow { width: 80%; float:none;margin: 0 auto; clear: both; }
+    /* ------ //My 결제관리 common ----- */
+
+   /* ------ My 결제관리 유료서비스안내 ----- */
+    .content .card .introBox .introTitle { font-size: 15px; }
+    .content .card .introBox .intro4 .row { border-bottom: 1px solid #eee; padding-bottom: 20px;}
+    .content .card .introBox .intro4 .row:last-child { border-bottom:0; }
+    .content .card .introBox .intro4 .row .descArea .daTitle { font-size: 15px; }
+    .content .card .introBox .intro4 .row .imgArea { width: 100%; float: none; }
+    .content .card .introBox .intro4 .row .descArea { width: 100%; float: none; padding-top: 0px;}
+    /* ------ //My 결제관리 유료서비스안내 ----- */
+
+    /* ------ My 결제관리 포인트 충전내역 ----- */
+    .content .pointCharge .pcCate1 { width: 22%; }
+    .content .pointCharge .pcCate2 { width: 30%; }
+    .content .pointCharge .pcCate3 { width: 48%; }
+    .content .pointCharge label { font-size: 13px; }
+    .content .pointCharge select { font-size: 13px; }
+    .content .pointCharge select.w-119 { width: 119px; }
+	.content .pointCharge input[type=text] { width: 82px; font-size: 14px;text-align: center;}
+	/* ------ //My 결제관리 포인트 충전내역 ----- */
+
+	/* ------ My 결제관리 포인트 결제내역 ----- */
+	.content .pointPay .ppCate1 { padding: 0 5px; }
+	.content .pointPay .ppCate2 { padding: 0 10px; }
+	.content .pointPay .ppCate3 { padding: 0 10px; }
+	.content .pointPay .ppCate4 { padding: 0 10px; }
+	.content .pointPay .ppCate1 .centerBox > .inputBox { width: 46%; margin: 0;}
+	.content .pointPay .ppCate1 .centerBox > .inputBox input { width: 75%; }
+	.content .pointPay .ppCate1 .centerBox > .inputBox .addon { width: 25%; padding: .5rem .5rem;}
+	.content .pointPay .ppCate2 select { width: 100%; margin: 0; }
+	.content .pointPay .ppCate3 .inputBox {  width: 100%; float: none; margin: 0;}
+	.content .pointPay .ppCate3 .inputBox input { width: 75%; }
+	.content .pointPay .ppCate3 .inputBox .addon { width: 25%; padding: .5rem .5rem; }
+	.content .pointPay .ppCate4 select { width: 100%; margin: 0; }
+
+	.content .pointPay .centerBox > .betweenBox { width: 8%; }
+	.content .pointPay label { display: block; float: none; width: 100%;}
+	.content .pointPay select { font-size: 13px; }
+	/* ------ //My 결제관리 포인트 결제내역 ----- */
+
+	/* ------ My 상담리스트 ------ */
+	.content .counsel .rcCate1 { float: left; display: block; width: 30%; }
+	.content .counsel .rcCate2 { float: left; display: block; width: 70%;}
+	.content .counsel .rcCate3 { float: left; display: block; width: 25%;}
+	.content .counsel .rcCate4 { float: left; display: block; width: 25%;}
+	.content .counsel .rcCate5 { float: left; display: block; top: 0; width: 25%;}
+	.content .counsel .rcCate6 { float: left; display: block; width: 25%;}
+	/* ------ //My 상담리스트 ------ */
+}
+
+
+@media only screen and (min-width: 960px) and ( max-width: 991px) {
+
+	.productView .proViewTop .conBoxWrap .conBox ul li { padding:10px 150px 105px; }
+	.productView .proViewTop .conBox ul.productForm li .proResBox { padding:0 150px 10px; }
+	.productView .proViewBottom .proAside .asideBox .conBox ul li { width: 50%; float: left; padding: 10px 20px 105px; }
+	.productView .proViewBottom .proAside .asideBox .conBox ul.productForm li .proResBox { padding: 0 20px 10px; }
+
+	.content .card .listView .listTabBox .ltContent2 .ltCalc .calcWrap .calcBox .calcDesc > div:last-child { width: 10%; }
+	.content .card .listView .listTabBox .ltContent2 .ltCalc .calcWrap .calcBox .calcDesc > div:first-child { width: 90%; }
+	.content .card .listView .listTabBox .ltCalc .calcWrap .calcBox .calcDesc .cTop { font-size: 14px; }
+	.content .card .listView .listTabBox .ltCalc .calcWrap .calcBox .calcDesc .cBottom { font-size: 14px; }
+	/* ------ My 결제관리 유료서비스안내 틀어짐 방지 ----- */
+	.content .card .introBox .intro4 .row .imgArea { width: 60%; float: left; }
+	.content .card .introBox .intro4 .row .descArea { width: 40%; float: right; padding-top: 40px; }
+
+	/* ------ //My 결제관리 유료서비스안내 틀어짐 방지 ----- */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+
+	/* ------ 메뉴 부분 ----- */
+	.navbar-profile .profileArea .textArea .row .question { float: none; width: 100%; }
+	.navbar-profile .profileArea .textArea .row .answer { float: none; width: 100%; }
+	.navbar-profile .profileArea .gradeArea i { font-size: 15px; margin: 0 5px; }
+	.navbar-mypoint .mypointArea .mpValue { font-size: 22px; }
+	.navbar-mypoint .mypointArea .rowBox .row .question { float: none; width: 100%; }
+	.navbar-mypoint .mypointArea .rowBox .row .answer { float: none; width: 100%; }
+
+    aside #main-menu i { width: 30px; }
+    .content .card .card-header .toggleBox {position: relative; top: -12px;}
+
+    .content .card .list .contentWrap table tr { width: 100%; padding: 30px 0 5px;}
+    .productView .proViewTop .conBoxWrap .conBox ul li { padding:10px 100px 105px; }
+    .productView .proViewTop .conBox ul.productForm li .proResBox { padding:0 100px 10px; }
+    .productView .proViewBottom .proAside .asideBox .conBox ul li { width: 100%; float: none; padding: 10px 50px 105px; }
+    .productView .proViewBottom .proAside .asideBox .conBox ul.productForm li .proResBox { padding: 0 50px 10px; }
+
+
+
+    /* ------ My 후기관리 My 후기리스트 ----- */
+    .content .card .table td .revDesc { font-size: 14px; padding-right: 0;}
+    .content .card .table td .btnBox { position: unset;text-align: right; padding-top: 20px;}
+    /* ------ //My 후기관리 My 후기리스트 ----- */
+
+    /* ------ My 결제관리 common ----- */
+    .content .card .pIntroTitle strong { font-size: 27px; }
+    .content .card .pIntroTitle { font-size: 14px; padding: 20px 20px;}
+    .content .card .pointBox .pointInfo { width: 100%; float:none; }
+    .content .card .pointBox .pointNow {width: 100%; float:none; padding: 0;}
+    .content .card .pointBox .pointNow .pnPrice .pnInput { padding-left: 0; }
+    .content .card .pointBox .pointNow .pnPrice .pnInput i { top: 5px; }
+	.content .card .pointBox .pointNow .pnPrice .pnDesc { padding-left: 0;}
+    .content .card .pointBox .pointHow { width: 100%; float:none; clear: both; }
+    /* ------ //My 결제관리 common ----- */
+
+    /* ------ My 결제관리 유료서비스안내 ----- */
+    .content .card .introBox .introTitle { font-size: 15px; }
+    .content .card .introBox .intro4 .row .descArea .daTitle { font-size: 15px; }
+    /* ------ //My 결제관리 유료서비스안내 ----- */
+
+    /* ------ My 결제관리 포인트 충전내역 ----- */
+    .content .pointCharge .pcCate1 { width: 50%; text-align: center; }
+    .content .pointCharge .pcCate2 { width: 50%; text-align: center; }
+    .content .pointCharge .pcCate3 { width: 100%;float:none;  padding-top: 20px;}
+    .content .pointCharge label { font-size: 13px; }
+    .content .pointCharge select { font-size: 13px; }
+    .content .pointCharge select.w-119 { width: 119px; }
+    .content .pointCharge .pcCate3 .centerBox { display: block; margin: 0 auto; width: 450px;}
+    .content .pointCharge .centerBox .betweenBox { width: 10%; }
+	.content .pointCharge input[type=text] { width: 128px; font-size: 14px;text-align: center;}
+
+	.content .card.pointCharge table thead { display: none; }
+	.content .card.pointCharge table tr { border:1px solid #ddd; width: 70%; margin: 20px auto; display: block;box-sizing: border-box; padding: 20px 20px; border-radius: 10px;     box-shadow: 3px 3px 3px 0 rgba(0,0,0,.28);}
+	.content .card.pointCharge table td { display: block; width: 100%; text-align: right; border:0; }
+	.content .card.pointCharge table td:before { content: attr(data-label); float: left; text-transform: uppercase; font-weight: bold; }
+	/* ------ //My 결제관리 포인트 충전내역 ----- */
+
+	/* ------ My 결제관리 포인트 결제내역 ----- */
+	.content .pointPay .ppCate1 { padding: 0 5px; width: 60%; }
+	.content .pointPay .ppCate2 { padding: 0 10px; width: 40%;}
+	.content .pointPay .ppCate3 { padding: 0 10px; width: 60%; }
+	.content .pointPay .ppCate4 { padding: 0 10px; width: 40%;}
+	.content .pointPay .ppCate1 .centerBox > .inputBox { width: 46%; margin: 0;}
+	.content .pointPay .ppCate1 .centerBox > .inputBox input { width: 70%; }
+	.content .pointPay .ppCate1 .centerBox > .inputBox .addon { width: 30%; padding: .5rem .5rem;}
+	.content .pointPay .ppCate2 select { width: 100%; margin: 0; }
+	.content .pointPay .ppCate3 .inputBox {  width: 100%; float: none; margin: 0;}
+	.content .pointPay .ppCate3 .inputBox input { width: 80%; }
+	.content .pointPay .ppCate3 .inputBox .addon { width: 20%; padding: .5rem .5rem; }
+	.content .pointPay .ppCate4 select { width: 100%; margin: 0; }
+
+	.content .pointPay .centerBox { display: block;width: 100%; }
+	.content .pointPay .centerBox > .betweenBox { width: 8%; }
+	.content .pointPay label { display: block; float: none; width: 100%;}
+	.content .pointPay select { font-size: 13px; }
+
+	.content .card.pointPay table thead { display: none; }
+	.content .card.pointPay table tr { border:1px solid #ddd; width: 70%; margin: 20px auto; display: block;box-sizing: border-box; padding: 20px 20px; border-radius: 10px;     box-shadow: 3px 3px 3px 0 rgba(0,0,0,.28);}
+	.content .card.pointPay table td { display: block; width: 100%; text-align: right; border:0;}
+	.content .card.pointPay table td:before { content: attr(data-label); float: left; text-transform: uppercase; font-weight: bold; }
+	/* ------ //My 결제관리 포인트 결제내역 ----- */
+
+	/* ------ My 상담리스트 ------ */
+	.content .counsel .centerBox { display: block; }
+	.content .counsel .centerBox .inputBox { width: 100%;margin: 0; padding: 0 5px;}
+	.content .counsel .centerBox label { display: block; float: none; text-align: left; font-size: 13px; padding-left: 5px;}
+	.content .counsel .centerBox input { width: 100%; }
+	.content .counsel .centerBox select { width: 100%; margin: 0; }
+
+	.content .counsel .rcCate1 { float: left; display: block; width: 30%; }
+	.content .counsel .rcCate2 { float: left; display: block; width: 70%;}
+	.content .counsel .rcCate3 { float: left; display: block; width: 50%;}
+	.content .counsel .rcCate4 { float: left; display: block; width: 50%;}
+	.content .counsel .rcCate5 { float: left; display: block; top: 0; width: 50%;}
+	.content .counsel .rcCate6 { float: left; display: block; width: 50%;}
+
+	.content .counsel .rcCate2 .centerBox .inputBox { width: 46%; }
+	.content .counsel .rcCate2 .centerBox .inputBox input { width: 75%; }
+	.content .counsel .rcCate2 .centerBox .inputBox .addon { width: 25%; }
+	.content .counsel .rcCate2 .centerBox .betweenBox { width: 8%; }
+
+	.content .card.counsel table thead { display: none; }
+	.content .card.counsel table tr { border:1px solid #ddd; width: 70%; margin: 20px auto; display: block;box-sizing: border-box; padding: 20px 20px; border-radius: 10px;     box-shadow: 3px 3px 3px 0 rgba(0,0,0,.28);}
+	.content .card.counsel table td { display: block; width: 100%; text-align: right; border:0; }
+	.content .card.counsel table td:before { content: attr(data-label); float: left; text-transform: uppercase; font-weight: bold; }
+	/* ------ //My 상담리스트 ------ */
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px){
+	/* ------ 메뉴 부분 ----- */
+	.navbar-profile .profileArea .textArea .row .question { float: none; width: 100%; }
+	.navbar-profile .profileArea .textArea .row .answer { float: none; width: 100%; }
+	.navbar-profile .profileArea .gradeArea i { font-size: 18px; margin: 0 3px; }
+	.navbar-mypoint .mypointArea .mpValue { font-size: 22px; }
+	.navbar-mypoint .mypointArea .rowBox .row .question { float: none; width: 100%; }
+	.navbar-mypoint .mypointArea .rowBox .row .answer { float: none; width: 100%; }
+
+    aside #main-menu i { width: 30px; }
+}
+
+@media only screen and (max-width: 767px){
+	.navbar-profile { display: none; }
+	.navbar-mypoint { display: none; margin-bottom: 20px;}
+	.collapse.show ~ .navbar-profile { display: block; }
+	.collapse.show ~ .navbar-mypoint {display: block; padding-bottom: 20px;}
+	.content .card .card-header .toggleBox {position: relative; top: -12px;}
+
+    .content .contentNavi > div { font-size: 14px; }
+    .content .card .listView .contentWrap h3 { font-size: 18px; line-height: 23px;}
+    .content .card .list .contentWrap table tr { width: 100%; padding: 30px 0 5px;}
+
+    .content .card .list .contentWrap .pager { width: 100%; }
+    .content .card .list .contentWrap .pager ul { width: 100%; text-align: center;  }
+    .content .card .list .contentWrap .pager ul li {margin: 0; width: 8.33%; }
+    .content .card .list .contentWrap .pager ul li a { box-sizing: border-box; padding: 0; }
+
+    .content .card .listView .leftBtn { top: 30%; }
+	.content .card .listView .rightBtn { top: 30%; }
+
+    .content .card-body .form-group.btnArea button.reset {width: 90px; margin:0;}
+    .content .card-body .form-group.btnArea button.save {width: 90px; margin:0;}
+    .content .card-body .form-group.btnArea button.delete {width: 90px; margin:0;}
+
+	.content .card .listView .listTabBox .ltResult h4 { width: 100%; font-size: 18px;}
+	.content .card .listView .listTabBox .ltResult p { width: 90%; }
+	.content .card .listView .listTab::after { content: ""; display: block; clear: both; }
+    .content .card .listView .listTab ul li { padding: 0; width: 33.3333%; margin-bottom: 0;}
+    .content .card .listView .listTabBox .ltDesc p { font-size: 12px; }
+    .content .card .listView .listTabBox .ltCalc .calcWrap .calcBox .calcDesc .cTop { width: 100%; font-size: 12px;}
+    .content .card .listView .listTabBox .ltCalc .calcWrap .calcBox .calcDesc .cBottom { font-size: 12px; }
+    .content .card .listView .listTabBox .ltContent2 .ltCalc .calcWrap .calcBox .calcDesc > div:last-child { width: 20%; }
+	.content .card .listView .listTabBox .ltContent2 .ltCalc .calcWrap .calcBox .calcDesc > div:first-child { width: 80%; }
+	.content .card .listView .listTabBox .ltContent2 .ltCalc .calcWrap .calcBox .calcDesc > div.lh55 { line-height: 90px; }
+	.content .card .listView .listTabBox .ltTable table td { font-size: 12px; }
+	.content .card .listView .listTabBox .conBox ul li { padding: 10px 5px 105px; }
+	.content .card .listView .listTabBox .conBox ul.productForm li .proResBox { padding: 0 5px 10px; }
+
+	.content .card .search .contentWrap .autoChart { width: 100%; }
+	.content .card .search .contentWrap .autoChart > div { width: 50%; }
+
+	.productView .proViewTop .conBoxWrap .conBox ul li { padding:10px 5px 105px; }
+	.productView .proViewTop .conBox ul.productForm li .proResBox { padding:0 5px 10px; }
+	.productView .proViewBottom .proAside .asideBox .conBox ul li { width: 100%; float: none; padding: 10px 5px 105px; }
+	.productView .proViewBottom .proAside .asideBox .conBox ul.productForm li .proResBox { padding: 0 5px 10px; }
+	.content .card .listTabBox .ltContent4 .resultForm li .proResBox { padding: 0 5px 10px; }
+
+    /* ------ My 견적상품 My 견적 리스트 ----- */
+    .content .card .search .contentWrap .chartWrap { overflow:unset; }
+	.content .card .search .productStats .statsBox { height: auto; overflow: hidden; }
+    .content .card .search .productStats .statsBox > div { height: 130px; width: 50%; }
+    .content .card .search .productStats .statsBox .statsCate dl { text-align: center; font-size: 16px; }
+    /* ------ //My 견적상품 My 견적 리스트 ----- */
+
+     /* ------ My 후기관리 My 후기리스트 ----- */
+    .content .card .rGrade { padding-bottom: 10px; }
+    .content .card .rGrade .star { margin: 20px auto 5px; }
+    .content .card .table td { padding: 10px 5px; }
+    .content .card .table td strong { width: 100%; display: block; float: left; }
+    .content .card .table td .revDate { display: block; float: left;}
+    .content .card .table td .revDate::before {content: ""; margin: 0;}
+    .content .card .table td .revReport { display: block; float: left; }
+    .content .card .table td .revDesc { font-size: 14px; padding-right: 0; clear: both; padding-top: 10px;}
+    .content .card .table td .btnBox { position: unset;text-align: right; padding-top: 20px; }
+    /* ------ //My 후기관리 My 후기리스트 ----- */
+
+    /* ------ My 후기관리 My 만족도평점 ----- */
+    .content .card .row .sGrade { margin-left: 20px; }
+
+    .content .card .table.tdp0 td { font-size: 12px; }
+
+    /* ------ My 결제관리 common ----- */
+    .content .card .pIntroTitle strong { font-size: 22px; }
+    .content .card .pIntroTitle { font-size: 12px; padding: 20px 20px;}
+    .content .card .pIntroTitle::before { left: 5%; background-size: 20px;}
+    .content .card .pIntroTitle::after { right: 5%; background-size: 20px;}
+    .content .card .pointBox .pointInfo { width: 100%; float:none; }
+    .content .card .pointBox .pointInfo .piDesc p { padding: 0; }
+    .content .card .pointBox .pointNow {width: 100%; float:none; padding: 0;}
+    .content .card .pointBox .pointNow .pnStats .pn50 { padding: 5px; }
+    .content .card .pointBox .pointNow .pnPrice { padding: 5px; }
+    .content .card .pointBox .pointNow .pnPrice .pnInput { padding-left: 0; padding-right: 0px; }
+    .content .card .pointBox .pointNow .pnPrice .pnInput i { top: 5px; left: 5%; }
+	.content .card .pointBox .pointNow .pnPrice .pnDesc { padding-left: 0; padding-right: 30px;}
+	.content .card .pointBox .pointNow .pnPrice input { width: 90%; }
+	.content .card .pointBox .pointNow .pnPrice .pnDesc ul { width: 90%; }
+    .content .card .pointBox .pointHow { width: 100%; float:none; clear: both; padding: 10px 5px;}
+    .content .card .pointBox .pointHow .phBox .phDesc p { font-size: 11px; line-height: 17px; padding: 0 5px;}
+	.content .card .pointBox .pointHow .phBox .phDesc p b { font-size: 14px; }
+    /* ------ //My 결제관리 common ----- */
+
+     /* ------ My 결제관리 유료서비스안내 ----- */
+    .content .card .introBox .introTitle { font-size: 15px; }
+    .content .card .introBox .intro4 .row { border-bottom: 1px solid #eee; padding-bottom: 20px;}
+    .content .card .introBox .intro4 .row:last-child { border-bottom:0; }
+    .content .card .introBox .intro4 .row .descArea .daTitle { font-size: 15px; }
+    .content .card .introBox .intro4 .row .imgArea { width: 100%; float: none; height: auto;}
+    .content .card .introBox .intro4 .row .descArea { width: 100%; float: none; padding-top: 0px;}
+    /* ------ //My 결제관리 유료서비스안내 ----- */
+
+    /* ------ My 결제관리 포인트 충전내역 ----- */
+    .content .pointCharge .pcCate1 { width: 100%; float:none; display: block; margin-bottom: 10px;}
+    .content .pointCharge .pcCate1 select { font-size: 13px; display: block;width: 100%; margin: 0;}
+    .content .pointCharge .pcCate2 { width: 100%; float:none; display: block; margin-bottom: 10px;}
+    .content .pointCharge .pcCate2 select {  font-size: 13px; display: block;width: 100%; margin: 0;}
+    .content .pointCharge .pcCate3 { width: 100%;float:none;  display: block; }
+    .content .pointCharge .pcCate3 label { display: block; width: 100%; float: none; }
+    .content .pointCharge .centerBox { display: block; width: 100%; }
+    .content .pointCharge .centerBox > .inputBox { margin: 0; width: 46%; text-align: center;}
+    .content .pointCharge .centerBox > .betweenBox { width:8%; }
+    .content .pointCharge .inputBox .addon { padding: .5rem .5rem; width: 25%;}
+    .content .pointCharge label { font-size: 13px; display: block; float: none; text-align: left;}
+	.content .pointCharge input[type=text] { width: 75%	; font-size: 14px;text-align: center;}
+
+	.content .card.pointCharge table thead { display: none; }
+	.content .card.pointCharge table tr { border:1px solid #ddd; width: 90%; margin: 20px auto; display: block;box-sizing: border-box; padding: 20px 20px; border-radius: 10px;     box-shadow: 3px 3px 3px 0 rgba(0,0,0,.28);}
+	.content .card.pointCharge table td { display: block; width: 100%; text-align: right; border:0;font-size: 13px;}
+	.content .card.pointCharge table td:before { content: attr(data-label); float: left; text-transform: uppercase; font-weight: bold; }
+	/* ------ //My 결제관리 포인트 충전내역 ----- */
+
+	/* ------ My 결제관리 포인트 결제내역 ----- */
+	.content .pointPay .ppCate1 { padding: 0; width: 100%; float: none; }
+	.content .pointPay .ppCate2 { padding: 0; width: 100%; float: none;}
+	.content .pointPay .ppCate3 { padding: 0; padding-right: 5px; width: 60%; }
+	.content .pointPay .ppCate4 { padding: 0; width: 40%;}
+	.content .pointPay .ppCate1 .centerBox > .inputBox { width: 46%; margin: 0;}
+	.content .pointPay .ppCate1 .centerBox > .inputBox input { width: 70%; }
+	.content .pointPay .ppCate1 .centerBox > .inputBox .addon { width: 30%; padding: .5rem .5rem;}
+	.content .pointPay .ppCate2 select { width: 100%; margin: 0; }
+	.content .pointPay .ppCate3 .inputBox {  width: 100%; float: none; margin: 0;}
+	.content .pointPay .ppCate3 .inputBox input { width: 80%; }
+	.content .pointPay .ppCate3 .inputBox .addon { width: 20%; padding: .5rem .5rem; }
+	.content .pointPay .ppCate4 select { width: 100%; margin: 0; }
+
+	.content .pointPay .centerBox { display: block;width: 100%; }
+	.content .pointPay .centerBox > .betweenBox { width: 8%; }
+	.content .pointPay label { display: block; float: none; width: 100%;}
+	.content .pointPay select { font-size: 13px; }
+
+	.content .card.pointPay table thead { display: none; }
+	.content .card.pointPay table tr { border:1px solid #ddd; width: 90%; margin: 20px auto; display: block;box-sizing: border-box; padding: 20px 20px; border-radius: 10px;     box-shadow: 3px 3px 3px 0 rgba(0,0,0,.28);}
+	.content .card.pointPay table td { display: block; width: 100%; text-align: right; border:0; font-size: 13px;}
+	.content .card.pointPay table td:before { content: attr(data-label); float: left; text-transform: uppercase; font-weight: bold; }
+	/* ------ //My 결제관리 포인트 결제내역 ----- */
+
+	.content .card .badgeSelect .h450 { height: 500px; }
+	.content .card .badgeInfo.badge_6 { width: 100%; }
+	.content .card .badgeInfo.badge_6 .badgeIntro { width:calc( 100% - 80px );}
+
+	/* ------ My 상담리스트 ------ */
+	.content .counsel .centerBox { display: block; }
+	.content .counsel .centerBox .inputBox { width: 100%;margin: 0; padding: 0 5px;}
+	.content .counsel .centerBox label { display: block; float: none; text-align: left; font-size: 13px; padding-left: 5px;}
+	.content .counsel .centerBox input { width: 100%; }
+	.content .counsel .centerBox select { width: 100%; margin: 0; }
+	.content .counsel .rcCate1 { float: none; display: block; width: 100%; }
+	.content .counsel .rcCate2 { float: none; display: block; width: 100%;}
+	.content .counsel .rcCate3 { float: left; display: block; width: 50%;}
+	.content .counsel .rcCate4 { float: left; display: block; width: 50%;}
+	.content .counsel .rcCate5 { float: left; display: block; top: 0; width: 50%; box-sizing: border-box;}
+	.content .counsel .rcCate6 { float: left; display: block; width: 50%;}
+
+	.content .counsel .rcCate2 .centerBox .inputBox { width: 46%; }
+	.content .counsel .rcCate2 .centerBox .inputBox input { width: 75%; }
+	.content .counsel .rcCate2 .centerBox .inputBox .addon { width: 25%; }
+	.content .counsel .rcCate2 .centerBox .betweenBox { width: 8%; }
+
+	.content .card.counsel table thead { display: none; }
+	.content .card.counsel table tr { border:1px solid #ddd; width: 100%; margin: 20px auto; display: block;box-sizing: border-box; padding: 20px 20px; border-radius: 10px;     box-shadow: 3px 3px 3px 0 rgba(0,0,0,.28);}
+	.content .card.counsel table td { display: block; width: 100%; text-align: right; border:0; }
+	.content .card.counsel table td:before { content: attr(data-label); float: left; text-transform: uppercase; font-weight: bold; }
+
+	/* ------ //My 상담리스트 ------ */
+
+}
+
+@media only screen and (max-width: 360px) {
+    .content .contentNavi > div { font-size: 12px; }
+    .content .card .list .contentWrap table.nowLoan {padding: 0;}
+    .content .card .list .contentWrap table tr { padding-top: 25px; min-width: 260px;}
+    .content .card .list .contentWrap table td.gender { width: 60px; padding: 0; }
+    .content .card .list .contentWrap table td.sumTd { left: 80px; }
+    .content .card .list .contentWrap table td.sumTd .sum { font-size: 18px; }
+    .content .card .list .contentWrap table td.cateTd { width: 80px; }
+    .content .card .list .contentWrap table td.useTd { width: 80px; }
+    .content .card .list .contentWrap table td.btr { margin-left: 120px; }
+    .content .card .list .contentWrap table td.authorTd { position: absolute; left: 80px; top: 25px; font-size: 14px; color: #555;}
+    .content .card .list .contentWrap table td.td50 { width: 50%; }
+    .content .card .list .contentWrap table .td50::before { font-size: 12px; }
+    .content .card .list .contentWrap table td.timerTd { font-size: 12px; right: 10px; }
+    .content .card .list .contentWrap table .td50 span { font-size: 14px; }
+    .content .card .list .contentWrap table .td50 span i { right: 4px; }
+
+
+}

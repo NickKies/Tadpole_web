@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>갹체 생성</title>
+    </head>
+    <body>
+        <h1>객체 생성</h1>
+    </body>
+</html>
+<script>
+    var circle = {
+        color : 'yellow',
+        diameter : 100,
+        radius : function() {
+            return this.diameter /2;
+        }
+    };
+    console.log(circle.color);
+    console.log(circle.diameter);
+    console.log(circle.radius());
+
+    function Triangle(b,h){
+        this.base = b;
+        this.height = h;
+        this.area = function() {
+            return b * h /2;
+        };
+    }
+    var triangle1 = new Triangle(15,15);
+    console.log(triangle1.base);
+    console.log(triangle1.height);
+    console.log(triangle1.area());
+    var triangle2 = new Triangle(25,10);
+    console.log(triangle2.base);
+    console.log(triangle2.height);
+    console.log(triangle2.area());
+</script>

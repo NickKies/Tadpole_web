@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>input 속성</title>
+    </head>
+    <body>
+        <h1>input 속성 예제</h1>
+        <form name="frm" method="post" action="test.jsp" ENCTYPE="multipart/form-data">
+            <p>아이디 &nbsp;&nbsp;<input type="text" size="20" maxlength="12" placeholder="아이디를 넣어주세요." name="user_id" required></p>
+            <p>패스워드<input type="password" size="20" maxlength="12" placeholder="패스워드를 넣어주세요." required></p>
+            <p><input type="text" size="20" maxlength="12" value="apple" readonly></p>
+            
+            <fieldset>
+                <legend>성별</legend>
+            <p><label>남자<input type="radio" name="gender" value="남" checked></label><label>여자<input type="radio" name="gender" value="여"></label></p>
+            </fieldset>
+         
+            <fieldset>
+            <legend>취미</legend>
+            <p> <label>드라이브<input type="checkbox" name="hobby" value="드라이브" checked></label><label>등산<input type="checkbox" name="hobby" value="등산"></label><label>영화감상<input type="checkbox" name="hobby" value="영화감상"></label><label> 게임<input type="checkbox" name="hobby" value="게임"></label></p>
+            </fieldset>
+            
+            <p>파일선택<input type="file"></p>
+
+            <p>색상 <input type="color" value="#00ff00"></p>
+            <p>메일주소<input type="email"></p>
+            <p>웹사이트<input type="url"></p>
+            <p>연락처<input type="tel"></p>
+            <p>조회기간<input type="date">~<input type="date"></p> 
+            <p>참여인원<input type="number" value="1" min="0" max="100" step="5"></p>  
+            <p>단계(상,중,하) <input type="range" value="1" min="1" max="3"></p>
+            <p>검색<input type="search"></p>
+
+            <select>
+                <p>학과 선택
+                <option value="archi">건축공학과</option>
+                <option value="mechanic">기계공학과</option>
+                <option value="indust">산업공학과</option>
+                <option value="elect">전기공학과</option>
+                <option value="computer">컴퓨터공학과</option>
+                <option value="chemical">화학공학과</option>
+            </select></p>
+
+            <p><textarea cols="100" rows="5">안녕하세요.</textarea></p>
+
+            <p>관심분야<input type="text" list="cell">
+            <datalist id="cell">
+                <option value="010" label="010"></option>
+                <option value="011" label="011"></option>
+                <option value="016" label="016"></option>
+                <option value="017" label="017"></option>
+                <option value="018" label="018"></option>
+                <option value="019" label="019"></option>
+            </datalist>
+            </p>
+
+            <p> 진행률 <progress value="30" max="100"></progress></p>
+    
+            <p><input type="submit" value="가입완료"></p>
+            <p><input type="reset" value="초기화"></p>
+            <p><input type="button" value="버튼" onclick="sendit()"></p>
+
+        </form>
+    </body>
+</html>
+<script>
+    function sendit(){
+        alert("클릭 되었어요!!")
+    }
+</script>

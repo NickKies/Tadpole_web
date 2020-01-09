@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript EventListener</title>
+</head>
+<body>
+	<h1>이벤트 리스너</h1>
+    <input type="button" id="btn" value="button" />
+    <script>
+	    var t = document.getElementById('btn'); 
+	    t.addEventListener('click', function(e){ 
+            alert(e.target.id)
+		    alert(1); 
+	    }); 
+        t.addEventListener('click', function(e){ 
+            alert(e.target.id)
+            alert(2); 
+        }); 
+</script>	
+</body>
+</html>

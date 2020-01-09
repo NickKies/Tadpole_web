@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>반응형 폼</title>
+        <style>
+        * {
+            box-sizing: border-box;
+        }
+        input[type=text],select,textarea {
+            width:100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        label{
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+        input[type=submit]{
+            background-color: #4caf50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor:pointer;
+            float:right;
+        }
+        input[type=submit]:hover{
+            background-color: #45a049; 
+        }
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        .col-75{
+            float:left;
+            width: 75%;
+            margin-top: 6px;
+        }
+        .row:after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+        @media screen and (max-width:600px){
+            .col-25, .col-75, input[type=submit]{
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+        </style>
+        <body>
+            <h2>반응형 폼</h2>
+            <p>사이즈를 변경하며 반응형폼으로 작성된 화면을 볼수 있어요</p>
+            <div class="container">
+                <form action="">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">이름</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name" name="name" placeholder="이름을 넣어주세요..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">닉네임</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lname" placeholder="닉네임을 넣어주세요..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="country">나라</label>
+                        </div>
+                        <div class="col-75">
+                            <select name="country" id="country">
+                                <option value="korea">대한민국</option>
+                                <option value="canada">캐나다</option>
+                                <option value="usa">미국</option>
+                            </select>
+                        </div>                
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">내용</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea name="subject" id="subject" placeholder="여기에 적어주세요!" style="height: 200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="제출">
+                    </div>
+                </form>
+            </div>
+        </body>
+    </head> 
+</html>

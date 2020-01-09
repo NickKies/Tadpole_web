@@ -1,0 +1,132 @@
+﻿
+.fl{left:0;}
+.fr{right:0;}
+header .mlogo{display:none;}
+header .mboard{display:none;}
+header .mcustomer{display:none;}
+header .gobtn { display: none; }
+
+/* --------------- Tab ---------------*/
+
+section.tabArea{width:550px;margin:0 auto;}
+section.tabArea > h2{text-align:center;font-size:18px;color:#444;margin-bottom:50px;margin-top:50px;font-weight:bold;}
+.tabmbg{width:100%;background-color: rgba(31,127,233,.07);}
+.tab {
+    overflow: hidden;
+    width:1200px;margin:0 auto;
+}
+.w5{width:1200px;margin:0 auto;padding-bottom:50px;}
+.tabbg{width:100%;height:300px;padding-top:230px;background-color: #2292ff;}
+.tabbg strong{display:block;text-align:center;width:100%;font-size:45px;font-weight:300;color:#fff;}
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    width:33.3%;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color:#4d70ce;color:white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    color:#4874E8;font-weight:bold;
+}
+
+/* Style the tab content */
+    .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+    border-top: none;
+}
+
+    .tabcontent h3{font-size:16px;}
+    .tabcontent p{font-size:14px;}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    section.tabArea{width:calc(100% - 10px);padding:0 5px;}
+    .tab{width:100%;}
+    .tabbg strong{font-size:40px;}
+}
+
+@media screen and (max-width: 767px){
+    section.tabArea{width:calc(100% - 10px);padding:0 5px;}
+    section.tabArea > h2{margin-top:30px;margin-bottom:30px;}
+    .tab button{font-size:11px;}
+    .tabcontent h3{font-size:13px;}
+    .tabcontent p{font-size:11px;}
+
+     .fl{border-right:1px solid #e1e1e1;}
+    header nav ul li {position:relative;}
+    header nav .mt65 {margin-top:65px;}
+    header nav .main_con {box-sizing:border-box; border-bottom: 1px solid #5c74d6; padding: 0; transition: inherit;}
+    header nav .main_con > a {color:#fff;line-height:60px;padding-left:65px;}
+	/*header nav .main_con:hover {background-color:#fff;background:url(../images/main_con_1_on.png) 20px 14px no-repeat;background-size:25px; border-bottom-color: #fff;}*/
+
+    header nav .main_con_1 { background:url(../images/m_icon_1.png) no-repeat 20px 20px #4064DB;background-size:25px; }
+    header nav .main_con_2 { background:url(../images/m_icon_2.png) no-repeat 20px 20px #4064DB;background-size:25px;}
+    header nav .main_con_3 {  background:url(../images/m_icon_3.png) no-repeat 20px 20px #4064DB;background-size:25px; }
+    header nav .main_con_4 {  background:url(../images/m_icon_4.png) no-repeat 20px 20px #4064DB;background-size:25px;}
+    header nav .main_con_5 {  background:url(../images/m_icon_5.png) no-repeat 20px 20px #4064DB;background-size:25px; }
+
+   /* header nav ul > li.active { background:url(../images/main_con_1.png) no-repeat 20px 14px #4064DB; background-size:25px;}*/
+    header nav ul > li.active > ul { display: block; }
+    header nav ul > li.active > ul > li { background-color: #1a3fac; border-top: 1px solid #5c74d6 ;}
+    header nav ul > li.active > ul > .m_sub_1 { background: url(../images/main_con_1.png) no-repeat 24px 20px;
+    background-size: 20px; background-color: #1a3fac;}
+    header nav ul > li.active > ul > .m_sub_2 { background: url(../images/main_con_2.png) no-repeat 24px 20px;
+    background-size: 20px; background-color: #1a3fac;}
+    header nav ul > li.active > ul > .m_sub_3 { background: url(../images/main_con_3.png) no-repeat 24px 20px;
+    background-size: 20px; background-color: #1a3fac;}
+    header nav ul > li.active > ul > .m_sub_4 { background: url(../images/chart_list.png) no-repeat 24px 20px;
+    background-size: 20px; background-color: #1a3fac;}
+    header nav ul > li.active > ul > .m_sub_5 { background: url(../images/noticeBtn.png) no-repeat 24px 20px;
+    background-size: 20px; background-color: #1a3fac;}
+    header nav ul > li.active > ul > .m_sub_6 { background: url(../images/moreBtn.png) no-repeat 24px 20px;
+    background-size: 20px; background-color: #1a3fac;}
+    header nav ul > li.active > ul > .m_sub_7 { background: url(../images/statsIcon_4.png) no-repeat 24px 20px;
+    background-size: 20px; background-color: #1a3fac;}
+
+    header nav ul > li.active > ul > li a { color: #fff; font-weight: bold; font-size: 14px; display: block; width: 100%; height: 100%; line-height: 60px; text-align: left; box-sizing: border-box; padding-left: 64px;}
+    header nav ul > .main_con:hover ul li a {color:#fff;}
+   /* header nav ul > .main_con.active:hover {background-color:#4874e8;background:url(../images/main_con_1_on.png) 20px 14px no-repeat;background-size:25px; border-bottom-color: #5c74d6}
+*/
+    header nav ul .member {position:absolute;top:65px;width:50%;height:50px;padding:0;border-top:1px solid #e1e1e1;}
+    header nav ul .member a {text-align:center;border-radius:0;line-height:50px;  width: 100%; height: 100%; border:0;}
+    header:hover nav ul .member a {border:none; }
+    
+    header nav ul .mlogo {display:block;position:absolute;top:0;left:10px;height:50px; width: 80%;}
+    header nav ul .mlogo > a{line-height:65px; }
+
+   /* header nav ul .mboard{display:block;text-align:left;border-bottom:1px solid #e1e1e1; color: #ccc;}
+    header nav ul .mboard strong{color:#464646;display:block;padding-top:15px;font-size:14px;margin-bottom:5px;}
+    header nav ul .mboard p{font-size:12px;margin-bottom:15px;display:block;}*/
+
+    header nav ul li div.gobtn {width:20%;height:60px;position:absolute;right:0px;top: 0;   display: block; cursor: pointer; box-sizing: border-box; padding-top: 20px; padding-right: 15px; background: url(../images/gobtn.png) no-repeat 30px 24px; background-size: 8px;}
+    header nav ul li.main_con:hover div.gobtn { background: url(../images/gobtnGray.png) no-repeat 30px 24px; background-size: 8px;}
+    
+    header nav ul .mcustomer{display:block;text-align:left;border-bottom:1px solid #e1e1e1; color: #ccc;}
+    header nav ul .mcustomer strong{display:block;padding-top:15px;font-size:14px;margin-bottom:5px;color:#464646;}
+    header nav ul .mcustomer p{display:block;margin-bottom:15px;font-size:12px;}
+
+    header nav .linklist {display:block;width:85px;position:absolute; top: 10px; right:10px; height:25px;}
+    header nav .linklist:after {display:block;visibility:hidden;content:'';clear:both;}
+    header nav .linklist > li {float:left;background:none;color:#464646;margin-top:0 ;text-align:center;padding:0;line-height:25px !important;width:25px;height:25px;border:1px solid #464646;border-radius:50%;margin-right:5px;box-sizing:border-box;}
+    header nav .linklist > li:last-of-type{margin-right:0;}
+    header nav .linklist > li a{padding:0;line-height:0;}
+    header nav .linklist > li a i{color:#464646;}
+
+    .tab{width:100%;}
+    .w5{width:calc(100% - 10px); margin:0 auto; padding:5px 0 50px 0;}
+    .tab button{padding:10px 12px;}
+    .tabbg{width:100%;height:150px;padding-top:80px;background-color: #2292ff;}
+.tabbg strong{font-size:35px;}
+}

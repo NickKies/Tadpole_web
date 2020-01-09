@@ -1,0 +1,317 @@
+
+/* --------------- list common ------------ */
+.list {  }
+.list .bgWrap { height: 126px; width: 100%; background-color: #4874E8; transition: all .5s;}
+
+/* --------------- list content ------------ */
+
+.list h3 span { color: #4874e8; }
+.list .contentWrap h3 { /*text-align: center; padding:10px 0;  font-size: 22px; color: #777; border:1px solid #ccc; margin-bottom: 20px;*/ text-align: center;  padding: 10px 0;  font-size: 22px; color: #4874e8;  /* border: 1px solid #ccc; */  margin-bottom: 20px;}
+
+.list .contentWrap { padding: 0 0 80px; width: 1200px;	margin: 0 auto;	}
+.list .contentWrap .listNumber {text-align: right; padding-bottom: 10px;}
+.list .contentWrap .listNumber span { font-size: 13px; color: #555; font-weight: bold; margin-right: 20px;}
+.list .contentWrap table { width: 100%;	 text-align: center; border:0; border-spacing: 0;}
+.list .contentWrap table tr { transition: all .5s; cursor: pointer; }
+.list .contentWrap table tr:hover { background-color: #f8f8f8; }
+.list .contentWrap table th {  height: 55px; background-color: #f8f8f8; font-size: 13px; color: #555;
+    font-weight: bold; box-sizing: border-box;   line-height: 26px; position: relative;}
+.list .contentWrap table td { height: 60px; font-size: 13px; border-bottom: 1px solid #ddd; box-sizing: border-box;  color: #777;/* font-weight: bold;*/}
+.list .contentWrap table td .sum { color: #4874e8; }
+.list .contentWrap table td .genderBox img { width: 40px; }
+.list .contentWrap table td .count { color: #ef792a; }
+.list .contentWrap table td .timer { color: #ef792a; }
+.list .contentWrap table td .checkMark { background:url(../images/checked.png) no-repeat 0 3px; display: inline-block; width: 20px; height: 20px; background-size: 15px; margin-left: 5px; position: relative; top: 4px;}
+.list .contentWrap .pager { text-align: center;	padding-top: 50px; }
+.list .contentWrap .pager ul { overflow: hidden; display: inline-block;	}
+.list .contentWrap .pager ul li { height: 35px; display: block; float: left; text-align: center; margin: 0 5px;}
+.list .contentWrap .pager ul li a { font-size: 14px; display: block; width: 100%; height: 100%; line-height: 35px; color:#4874e8;padding: 0 6px; transition: all .5s; outline:0; text-align: center;	}
+.list .contentWrap .pager ul li a:hover { color: #fff; background-color: #8fbff4; }
+.list .contentWrap .pager ul li a.active { font-weight: bold; color: #fff; background-color: #4874e8;}
+.list .contentWrap .pager .prev a { color: #777; }
+.list .contentWrap .pager .next a { color: #777; }
+
+.list .contentWrap table th .lowCate { position: absolute; top: 55px; background-color: #fff; border:1px solid #ccc; border-radius: 0 0 5px 5px; min-width: 100px; width: 100%; border-top: 0; display: none;}
+.list .contentWrap table th .lowCate.on { display: block; }
+.list .contentWrap table th .lowCate ul li { padding: 2px 0; transition: all .5s;}
+.list .contentWrap table th .lowCate ul li:hover { background-color: #f8f8f8; }
+
+/* --------------- list View common ------------ */
+.listView {}
+.listView .bgWrap { height: 126px; width: 100%; background-color: #4874E8; transition: all .5s; }
+.guardWrap { display: none; }
+
+/* --------------- list View content ------------ */
+.listView .contentWrap { padding: 0 0 0; width: 1200px;	margin: 0 auto;	}
+.listView .contentWrap:after { content: ""; display: block; clear: both; }
+.listView h3 { text-align: center; padding: 10px 0;  font-size: 22px;  color: #777;  border: 1px solid #ccc;  margin-bottom: 20px}
+.listView h3 span { color: #4874e8; }
+.listView h3.mt70 { margin-top: 70px; }
+
+.listView ul { width: 50%; float: left; border-radius: 10px;}
+.listView ul li { width: 100%; box-sizing: border-box; padding: 10px 20px; margin-bottom: 40px; transition: all .5s;}
+.listView .rightBox li {  }
+.listView .conTitle { color:#777; margin-bottom: 30px; font-size: 18px; font-weight: bold; height: 27px;}
+.listView .conDesc { width: 100%; text-align: center; position: relative;}
+.listView .conDesc .imgBox { position: absolute; background: url(../images/grade.png) no-repeat 100px 20px; width: 100%; height: 380px; z-index: -1; background-size: 65%; transition: all .5s;}
+.listView .conDesc span { font-size: 25px; font-weight: bold; color: #777;}
+.listView .conDesc span b { font-size: 50px; letter-spacing: 2px; display: inline-block; color: #4874e8; }
+.listView .grade { height: 380px; box-sizing: border-box; }
+.listView .grade span { padding-top: 130px; display: inline-block; }
+.listView .stats { height: 230px; }
+.listView .stats .statsBox { position: absolute; width: 100%; height: 230px; z-index: -1; background: url(../images/stats.png) no-repeat 100px 20px; background-size: 60%; }
+.listView .stats span { padding-top: 100px;  display: inline-block;}
+
+.listView .conInfo { width: 100%; box-sizing: border-box; margin-top: 40px; border: 1px solid #eee; border-radius: 5px;}
+.listView .conInfo:after { content: ""; display: block; clear:both; }
+.listView .conInfo .subTitle { width: 40%; height: 35px; float: left; background-color: #f8f8f8; line-height: 33px;  text-align: center; color: #555; font-size: 14px; font-weight: bold; transition: all .5s;}
+.listView .conInfo .subDesc {width: 60%; height: 35px; float: left; line-height: 33px; text-align: center;
+    font-size: 14px; /* font-weight: bold; */ color: #555; transition: all .5s;}
+.listView .conInfo .subBb {/* border-bottom: 1px solid #ccc;*/ }
+.listView .conInfo p {   height: 180px; box-sizing: border-box; padding: 15px 20px;color: #555;  font-size: 14px;  text-align: left;}
+.listView ul li .conTitle span.checkIcon { width: 18px; height: 13px;	 display: inline-block;	 background:url(../images/check.png) no-repeat 0 0; padding-right: 2px; margin-right: 5px; background-size: cover;}
+
+.listView .notice { width: 100%; clear:both; padding-top: 20px;}
+.listView .notice p {text-align: center; background-color: #f8f8f8; height: 50px; padding-top: 10px; font-size: 14px; transition: all .5s;}
+
+.listView .submitBtn { text-align: center; padding: 40px 0;}
+.listView .submitBtn button { width: 250px; height: 45px; display: inline-block; background-color: #4874e8; border-radius: 5px; color: #fff; font-weight: bold; font-size: 16px; border:0; cursor: pointer;}
+
+/* --------------- list  광고 ------------ */
+.list .listAd { width: 100%; overflow: hidden; box-sizing: border-box; border-top: 1px solid #ccc; border-left: 1px solid #ccc;  margin-top: 50px; margin-bottom: 50px;}
+.list .listAd > div { width: 20%; float: left; height: 120px; border-right: 1px solid #ccc; box-sizing: border-box; padding-top: 20px; border-bottom: 1px solid #ccc;}
+
+.list .listAd div a { display: block; width: 100%; height: 100%; }
+.list .listAd div .listAdTitle { text-align: center; font-weight: bold; color: #4874e8;}
+.list .listAd div .newTitle { text-align: center; font-weight: bold; color: #777; }
+.list .listAd .btnArea { text-align: center; padding-top: 15px; }
+.list .listAd .btnArea button { border:1px solid #eee; border-radius: 5px; width: 150px; height: 32px; line-height: 30px; font-weight: bold; cursor: pointer;}
+.list .listAd .btnArea .golistAd { background-color: #4874e8; color: #fff; }
+.list .listAd .btnArea .goNew { background-color: #777; color: #fff; }
+
+div.viewBox{width:100%; border:1px solid #ddd;}
+div.viewBox:after{display:block;visibility:hidden;content:'';clear:both;}
+div.viewBox > div{width:25%;float:left;height:600px;text-align:center; padding: 50px 5px 0; box-sizing: border-box;}
+.imgArea{height:250px;line-height:250px;}
+div.viewBox > div:last-of-type .imgArea img{padding-top:50px;}
+
+/* --------------- list 내 번호로 검색 ------------ */
+.list .myPhone { text-align: center;}
+.list .myPhone fieldset { text-align: center; box-sizing: border-box;  padding: 0 10px;}
+.list .myPhone legend { position: absolute; left: -9999px; top: -9999px; }
+.list .myPhone .inputGroup { width: 350px; height: 45px; display: inline-block; margin-right: -15px;}
+.list .myPhone .inputGroup:after { content: ""; display: block; clear: both; }
+.list .myPhone .inputGroup input { width: 80%; border:1px solid #4874e8; box-sizing: border-box; height: 35px; padding: 2px 7px; display: block;float: left; -webkit-appearance: none; -webkit-border-radius: 0;}
+.list .myPhone .inputGroup button { width: 20%;  border:0; height: 35px; display: block;float: left; background-color: #4874e8; color: #fff; }
+
+
+/* listView guardWrap ------- 180813 배다빈 추가 */
+.guardWrap.on { position: fixed; left: 0; top: 0; bottom: 0; right: 0; width: 100%; height: 100%;background-color:rgba(72,116,232,.95);  z-index: 9999; display: block;}
+.guardWrap .description { text-align: center; position: absolute; top: 50%; left: 50%; width: 555px; height: 300px; margin-left: -277.5px; margin-top: -150px;  }
+.guardWrap .description p { color: #fff;  font-weight: bold; font-size: 18px; letter-spacing: 1px;}
+.guardWrap .description .btnArea { padding: 20px 0 30px; }
+.guardWrap .description .btnArea button { width: 150px; height: 35px; background-color: #fff; border:1px solid #eee; border-radius: 7px; font-weight: 900; color: #4874e8; font-size: 14px; line-height: 20px;  box-shadow: 5px 5px 5px 0 rgba(0,0,0,.5);}
+.guardWrap .description form legend { position: absolute; left: -9999px; top: -9999px; }
+.guardWrap .description form .searchBox { width: 290px; height: 40px; margin: 0 auto 5px;  box-shadow: 5px 5px 5px 0 rgba(0,0,0,.5);}
+.guardWrap .description form .searchBox input { width: 80%; height: 40px; border:0; display: block; float: left; box-sizing: border-box; padding: 2px 5px;}
+.guardWrap .description form .searchBox button { width: 20%; height: 40px; border:0;  background-color: #4874e8; color: #fff; display: block; float: left; text-align: center; line-height: 40px;}
+.guardWrap .description form span { color: #fff;  font-size: 11px;}
+
+/* listView productStats --------- 180813 배다빈 추가 */
+.search .productStats { padding-top: 20px; padding-bottom: 50px; }
+.search .productStats p { text-align: center; font-weight: bold; font-size: 18px;}
+.search .productStats p span { color: #4874e8; }
+.search .productStats p strong { color: #4874e8; }
+
+.search .productStats .statsBox { width: 100%; height: 200px; border:1px solid #ccc; box-sizing: border-box; margin: 20px 0;}
+.search .productStats .statsBox > div { width: 25%; float: left; }
+.search .productStats .statsBox .statsTitle { color: #7d7877;  text-align: center; padding-top: 20px}
+.search .productStats .statsBox .statsDesc { text-align: center; }
+.search .productStats .statsBox .statsDesc b { font-size: 90px; color: #4874e8; font-weight: 400;}
+.search .productStats .statsBox .statsCate dl { padding-top: 68px; }
+
+
+/* list Stats ------- 180814 배다빈 추가 */
+.list .listStats { width: 100%; box-sizing: border-box; padding: 20px 50px; border:1px solid #eee; border-radius: 10px; margin-bottom: 20px;}
+.list .listStats::after {content:""; display: block; clear: both;}
+.list .listStats > div { float: left; width: 25%; text-align: center; }
+.list .listStats .statsTitle { color: #333; font-weight: bold;}
+.list .listStats .statsValue { color: #4874e8; font-size: 30px;}
+
+/* list 대출신청 버튼 ------- 180814 배다빈 추가 */
+.list .contentWrap .lendBtnBox { text-align: center; padding-top: 50px; }
+.list .contentWrap .lendBtnBox button { width: 200px; height: 45px; background-color: #4874e8; border:2px solid transparent; border-radius: 5px;  color: #fff; font-size: 16px; line-height: 43px; cursor: pointer; transition:  all .5s;}
+.list .contentWrap .lendBtnBox button:hover { background-color: #fff; color: #4874e8; border-color: #4874e8; }
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
+	.list .contentWrap { width: 100%; }
+
+	.listView .contentWrap { width: 100%; }
+	.listView h3 { width: 98%; margin: 20px auto 70px; }
+	.listView .notice { width: 98%; margin: 0 auto; }
+
+	.listView .listAd div .listAdTitle { font-size: 15px; }
+	.listView .listAd div .newTitle { font-size: 15px; }
+	.listView .listAd .btnArea button { width: 120px; height: 32px;}
+
+    div.viewBox > div {width:50%;}
+    div.viewBox > div:last-of-type, div.viewBox > div:nth-of-type(3){border-top:none;}
+    .listView .viewBox > div {margin-bottom:0;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.list .contentWrap { width: 100%; }
+	.list .contentWrap table th { font-size: 12px; }
+	.list .contentWrap table td { font-size: 12px; }
+	.list .contentWrap table td .timer { font-size: 11px; }
+
+	.listView .contentWrap { width: 100%; }
+	.listView h3 { width: 98%; margin: 20px auto 70px; }
+
+	.listView ul li { margin-bottom: 35px; }
+	.listView .conTitle { font-size: 16px; margin-bottom: 15px;}
+	.listView .conDesc .imgBox { background-position: 10px 50px; background-size: 90%;}
+	.listView .stats .statsBox { background-position: 25px 25px; background-size: 85%; }
+	.listView .conInfo { margin-top: 20px; }
+	.listView .conInfo .subTitle { font-size: 13px; }
+	.listView .conInfo .subDesc { font-size: 14px; }
+	.listView .conInfo p { font-size: 14px; }
+
+	.listView .notice { width: 98%; margin: 0 auto; }
+	.listView .notice p { font-size: 12px; height: 45px; }
+
+	.list .listAd div .listAdTitle { font-size: 14px; }
+	.list .listAd div .newTitle { font-size: 14px; }
+	.list .listAd .btnArea button { width: 100px; height: 32px; line-height: 30px; font-weight: bold; cursor: pointer; font-size: 12px;}
+
+    div.viewBox > div{width:50%;height:550px;}
+    div.viewBox > div:first-of-type, div.viewBox > div:nth-of-type(2){border-bottom:none;}
+    .listView .viewBox > div {margin-bottom:0;}
+
+	.search .productStats .statsBox { height: 170px; }
+	.search .productStats .statsBox .statsTitle { font-size: 18px; }
+	.search .productStats .statsBox .statsCate dl { padding-top: 50px;  }
+    .search .productStats .statsBox .statsDesc b { font-size: 70px;}
+
+    .list .listStats .statsTitle { font-size: 14px; }
+	.list .listStats .statsValue { font-size: 22px;}
+}
+
+@media only screen and (max-width: 767px) {
+
+	.list .bgWrap { height: 50px; }
+	.listView .bgWrap { height: 50px; }
+
+	.list .contentWrap { width: 100%; }
+	.list .contentWrap table.nowLoan { box-sizing: border-box; padding: 0 10px; }
+	.list .contentWrap table .colGroup { display: none; }
+	.list .contentWrap table .thGroup { display: none;	 }
+	.list .contentWrap table tr {display: block; overflow: hidden;box-sizing: border-box; padding:30px 10px 5px; text-align: center;	border:1px solid #eee; width: 350px; height: 190px; position: relative; border-radius: 5px; box-shadow: 5px 5px 5px 0 rgba(0,0,0,.2); margin: 0 auto 30px;}
+	.list .contentWrap table tr::after { content:""; display: block; width: 95%; margin: 86px auto 0; border-top: 1px solid #eee; }
+
+
+	.list .contentWrap table td { display: block; float: left; background-color: transparent; border:0;}
+	.list .contentWrap table td.gender { width: 100px; box-sizing: border-box; padding: 10px; height: auto; position: absolute; left: 10px; top: 10px;}
+	.list .contentWrap table td.gender img { width: 100%;}
+	.list .contentWrap table td.countTd { width: 100px;  left: 10px; position: absolute;bottom: 0; line-height: 20px;}
+	.list .contentWrap table td.timerTd { width: 50%; right: 33px; position: absolute;bottom: 0; line-height: 20px;}
+	.list .contentWrap table td.sumTd { position: absolute; left: 120px; top: 50px; }
+	.list .contentWrap table td.sumTd .sum { font-size: 25px; }
+	.list .contentWrap table td.cateTd { position: absolute; top: 50px; background-color: transparent; height: auto; right: 20px; width: 100px; text-align: center;}
+	.list .contentWrap table td.useTd { position: absolute; top: 70px; background-color: transparent; height: auto; right: 20px; color: #aaa; width: 100px; text-align: center;}
+	.list .contentWrap table td.useTd::before { content: "("; padding-right: 2px;}
+	.list .contentWrap table td.useTd::after { content: ")"; padding-left: 2px;}
+	.list .contentWrap table td.ageTd { color: #999; }
+	.list .contentWrap table td.ageTd::after { content:")"; padding-left:2px;}
+	.list .contentWrap table td.authorTd { position: absolute; left: 122px; top: 25px; font-size: 16px; color: #555;}
+	.list .contentWrap table td.btr { margin-left: 162px; color: #999;}
+	.list .contentWrap table td.btr::after { content:" / "; }
+	.list .contentWrap table td.btr::before { content:"("; padding-right: 2px; font-size: 12px;}
+
+	.list .contentWrap table .td50 span { display: block; height: 25px; font-size: 16px;}
+	.list .contentWrap table .td50 span i { height: 20px; width: 20px; background-size: cover; background-position: 0 0; margin-left: 2px; position: absolute; top: -118px; right: -15px;}
+	.list .contentWrap table .dateTd { display: none; }
+	.list .contentWrap table .td50::before { content: attr(data-label);  display: block; font-weight: bold; text-transform: uppercase; height: 25px;}
+	.list .contentWrap table td.no { display: none; }
+	.list .contentWrap table tr:hover { background-color: transparent; }
+
+	.list .contentWrap .pager { width: 100%; }
+	.list .contentWrap .pager ul { width: 100%;	text-align: center;	 }
+	.list .contentWrap .pager ul li {margin: 0; width: 8.33%; }
+	.list .contentWrap .pager ul li a { box-sizing: border-box; }
+
+	div.viewBox { border:0; width: 400%; overflow: hidden;}
+	div.viewBox > div {width:100%; height: 400px; padding:0 20px; box-sizing: border-box;}
+    .imgArea{}
+    .imgArea img{}
+
+	.listView .contentWrap { width: 100%; padding-top: 40px; overflow: hidden;}
+	.listView h3 { width: 98%; margin: 0 auto 40px; height: 45px; line-height: 45px; font-size: 18px;}
+	.listView ul { width: 100%; float: none; }
+	.listView ul li { margin-bottom: 0; height: 365px; padding-top: 10px;}
+
+	.listView .viewBox .conTitle { font-size: 16px; margin-bottom: 0; }
+	.listView .viewBox .imgArea { height: 150px; line-height: 150px;}
+	.listView .viewBox .imgArea img { height: 100%; }
+	.listView .conInfo { margin-top: 0; }
+	.listView .conInfo .subTitle { font-size: 0.8rem; }
+	.listView .conInfo .subDesc { font-size: 14px; }
+	.listView .conInfo p { font-size: 14px; }
+
+	.listView .grade { height: 300px; }
+	.listView .stats { height: 180px; }
+	.listView .conDesc .imgBox { max-width: 320px; background-position:0 0; background-size: 100%;}
+	.listView .stats .statsBox { background-position:50% 0; background-size: 80%;}
+
+	div.viewBox > div:last-of-type .imgArea img {padding-top: 0px;}
+
+
+	.listView .notice { width: 98%; margin: 0 auto; }
+	.listView .notice p { font-size: 11px; height: auto;  box-sizing: border-box; padding: 20px;}
+
+	.list .listAd > div { width: 50%; border-bottom: 1px solid #ccc;}
+	.list .listAd div .listAdTitle { font-size: 14px; }
+	.list .listAd div .newTitle { font-size: 14px; }
+	.list .listAd .btnArea button { width: 100px; height: 32px; line-height: 30px; font-weight: bold; cursor: pointer; font-size: 12px;}
+
+    div.viewBox > div:not(:last-of-type){border-bottom:none;}
+
+	.list .myPhone .inputGroup { width: 100%; height: 45px;  margin-right: 0px;}
+
+
+	.search .productStats p { font-size: 14px; }
+	.search .productStats .statsBox { height: 90px; }
+	.search .productStats .statsBox .statsTitle { font-size: 12px; }
+	.search .productStats .statsBox .statsCate dl { padding-top: 6px;  }
+	.search .productStats .statsBox .statsCate dl dd { font-size: 11px;text-align: center; }
+    .search .productStats .statsBox .statsDesc b { font-size: 30px; font-weight: bold;}
+
+	.list .listStats { padding: 20px 30px 0; width: 98%; margin: 0 auto;}
+	.list .listStats > div { width: 50%; margin-bottom: 20px;  }
+	.list .listStats .statsTitle { font-size: 12px; }
+	.list .listStats .statsValue { font-size: 20px; font-weight: bold;}
+
+	/* search Product 페이지 레이아웃 ----- 180814 배다빈 추가 */
+	.list .contentWrap .productList { width: 100%; box-sizing: border-box; padding: 0 10px; }
+	.list .contentWrap .productList tr { width: 100%; height: auto; padding:20px; }
+	.list .contentWrap .productList tr.thGroup { display: none; }
+	.list .contentWrap .productList tr::after {border:0;}
+	.list .contentWrap .productList td { width: 100%; height: auto; padding: 5px 0; display: block; float: left; text-align: right; color: #333; }
+	.list .contentWrap .productList td::before {  content: attr(data-label); float: left; text-transform: uppercase;font-weight: bold; color: #999;}
+
+}
+
+@media only screen and (max-width: 360px) {
+
+	.list .contentWrap table.nowLoan {padding: 0;}
+	.list .contentWrap table tr {width: 320px; }
+	.list .contentWrap table td.gender { width: 90px; }
+	.list .contentWrap table td.sumTd { left: 100px; }
+	.list .contentWrap table td.cateTd { width: 80px; }
+	.list .contentWrap table td.useTd { width: 80px; }
+	.list .contentWrap table td.btr { margin-left: 140px; }
+	.list .contentWrap table td.authorTd { position: absolute; left: 103px; top: 25px; font-size: 16px; color: #555;}
+}
