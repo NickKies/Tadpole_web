@@ -1,0 +1,13 @@
+package test;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+
+public class test {
+
+	public static void main(String[] args) {
+		BufferedReader br = new BufferedReader(new FileInputStream(new File("./ip.txt")));
+	}
+
+}

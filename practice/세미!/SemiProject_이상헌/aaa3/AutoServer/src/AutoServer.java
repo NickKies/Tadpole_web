@@ -1,0 +1,28 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class AutoServer {
+	
+	static SimpleDateFormat time = new SimpleDateFormat("[hh:mm:ss] ");
+
+	public static void main(String[] args) {
+		System.out.println(time.format(new Date(System.currentTimeMillis())) + "Auto Refreshing...");
+		new InsertData("데스크탑 PC");
+		new InsertData("노트북");
+		new InsertData("태블릿 PC");
+		System.out.println(time.format(new Date(System.currentTimeMillis())) + "Complete!!");
+		while (true) {
+			try {
+				Thread.sleep(600000);
+				System.out.println(time.format(new Date(System.currentTimeMillis())) + "Auto Refreshing...");
+				new InsertData("데스크탑 PC");
+				new InsertData("노트북");
+				new InsertData("태블릿 PC");
+				System.out.println(time.format(new Date(System.currentTimeMillis())) + "Complete!!");
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

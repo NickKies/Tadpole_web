@@ -1,0 +1,13 @@
+
+public class t {
+
+	public static void main(String[] args) {
+		String category = "블루투스 이어폰";
+		category.replaceAll(" ", "\\%20");
+		int page = 1;
+		String url = String.format("https://search.shopping.naver.com/search/all.nhn?rigQuery=%s&pagingIndex=%d&pagingSize=40&productSet=model&viewType=list&sort=rel&frm=NVSHPAG&query=%s", category, page, category);
+		System.out.println(url);
+		System.out.println("%20");
+	}
+
+}

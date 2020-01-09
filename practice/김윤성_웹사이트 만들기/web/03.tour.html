@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <title>감귤투어</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <a href="01.home.html"><h1>감귤투어</h1></a>
+                <form action="" class="login">
+                    <label for="fname">ID : </label><input type="text" class="header-login" size="20" minlength="4" maxlength="12" placeholder="ID를 입력해주세요." name="user_id" required>
+                    <label for="pw">PW : </label><input type="password" class="header-login" size="20" minlength="8" maxlength="16" placeholder="PW를 입력해주세요." required>
+                    <input type="submit" class="header-sub" value="로그인">
+                    </form>
+            </header>
+            <nav>
+                <ul id="main-nav">
+                    <li><a href="02.intro.html">소 개</a></li>
+                    <li><a href="03.tour.html">투어신청</a></li>
+                    <li><a href="04.bss.html">관광 후기</a></li>
+                    <li><a href="05.join.html">회원가입</a></li>
+                </ul>
+            </nav>
+            <div id="pagewrapper">
+                <h3>투어 신청</h3>
+                <form action="" class="tour-page">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">닉네임</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name" name="name" placeholder="닉네임을 넣어주세요..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="country">코스선택</label>
+                        </div>
+                        <div class="col-75">
+                            <select name="course" id="course">
+                                <option value="jeju">제주시 감귤농장</option>
+                                <option value="sgp">서귀포시 감귤농장</option>
+                                <option value="house">가정 감귤나무 따기</option>
+                            </select>
+                        </div>                
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="country">인원</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" value="1" min="1" max="50" step="1">
+                        </div>                
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">요청사항</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea name="subject" id="subject" placeholder="여기에 적어주세요!" style="height: 200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" class="header-sub tourb" value="제출">
+                    </div>
+                </form>
+            </div>
+            <footer>
+                <p>맛있는감귤</p>
+            </footer>
+        </div>
+    </body>
+</html>

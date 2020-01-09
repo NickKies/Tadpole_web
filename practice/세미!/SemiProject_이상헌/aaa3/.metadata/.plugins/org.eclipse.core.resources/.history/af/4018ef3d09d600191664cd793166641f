@@ -1,0 +1,43 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+public class InsertData {
+
+	private Data data = new Data();
+	private ArrayList<Integer> num = data.getNum();
+	private ArrayList<String[]> dataArr = data.getData();
+	private int size = dataArr.size();
+	private String url = "jdbc:mariadb://localhost:3306/product";
+	private String user = "root";
+	private String pw = "1234";
+	private PreparedStatement pstmt = null;
+	
+	public InsertData() {
+		try {
+			Class.forName("org.mariadb.jdbc.Driver");
+			Connection con = DriverManager.getConnection(url, user, pw);
+			pstmt = con.prepareStatement("DELETE FROM product;");
+			pstmt.executeUpdate();
+			int idx = 0;
+			for (String[] d : dataArr) {
+				String sql = String.format("INSERT INTO product(num,name,price,score,imgURL,pageURL) VALUES(%d,'%s','%s','%s','%s','%s');",
+						num.get(idx), d[0], d[1], d[2], d[3], d[4]);
+				pstmt = con.prepareStatement(sql.toString());
+				pstmt.executeUpdate();
+				idx++;
+			}
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public int getSize() {
+		return size;
+	}
+	
+}

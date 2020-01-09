@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Client/URL.txt&apos; to &apos;ServerURL.txt&apos;" description="Rename resource &apos;URL.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="URL.txt" name="ServerURL.txt" stamp="1568554341554" updateReferences="true"/>
+</session>

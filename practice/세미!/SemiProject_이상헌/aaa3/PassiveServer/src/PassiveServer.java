@@ -1,0 +1,35 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class PassiveServer {
+	
+	static Scanner sc = new Scanner(System.in);
+	static SimpleDateFormat time = new SimpleDateFormat("[hh:mm:ss] ");
+
+	public static void main(String[] args) {
+		System.out.println(time.format(new Date(System.currentTimeMillis())) + "Auto Refreshing...");
+		new InsertData("데스크탑 PC");
+		new InsertData("노트북");
+		new InsertData("태블릿 PC");
+		System.out.println(time.format(new Date(System.currentTimeMillis())) + "Complete!!\n");
+		
+		while (true) {
+			System.out.print("1.Refresh   2.Exit\n>> ");
+			String n = sc.next();
+			if (n.equals("1")) {
+				System.out.println(time.format(new Date(System.currentTimeMillis())) + "Refreshing...");
+				new InsertData("데스크탑 PC");
+				new InsertData("노트북");
+				new InsertData("태블릿 PC");
+				System.out.println(time.format(new Date(System.currentTimeMillis())) + "Complete!!\n");
+			} else if (n.equals("2")) {
+				break;
+			} else {
+				System.out.println("Please insert '1' or '2'\n");
+			}
+		}
+		sc.close();
+	}
+
+}

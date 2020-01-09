@@ -1,0 +1,597 @@
+@import url("https://fonts.googleapis.com/css?family=Gamja+Flower|Gugi&display=swap&subset=korean");
+:root {
+    font-size: 10px;   
+    --neon-text-color: #f90;
+    --neon-border-color: #08f;
+}  
+* { 
+    margin: 0; 
+    padding: 0;
+
+}
+body { 
+    background: black;
+    font-family: 'Gamja Flower', cursive;
+}
+h1, h2, h3, #start div , nav a:link, nav a:visited {
+    font-family: 'Gugi', cursive;
+}
+#start {
+    width: 100%;
+}
+#start div {
+    width: 400px;
+    margin: 400px auto;
+    border: 0.4rem solid #fff;
+    border-radius: 0.5em;
+    height: 150px;
+    text-align: center;
+    letter-spacing: 20px;
+    padding-top: 20px;
+}
+#start div p {
+    margin-top: 20px;
+}
+a { 
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: #fff;
+}
+a:active {
+    color: yellow;
+}    
+#start a {
+    color: #fff;
+    margin-left: 5%;
+}
+#start div a {
+    font-size: 6em;
+    padding-top: 12px;
+}
+h1,#start div {
+    text-shadow:
+        -0.2rem -0.2rem 1rem #fff,
+        0.2rem 0.2rem 1rem #fff,
+        0 0 2rem var(--neon-text-color),
+        0 0 4rem var(--neon-text-color),
+        0 0 6rem var(--neon-text-color),
+        0 0 8rem var(--neon-text-color),
+        0 0 10rem var(--neon-text-color);
+    box-shadow:
+        0 0 .5rem #fff,
+        inset 0 0 .5rem #fff,
+        0 0 2rem var(--neon-border-color),
+        inset 0 0 2rem var(--neon-border-color),
+        0 0 4rem var(--neon-border-color),
+        inset 0 0 4rem var(--neon-border-color);
+}
+h1, #start div:hover {
+    animation: flicker 1.5s infinite alternate;
+}  
+@keyframes flicker {      
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow:
+        -0.2rem -0.2rem 1rem #fff,
+        0.2rem 0.2rem 1rem #fff,
+        0 0 2rem var(--neon-text-color),
+        0 0 4rem var(--neon-text-color),
+        0 0 6rem var(--neon-text-color),
+        0 0 8rem var(--neon-text-color),
+        0 0 10rem var(--neon-text-color);
+    box-shadow:
+        0 0 .5rem #fff,
+        inset 0 0 .5rem #fff,
+        0 0 2rem var(--neon-border-color),
+        inset 0 0 2rem var(--neon-border-color),
+        0 0 4rem var(--neon-border-color),
+        inset 0 0 4rem var(--neon-border-color);   
+        animation: flicker 1.5s infinite alternate
+    }      
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }   
+}
+#container {
+    width: 1000px; 
+    margin: 0 auto;
+    border: 1px solid white;
+}
+h1 {
+    position: absolute;
+    left: 3%;
+    top:15%;
+    width: 4em;
+    text-align: center;
+    font-size: 5em;
+    font-weight: 200;
+    font-style: italic;
+    color: #fff;
+    padding: 1em;
+    border: 0.4rem solid #fff;
+    border-radius: 0.5em;
+}
+header { 
+    width: 100%; 
+    height: 280px; 
+    background: url(images/귤.jpg) center no-repeat; 
+    margin: 0;
+    position: relative;
+}
+.login {
+    position: absolute;
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 5px;
+    color: white;
+    right: 1%;
+    bottom: 3%;
+}
+input.header-login[type=text], input.header-login[type=password] {
+    width: 10em;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+input.header-sub[type=submit], input.tour-button[type="button"],.join form input[type="reset"], .join form input[type="submit"], .bss-page div input[type=button], input.write-bss[type="button"] {
+    background-color:  #f90;
+    color: white;
+    padding: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+}
+input.header-sub[type=submit]:hover, input.tour-button[type="button"]:hover, .join form input[type="reset"]:hover, .join form input[type="submit"]:hover, .bss-page div input[type=button]:hover,input.write-bss[type="button"] {
+    background-color: rgba(163, 95, 6, 0.7); 
+}
+nav { 
+    height: 50px; 
+    background: #000;
+    font-size: 1.5em;
+}
+#main-nav { 
+    list-style: none; 
+    margin: 0; 
+    padding: 10px;
+}
+#main-nav li { 
+    display: inline-block; 
+    margin: 5px 15px;
+    color: #fff;
+    font-size: 1em; 
+}
+nav a:link, nav a:visited, a:link, h2 a:visited { 
+    color: #fff;
+}
+nav a:hover, nav a:active{
+    color: orange;
+}
+section { 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative; 
+    height: 400px;
+    padding: 15px 5% 10px 5%;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px dashed orange;
+    border-radius: 5px;
+    float: left;
+}
+.section-header {
+    position: absolute;
+    top: 0;
+    left:0;
+    background: rgba(163, 95, 6, 0.7);
+    width: 100%;
+}
+h2 a:link, h2 a:visited{
+    font-size: 1.5em;
+    line-height: 2;
+    margin-left: 6px;
+    letter-spacing: 4px;
+}
+.intro-content { 
+    position: absolute;
+    top:80px;
+    left: 50%;
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box; 
+    width: 100%; 
+    padding: 10px;
+    align-content: center;
+}
+#intro li{
+    list-style: lower-greek;
+}
+.intro-photo {
+    position: absolute;
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;  
+    top:0;
+    left:-45%;
+    width: 35%;
+    height: 200px;
+    background-image: url("images/보노보노.jpg");
+    background-size: cover;
+}
+.intro-text {
+    width: 64%;
+    font-size: 2.5em;
+    line-height: 2em;
+}
+#intro, #top3 {
+    width: 49%;
+    margin: 10px 5px;
+}
+#tour, #bss, #ad {
+    width: 32%;
+    margin:10px 5px;
+}
+#top3 {
+    background-image: url('images/귤1.jpg');
+}
+content {
+    margin-top : 40px;
+    width: 95%;
+    padding: 5px;
+    height: 400px;
+}
+.top3-content {
+    margin-top : 40px;
+    width: 95%;
+    padding: 5px;
+    height: 400px;
+    font-size: 1.5em;
+    line-height: 2;
+    color: white;
+}
+.top3-content p {
+    font-size: 1.8em;
+    line-height: 3;
+}
+#bss {
+    width: 40%;
+    margin: 10px 5px;
+    
+}
+#bss div.content {
+    margin-top: 60px;
+}
+#bss li {
+    font-size: 2em;
+    list-style: none;
+}
+#bss li a:link, #bss li a:visited {
+    color: #000;
+}
+#bss li a:hover, #bss li a:active {
+    color: orange;
+}
+#tour, #ad {
+    width: 28%;
+    height: 400px;
+    margin: 10px 5px;
+}
+.tour-h1 { 
+    left: 6%;
+    top: 70px;
+    width: 4em;
+    font-size: 4em;
+}
+.tour-text {
+    font-size: 3em;
+    line-height: 2;
+    margin-top:200px;
+    color: orange;
+}
+.tour-text-p {
+    font-size: 0.5em;
+}
+input.tour-button[type="button"] {
+    width: 100%;
+    margin-top: 10%;
+}
+#ad {
+    background: url('images/귤2.jpg')no-repeat;
+    border: none;
+}
+footer p { 
+    font-size: 5em;
+    letter-spacing: 1em;
+    line-height: 100px; 
+    text-shadow: 5px 5px 7px black;
+    color: white; 
+    text-align: center;
+    clear: both;
+}
+#pagewrapper {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+}
+h3 {
+    font-size: 3em;
+    letter-spacing: 1em;
+}
+table {
+    border: 1px solid black;
+    align-content: center;    
+    border-collapse: collapse;
+    width: 100%;
+}
+tr, td, th {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.05em;
+}
+.intro-img {
+    width:150px;
+    height:200px;
+}
+#one-one {
+    border:1px solid black;
+}
+.one-one {
+    width: 12%;
+}
+.one-two {
+    width: 30%;
+}
+.one-three {
+    width: 11%;
+}
+.one-four {
+    width: 30%;
+}
+#one-one tr {
+    height: 40px;
+}
+.skyblue {
+    background-color: skyblue;
+}
+.turquoise {
+    background-color: turquoise;
+}
+thead{
+    background: skyblue;
+}
+.two-one {
+    width: 13%;
+}
+.two-two {
+    width: 22%;
+}
+.two-tree {
+    width: 38%;
+}
+.two-four {
+    width: 13%;
+}
+.two-five {
+    width: 13%;
+}
+.right {
+    text-align: right;
+}
+#three tr th {
+    width: 50px;
+}
+.three-one {
+    width: 20%;
+}
+.three-two {
+    width: 15%;
+}
+.three-three {
+    width: 10%;
+}
+.three-four {
+    width: 23%;
+}
+.three-five {
+    width: 22%;
+}
+#four tr th {
+    width: 50px;
+}
+#four tr th table {
+    width: 450px;
+}
+.four-one {
+    width: 25%;
+}
+.four-two {
+    width: 30%;
+}
+.four-three {
+    width: 20%;
+}
+.four-four {
+    width: 20%;
+}
+.four-five {
+    width: 30%;
+}
+#five tr th {
+    width: 50px;
+}
+#five tr td table {
+    width: 275px;
+}
+.empty {
+    empty-cells: show;
+}
+.six-one {
+    width: 13%;
+}
+.small {
+    width: 15%;
+}
+.big {
+    width: 35%;
+}
+.tour-page {
+    font-size: 2em;
+    margin: 5px;
+    padding:3px;
+}
+input[type=text],select,textarea {
+    width:90%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+input.tourb[type=submit] { 
+    padding: 12px 20px;
+    cursor:pointer;
+    float: right;
+    margin: 20px 10%;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75{
+    float:left;
+    width: 75%;
+    margin-top: 6px;
+}
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.red {
+    color: red;
+}
+.join {
+    width: 50%;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0 auto;
+}
+.join h3 {
+    font-size: 2em;
+}
+.join form input[type="reset"] {
+    margin: 15px 15px 0 50%;
+}
+
+.bss-page table {
+    background: white;
+    width: 80%;
+    margin: 1% 5% 0% 15%;
+    font-size: 1.5em;
+    line-height: 2;
+}
+.bss-page div {
+    margin: 1em 30% 0 30%;
+}
+.bss-page div ul {
+    margin : 0 0 0 20%;
+}
+.bss-page table tr th {
+    color: white;
+    background: orange;
+}
+.num {
+    width: 15%;
+}
+.con {
+    width: 70%;
+    text-align: left;
+    text-indent: 5px;
+}
+.bss-page table a:link, .bss-page table a:visited {
+    color: black;
+}
+.bss-page div ul li {
+    display: inline-block; 
+    box-sizing: border-box;
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid black;
+    background: white;
+    margin: 5px 3px;
+    color: black;
+    font-size: 1.5em; 
+    text-align: center;
+    padding: 3px;
+}
+input.write-bss[type="button"] {
+    float: right;
+    padding: 3px;
+}
+
+
+@media screen and (max-width:500px){
+    #start div{
+        animation: flicker 1.5s infinite alternate;
+    }
+    #container {
+        width: 100%;
+    }
+    section {
+        width: 100%;
+        float: none;
+    }
+    #intro, #top3, #bss, #tour, #ad {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #bss {
+        padding-left: 20px;
+    }
+    .tour-text {
+        display: none;
+    }
+    .tour-h1{ 
+        left: 25%;
+    }
+    input.tour-button[type="button"] {
+        margin: 50% 25% 0;
+        height: 100px;
+        width: 50%;
+        font-size: 3em;
+    }
+    #ad {
+        margin: 0 1%;
+    }
+    .intro-pagewrapper {
+        width: 200%;
+    }
+    #intro-pagewrapper {
+        width: 188%;
+    }
+    .col-25, .col-75, input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+    input.tourb[type=submit] {
+        width: 100%;
+        margin-right: 3%;
+    }
+    .bss-page table {
+        width: 100%;
+        margin-left: 10px;
+    }
+    .bss-page div input[type=text] {
+        width: 200px;
+        
+    }
+    .bss-page div input[type=button] {
+        width: 200px;
+    }
+    .join {
+        width: 100%;
+        margin: 0;
+    }
+    .join form input[type="reset"] {
+        margin: 15px 15px 20px 80%;
+    }
+}

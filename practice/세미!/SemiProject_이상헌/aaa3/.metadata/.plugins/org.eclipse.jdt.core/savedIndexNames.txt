@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Users\rlsh7\Desktop\SemiProject\workspace\.metadata\.plugins\org.eclipse.jdt.core
+3019146177.index
+3950796323.index
+387264965.index
+137624701.index
